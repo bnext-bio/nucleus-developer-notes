@@ -1,0 +1,35 @@
+version: 1
+project:
+  id: e0db63f6-1d90-4257-87ea-59b1696ac838
+  references:
+    devnotes: https://devnotes.bnext.bio
+    mystmd: https://mystmd.org/guide
+  title: Nucleus Developer Notes
+  thumbnail: default-thumb.png
+  description: please add for social previews
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  toc:
+    - file: index.md
+    - file: core-devnotes.md
+    - file: community-devnotes.md
+    - file: submit.md
+    - file: open-science.md
+    - file: news.md
+    - file: about.md
+    - file: glossary.md
+    - file: faq.md
+  plugins:
+    - lorem.mjs
+site:
+  title: Nucleus Developer Notes
+  nav:
+    - url: /core-devnotes
+      title: Core
+    - url: /community-devnotes
+      title: Community
+    - url: /submit
+      title: Submit
+    - url: /about
+      title: About
+  domains:
+    - bnextbio-devnotes_landing.curve.space
