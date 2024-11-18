@@ -1,0 +1,60 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-00_myst_template
+  # Ensure your title is the same as in your `main.md`
+  title: Developer Notes - Core Team Template
+  subtitle: Contributions from the core team
+  description: please add for social previews
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Charles Darwin
+      email: charles.d@downhouse.uk
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - The Royal Society, UK
+        - Galápagos Research Institute
+    - name: Gregor Mendel
+      email: gmendel@abbey.cz
+      affiliations:
+        - St. Thomas Abbey, Brno
+        - Mendelian Genetics Research Center
+    - name: Rosalind Franklin
+      email: rosalind.franklin@kcl.ac.uk
+      affiliations:
+        - King's College London
+        - DNA Structure Laboratory, UK
+      corresponding: true
+    - name: Rachel Carson
+      email: rachel.carson@environment.org
+      affiliation: Environmental Science and Conservation Society
+  keywords:
+    - cells
+    - liposomes
+    - synthetic biology
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2024-07-10
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+site:
+  template: article-theme
+  nav: []

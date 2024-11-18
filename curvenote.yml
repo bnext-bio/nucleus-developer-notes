@@ -8,6 +8,9 @@ project:
   thumbnail: default-thumb.png
   description: please add for social previews
   github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-NY-4.0
+  open_access: true
+  venue: Nucleus
   toc:
     - file: index.md
     - file: core-devnotes.md
@@ -18,6 +21,8 @@ project:
     - file: about.md
     - file: glossary.md
     - file: faq.md
+  exclude:
+    - dev-notes
   plugins:
     - lorem.mjs
 site:

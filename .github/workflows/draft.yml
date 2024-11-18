@@ -1,0 +1,20 @@
+name: curvenote draft
+on:
+  pull_request:
+    branches: ['main']
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  create-preview-core-devnotes-draft:
+    uses: curvenote/actions/.github/workflows/draft.yml@v1
+    with:
+      monorepo: true
+      id-pattern-regex: '^nucleus-devnote-core-(?:[a-zA-Z0-9-_]{3,15})$'
+      venue: bnext-devnotes
+      kind: dev-notes
+      collection: nucleus-core
+      path: dev-notes/*
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}
