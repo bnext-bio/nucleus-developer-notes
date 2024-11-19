@@ -9,7 +9,7 @@ jobs:
     uses: curvenote/actions/.github/workflows/submit.yml@v1
     with:
       id-pattern-regex: '^nucleus-devnote-core-(?:[a-zA-Z0-9-_]{3,15})$'
-      enforce-single-folder: true
+      enforce-single-folder: false
       venue: bnext-devnotes
       kind: dev-notes
       collection: nucleus-core

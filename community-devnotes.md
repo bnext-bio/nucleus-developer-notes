@@ -5,11 +5,6 @@ thumbnail: default-thumb.png
 description: please add for social previews
 ---
 
-:::{lorem} 1
-:::
-
-## Nucleus Community Contributions
-
 The Nucleus Community Contributions contains modules, documentation, and protocols shared by contributors in the community and outside of the main Nucleus distribution.
 
 :::{warning} Important
@@ -22,7 +17,4 @@ User contributions have not been validated by more than one lab (to our knowledg
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:::
-
-:::{lorem} 2
 :::
