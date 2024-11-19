@@ -5,22 +5,32 @@ thumbnail: default-thumb.png
 description: please add for social previews
 ---
 
+## General terms
+
 :::{glossary}
-Synthetic Biology
-: An interdisciplinary field that combines biology, engineering, and computational methods to design and construct new biological parts, devices, and systems or to re-engineer existing biological systems.
 
-Biobricks
-: Standardized DNA sequences that can be assembled to build synthetic biological circuits or systems.
+Cytosol
+: Cytosols are the insides of synthetic cells, aqueous mixtures of “components” (e.g., proteins, RNAs, small organic molecules, and salts) that recapitulate user desired biological functions (e.g., transcription and translation).
 
-CRISPR-Cas9
-: A genome editing tool derived from bacterial immune systems, enabling precise modification of DNA sequences in organisms.
+Container
+: Containers are the outsides of synthetic cells. Containers form a barrier between the interior (or “cytosols”) of synthetic cells and the environment, and are typically made of phospholipids forming a bilayer.
 
-Metabolic Engineering
-: The practice of optimizing metabolic pathways within an organism to increase production of a desired substance, such as biofuels or pharmaceuticals.
+Module
+: Modules are defined sets of DNA, RNA, and proteins that encode defined functions when implemented in cytosol or synthetic cells. [[Nucleus modules](https://github.com/bnext-bio/nucleus/tree/main/dna-distribution/v0.1.0-001)]
 
-Chassis Organism
-: A host organism, often a microbe, engineered to perform specific functions or host synthetic biological circuits.
+PURE
+: PURE is a defined set of 108 molecules (proteins, RNAs, small organic molecules, and salts) that recapitulate transcription and translation.
 
-Gene Circuit
-: A network of interacting genes and regulatory elements designed to perform specific computational or functional tasks within a cell.
+OpenMTA
+: The [OpenMTA](https://biobricks.org/openmta-faq/) is an easy-to-use legal tool that promotes exchange of biological materials. By removing blanket restrictions, the Open MTA aims to inspire innovation so that all people benefit from advances in biotechnology.
+
+:::
+
+## Parts
+
+:::{glossary}
+
+pT7-bjaI
+: Expresses the enzyme bjaI under the T7 promoter transforming S-adenosylmethionine (SAM) and isovaleryl-CoA (IV-CoA) into the quorum sensing small molecule  IV-HSL. [[sequence](https://github.com/bnext-bio/nucleus/blob/main/dna-distribution/v0.1.0-001/lacI.gb)] 
+
 :::
