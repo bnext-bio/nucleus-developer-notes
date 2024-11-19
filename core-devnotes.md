@@ -5,12 +5,7 @@ thumbnail: default-thumb.png
 description: please add for social previews
 ---
 
-:::{lorem} 1
-:::
-
-## Nucleus Community Contributions
-
-Development notes from the core development team
+Dev Notes from the Core Development team at b.next. The underlying protocols, materials, and analysis code to replicate and build upon these reports can be found at nucleus.bnext.bio. Biological materials are available for community use under the OpenMTA.
 
 :::{cn:articles}
 :venue: bnext-devnotes
@@ -18,7 +13,4 @@ Development notes from the core development team
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:::
-
-:::{lorem} 2
 :::

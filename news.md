@@ -4,5 +4,7 @@ thumbnail: default-thumb.png
 description: please add for social previews
 ---
 
-:::{lorem} 5
+:::{admonition} Attention
+:class: attention
+No news is good news
 :::
