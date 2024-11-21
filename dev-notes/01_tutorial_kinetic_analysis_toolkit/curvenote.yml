@@ -7,6 +7,9 @@ project:
   subtitle: Tutorial introducing the kinetic analysis toolkit released in version Nucleus-cdk-v0.2.1
   description: please add for social previews
   # Authors should have affiliations, emails and ORCIDs if available
+  jupyter: true
+  exports:
+    - format: meca
   authors:
     - name: Anton Jackson-Smith
       email: anton@bnext.bio
