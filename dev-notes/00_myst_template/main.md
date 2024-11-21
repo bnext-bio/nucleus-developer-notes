@@ -3,7 +3,7 @@
 title: Developer Notes - Core Team Template
 abstract: |
   A short version of the long version that is way too long to be written as a
-  short version anyway.  Still, when considering the facts from first
+  short version anywa {abbr}`CDK (Heart Rate)`.  Still, when considering the facts from first
   principles, we find that the outcomes of this introspective approach is
   compatible with the guidelines previously established.
 
@@ -15,6 +15,7 @@ abstract: |
 
 :::{tip} TODO
 We should provide some default content to illustrate the format / content that we are aiming for.
+MyST
 :::
 
 :::{lorem} 5
