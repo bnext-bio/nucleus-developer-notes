@@ -56,6 +56,14 @@ project:
   subject: Developer Note
   plugins:
     - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+  # requirements:
+  #   - requirements.txt
+  # resources:
+  #   - data/**/*
 site:
   template: article-theme
   nav: []
