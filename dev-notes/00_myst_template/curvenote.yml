@@ -61,7 +61,7 @@ project:
   exports:
     - format: meca
   # requirements:
-  #   - requirements.txt
+  #   - environment.yml
   # resources:
   #   - data/**/*
 site:
