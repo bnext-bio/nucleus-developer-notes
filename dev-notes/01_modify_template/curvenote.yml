@@ -60,10 +60,12 @@ project:
   jupyter: true
   exports:
     - format: meca
-  # requirements:
-  #   - environment.yml
-  # resources:
-  #   - data/**/*
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - tests/**/*
+
 site:
   template: article-theme
   nav: []
