@@ -1,7 +1,7 @@
 version: 1
 project:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
-  id: nucleus-devnote-core-01_tutorial_kinetic_analysis_toolkit
+  id: nucleus-devnote-core-01_kinetics
   # Ensure your title is the same as in your `main.md`
   title: Kinetic Analysis Toolkit (v0.2.1)
   subtitle: Tutorial introducing the kinetic analysis toolkit released in version Nucleus-cdk-v0.2.1
