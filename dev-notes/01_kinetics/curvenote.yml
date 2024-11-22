@@ -1,0 +1,52 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-01_kinetics
+  # Ensure your title is the same as in your `main.md`
+  title: Kinetic Analysis Toolkit (v0.2.1)
+  subtitle: Tutorial introducing the kinetic analysis toolkit released in version Nucleus-cdk-v0.2.1
+  description: please add for social previews
+  # Authors should have affiliations, emails and ORCIDs if available
+  jupyter: true
+  exports:
+    - format: meca
+  authors:
+    - name: Anton Jackson-Smith
+      email: anton@bnext.bio
+      orcid: 
+      affiliations:
+        - b.next
+    - name: Anton Molina
+      email: antonmolina@bnext.bio
+      affiliations:
+        - b.next
+      corresponding: true
+  keywords:
+    - cell development kit
+    - tutorial
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    cdk: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2024-07-10
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+site:
+  template: article-theme
+  nav: []
