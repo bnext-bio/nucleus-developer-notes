@@ -16,3 +16,4 @@ dependencies:
   - hvplot
   - seaborn
   - timple
+  - rich
