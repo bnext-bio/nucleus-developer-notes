@@ -48,6 +48,7 @@ project:
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.ipynb
+    - file: supplementary.ipynb
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
