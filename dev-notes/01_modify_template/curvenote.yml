@@ -54,6 +54,7 @@ project:
   resources:
     - src/**/*
     - tests/**/*
+    - figures/**/*
 
 site:
   template: article-theme
