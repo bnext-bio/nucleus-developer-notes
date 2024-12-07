@@ -17,3 +17,5 @@ dependencies:
   - seaborn
   - timple
   - rich
+  - zenodo-client
+  
