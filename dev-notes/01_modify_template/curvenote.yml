@@ -35,6 +35,7 @@ project:
   toc:
     - file: main.ipynb
     - file: supplementary.ipynb
+    - file: widget.ipynb
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
