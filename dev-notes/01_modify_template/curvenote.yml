@@ -41,7 +41,8 @@ project:
     - file: widget_kinetics_barplot.ipynb
     - file: widget_bokeh.ipynb
     - file: widget_mpl.ipynb
-    - file: widget_sns.ipynb
+    - file: widget_sns_fig1.ipynb
+    - file: widget_sns_fig2.ipynb
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
