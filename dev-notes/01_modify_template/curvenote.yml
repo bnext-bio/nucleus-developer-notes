@@ -35,12 +35,6 @@ project:
   toc:
     - file: main.md
     - file: supplementary.ipynb
-    - file: widget.ipynb
-    - file: widget_barplot.ipynb
-    - file: widget_kinetics_annotate_curve.ipynb
-    - file: widget_kinetics_barplot.ipynb
-    - file: widget_bokeh.ipynb
-    - file: widget_mpl.ipynb
     - file: widget_sns_fig1.ipynb
     - file: widget_sns_fig2.ipynb
     - file: widget_sns_fig3.ipynb
