@@ -56,7 +56,6 @@ project:
     - src/**/*
     - tests/**/*
     - figures/**/*
-
 site:
   template: article-theme
   nav: []
