@@ -40,6 +40,7 @@ project:
     - file: widget_kinetics_annotate_curve.ipynb
     - file: widget_kinetics_barplot.ipynb
     - file: widget_bokeh.ipynb
+    - file: widget_mpl.ipynb
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
