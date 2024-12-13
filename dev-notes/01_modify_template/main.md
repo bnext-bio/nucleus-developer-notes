@@ -20,7 +20,7 @@ This paper compares four models, YOLOv8n-seg, EfficientSAM-tiny, Swin-UNet, and 
 - VMamba is based on a new architecture based on Mamba. It has a relatively small number of parameters (3.15M) and a video memory of 1823MB. However, its throughput (16.41/s) is low and its inferencing is slow. It is worth noting that Mamba, being a new architecture, is currently not able to train with multiple cards, unlike the other models.
 - EfficientSAM-tiny has a high number of parameters (10.19M) and video memory usage 1827MB, relatively low throughput (17.94/s), but has a significant advantage in accuracy. Despite its high number of parameters, it was the final model chosen due to its excellent accuracy.
 
-:::{figure} #app:interactive_image_curve_mpl
+:::{figure} #app:interactive_image_curve_sns
 :name: Qy3XvUUvyI
 :align: center
 :width: 100%
