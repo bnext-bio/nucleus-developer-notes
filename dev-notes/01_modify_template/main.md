@@ -42,11 +42,3 @@ The top row of graphs shows detailed zoomed sections of the full range loss curv
 
  good generalization ability. Thirdly, the training and testing loss curves of the VMamba model are very close to each other and drop rapidly in a short period of time, after which they remain at a low level, indicating that it has a significant advantage in convergence speed and stability. Finally, the EfficientSAM model performs particularly well, as its training and testing losses almost completely overlap and are maintained at a very low level throughout the training process, showing extremely high training efficiency and excellent generalization performance.
 
-:::{figure} #app:interactive_sns_fig3
-:name: interactive_fig3
-:align: center
-:width: 50%
-:placeholder: ./figures/placeholder_sns_fig2.png
-
-The top row of graphs shows detailed zoomed sections of the full range loss curves displayed in the bottom row for various segmentation models for comparison: YOLOv8n-seg, Swin-UNet, VMamba, and EfficientSAM.
-:::
