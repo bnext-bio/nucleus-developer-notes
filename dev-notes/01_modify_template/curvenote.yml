@@ -38,6 +38,7 @@ project:
     - file: widget_sns_fig1.ipynb
     - file: widget_sns_fig2.ipynb
     - file: widget_sns_fig3.ipynb
+    - file: table1.ipynb
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
