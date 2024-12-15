@@ -21,12 +21,29 @@ This paper compares four models, YOLOv8n-seg, EfficientSAM-tiny, Swin-UNet, and 
 
 ```
 
+:::{figure} #table1-1
+:name: table1
+:align: center
+:width: 50%
+
+This is a table of platemap
+:::
+
 - YOLOv8n-seg provides a high throughput (80.19/s) with a relatively small number of parameters (3.41M) and video memory of 1513MB. This model, while performing well in terms of accuracy, can be seen in @Qy3XvUUvyI where overfitting occurs during the training of YOLO. Early stopping was used to mitigate this problem.
+
+:::{figure} #table1-2
+:name: table1
+:align: center
+:width: 50%
+
+This is a table of data
+:::
+
+
 - Swin-UNet has the sliding window attention mechanism, the number of parameters (3.65M) and video memory usage 1793MB are moderate and the throughput (64.89/s) is high. Swin-UNet based on the sliding window mechanism has a significant advantage in training and inference speed.
 
 ```{csv-table} Frozen Delights!
 :file: ./tests/test_data/envision_kinetics.csv
-
 
 ```
 
