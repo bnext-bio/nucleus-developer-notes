@@ -10,6 +10,8 @@ import seaborn as sns
 
 import matplotlib.pyplot as plt
 import ipywidgets as widgets
+from ipywidgets import Output
+from IPython.display import display
 
 import src.cdk.logging
 
@@ -95,12 +97,19 @@ def interactive_kinetic_by_experiment(my_data, my_kinetics, toggle_col="Experime
         button_style=''
     )
 
+    # Define the first dropdown menu (level 0)
+    level_zero_dropdown = widgets.Dropdown(
+        options=['Velocity', 'Lag', 'Steady State', 'Fit'],
+        value='Lag',
+        description='Property:',
+)
+
     # Define the second dropdown menu (level 1)
     level_one_dropdown = widgets.Dropdown(
         options=[],  # Initially empty
         value=None,
         description='Item:',
-    )
+)
 
     # Define a plot placeholder
     plot_output = Output()
@@ -108,13 +117,13 @@ def interactive_kinetic_by_experiment(my_data, my_kinetics, toggle_col="Experime
     # Function to update the second dropdown based on the first dropdown's selection
     def update_items(change):
         if change['new'] == 'Velocity':
-            level_one_dropdown.options = kinetics.columns[kinetics.columns.get_level_values(0) == 'Velocity'].get_level_values(1).tolist()
+            level_one_dropdown.options = my_kinetics.columns[my_kinetics.columns.get_level_values(0) == 'Velocity'].get_level_values(1).tolist()
         elif change['new'] == 'Lag':
-            level_one_dropdown.options = kinetics.columns[kinetics.columns.get_level_values(0) == 'Lag'].get_level_values(1).tolist()
+            level_one_dropdown.options = my_kinetics.columns[my_kinetics.columns.get_level_values(0) == 'Lag'].get_level_values(1).tolist()
         elif change['new'] == 'Steady State':
-            level_one_dropdown.options = kinetics.columns[kinetics.columns.get_level_values(0) == 'Steady State'].get_level_values(1).tolist()
+            level_one_dropdown.options = my_kinetics.columns[my_kinetics.columns.get_level_values(0) == 'Steady State'].get_level_values(1).tolist()
         elif change['new'] == 'Fit':
-            level_one_dropdown.options = kinetics.columns[kinetics.columns.get_level_values(0) == 'Fit'].get_level_values(1).tolist()
+            level_one_dropdown.options = my_kinetics.columns[my_kinetics.columns.get_level_values(0) == 'Fit'].get_level_values(1).tolist()
         
         # Also reset the second dropdown value to None each time first dropdown changes
         level_one_dropdown.value = None
@@ -142,7 +151,7 @@ def interactive_kinetic_by_experiment(my_data, my_kinetics, toggle_col="Experime
 
             #filter kinetics by experiment
 
-            combined_df = pd.merge(my_kinetics[level_0], data[['Well', 'Name', 'Experiment']], on='Well', how='left').drop_duplicates()
+            combined_df = pd.merge(my_kinetics[level_0], my_data[['Well', 'Name', 'Experiment']], on='Well', how='left').drop_duplicates()
             filter_combined = combined_df[combined_df['Experiment'] == experiment]
 
             sns.catplot(data=filter_combined, kind="bar", x="Name", y=level_1, height=5, aspect=1)
