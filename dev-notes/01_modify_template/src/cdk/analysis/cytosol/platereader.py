@@ -611,8 +611,8 @@ def plot_kinetics_by_well(
 
     ax = sns.scatterplot(data=data, x=x, y=y, color=colors[2], alpha=0.5)
 
-    well_exp = data['Name'].unique().tolist()[0]
-    well_name = data['Experiment'].unique().tolist()[0]
+    well_exp = data['Experiment'].unique().tolist()[0]
+    well_name = data['Name'].unique().tolist()[0]
     ax.set_title(well_exp + " - " + well_name)
 
     well = data["Well"].iloc[0]
