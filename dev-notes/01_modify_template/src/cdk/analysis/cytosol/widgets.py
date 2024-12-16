@@ -23,6 +23,7 @@ def interactive_curve_by_experiment(my_data, toggle_col='Experiment', display_by
 
         experiment_data = my_data[my_data[toggle_col] == experiment]
 
+        plt.figure(figsize=(10, 6))
         for row, group in experiment_data.groupby(display_by):
             sns.lineplot(x='Seconds', y='Data', data=group, label=row)
 
@@ -48,6 +49,7 @@ def interactive_ss_by_experiment(my_data, my_ss_data, toggle_col='Experiment', d
         combined_df = pd.merge(my_ss_data, my_data[['Well', 'Name', 'Experiment']], on='Well', how='left').drop_duplicates()
         experiment_data = combined_df[combined_df['Experiment'] == experiment]
 
+        plt.figure(figsize=(10, 6))
         sns.catplot(data=experiment_data, kind="bar", x=display_by, y="Data_steadystate", height=5, aspect=1)
         # Rotate x-axis labels
         plt.xticks(rotation=60, ha='right', fontsize=10)
@@ -62,8 +64,6 @@ def interactive_ss_by_experiment(my_data, my_ss_data, toggle_col='Experiment', d
         button_style=''
     )
 
-
-
     # Use interact to link the widgets to the plotting function
     my_widget = widgets.interact(sns_plot_experiment_bars, experiment=toggle)
 
@@ -73,6 +73,7 @@ def interactive_curve_by_well(my_data, my_kinetics):
         plt.clf()
         well_df = my_data[my_data['Well'] == well]
         pr.plot_kinetics_by_well(well_df, my_kinetics, annotate=annotate)
+        plt.show()
 
     # Create widgets for the parameters
     toggle = widgets.ToggleButtons(
