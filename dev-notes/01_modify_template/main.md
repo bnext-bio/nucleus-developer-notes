@@ -101,11 +101,11 @@ If kinetics can't be solved for a given well, a warning will be printed and that
 
 Here you can visualize the sigmoid fit to experimental data with key parameters annotated on the plot. 
 
- :::{figure} #app:interactive_sns_fig3
+ :::{figure} #app:interactive_sns_fig4
 :name: interactive_fig3
 :align: center
 :width: 50%
-:placeholder: ./figures/placeholder_sns_fig2.png
+:placeholder: ./figures/placeholder_sns_fig4.png
 
 This interactive plot allows you to interact values obtained from runnings `kinetics()`
 :::
