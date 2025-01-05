@@ -19,7 +19,8 @@ def interactive_curve_by_experiment(my_data, toggle_col='Experiment', display_by
 
     def sns_plot_experiment(experiment):
 
-        plt.clf()
+        # plt.clf()
+        plt.close()
 
         experiment_data = my_data[my_data[toggle_col] == experiment]
 
