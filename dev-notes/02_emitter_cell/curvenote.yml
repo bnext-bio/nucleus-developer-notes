@@ -46,7 +46,7 @@ project:
     - format: meca
   # requirements:
   #   - environment.yml
-  # resources:
+  resources:
     - data/**/*
 site:
   template: article-theme
