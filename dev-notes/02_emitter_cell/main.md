@@ -67,7 +67,7 @@ Emitter Cells were constructed following  and co-cultured with E. coli containin
 
 ### TODO Video 1 - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
 
-:::{iframe} https://youtu.be/ylHokZo5Qrg
+:::{iframe} https://www.youtube.com/embed/ylHokZo5Qrg?si=rLfGsJ2vJJB9s-sI
 :width: 100%
 
 *Emitter Cell Timeseries.* *(Positive)* Liposomes contain PURE and 100 nM IV-HSL. *(Negative)* Liposomes contain PURE supplemented with SAM and IV-HSL, but no DNA encoding BjaI. *(Emitter)* Liposomes contain PURE expressing BjaI from `pT7-bjaI`. Exposures are matched between wells. Each field of view is 167 uM wide.
