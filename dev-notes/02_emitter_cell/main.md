@@ -21,14 +21,21 @@ In this first Emitter, the cell produces and releases N-isovaleryl-L-homoserine 
 
 The [Detector Cells](https://nucleus.bnext.bio/detector-cells) and Emitter together form the basis for an upcoming Responder Cell; a synthetic cell which can detect a molecular input (such as aTc or IV-HSL itself), and produce a molecular output (IV-HSL) in response. Coupling Detector and Emitter modules will enable signal amplification, where a low amount of a molecule of interest can activate a large population of Responder cells and generate an output that is easy to detect. IV-HSL-detecting Responder Cells could also detect the production of IV-HSL from living cells, providing a means to report on their state in co-culture.
 
-### TODO Schematic 1
+:::{figure} ./data/emitter-cell-schematic.png
+:label: fig1-emitter-cell-schematic
+Schematic of IV-HSL emitter cell.
+:::
+
 
 
 # Design
 
 The Emitter Cell implements the [IV-HSL Emitter Module](https://nucleus.bnext.bio/modules/iv-hsl-emitter-module) within a synthetic cell. The Emitter Module produces the BjaI enzyme under the control of a constitutive T7 promoter. BjaI produces IV-HSL from two substrate molecules, S-adenosylmethionine (SAM) and isovaleryl coenzyme A (IV-CoA). IV-HSL diffuses out of the cell, through the lipid bilayer.
 
-### TODO Schematic 2
+:::{figure} ./data/emitter-module-schematic.png
+:label: fig1-emitter-module-schematic
+Schematic of IV-HSL emitter module.
+:::
 
 # Usage
 
@@ -60,9 +67,18 @@ Emitter Cells were constructed following  and co-cultured with E. coli containin
 
 ### TODO Video 1 - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
 
-### TODO Figure XX - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
+:::{figure} ./data/emitter-cell-all.png
+:label: fig-emitter-cell-endpoint-montage.png
 
-### TODO Figure XX - Liposomes exclude E. coli cells from the plate coverslip
+:::
+
+## Liposomes exclude E. coli cells from the plate coverslip
+
+:::{figure} ./data/emitter-cell-endpoint-montage.png
+:label: fig-emitter-cell-endpoint-montage
+
+*Emitter Cell Endpoint Montage.* Single field of view of Emitter Cell in co-culture with E. coli receiver cells at t = 8 hours. *(green)* E. coli producing GFP in response to IV-HSL emitted by the emitter cells. *(red)* Emitter cells with rhodamine-labeled membrane producing IV-HSL. *(grey)* Brightfield image of liposomes and E. coli cells. *(rgb)* Merged image.
+:::
 
 ### TODO Video 2 - Liposomes exclude E. coli cells from the plate coverslip
 
