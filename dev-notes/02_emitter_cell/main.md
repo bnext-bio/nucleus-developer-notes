@@ -23,6 +23,7 @@ The [Detector Cells](https://nucleus.bnext.bio/detector-cells) and Emitter toget
 
 :::{figure} ./data/emitter-cell-schematic.png
 :label: fig1-emitter-cell-schematic
+:width: 75%
 Schematic of IV-HSL emitter cell.
 :::
 
@@ -34,6 +35,8 @@ The Emitter Cell implements the [IV-HSL Emitter Module](https://nucleus.bnext.bi
 
 :::{figure} ./data/emitter-module-schematic.png
 :label: fig1-emitter-module-schematic
+:width: 50%
+
 Schematic of IV-HSL emitter module.
 :::
 

@@ -3,9 +3,9 @@ project:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-02_emitter_cell
   # Ensure your title is the same as in your `main.md`
-  title: Developer Notes - Core Team Template
-  subtitle: Contributions from the core team
-  description: please add for social previews
+  title: IV-HSL Emitter Cell
+  subtitle: 
+  description: IV-HSL Emitter Cell
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: Yen-Yu Hsu
@@ -13,9 +13,7 @@ project:
       affiliations:
         - b.next
   keywords:
-    - cells
-    - liposomes
-    - synthetic biology
+    - Archetypal Cell
   # Add the abbreviations that you use in your paper here
   abbreviations:
     MyST: Markedly Structured Text
