@@ -1,9 +1,9 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: Developer Notes - Core Team Template
+title: IV-HSL emitter cell
 abstract: |
   A short version of the long version that is way too long to be written as a
-  short version anywa {abbr}`CDK (Heart Rate)`.  Still, when considering the facts from first
+  short version anyway for {abbr}`CDK (Heart Rate)`.  Still, when considering the facts from first
   principles, we find that the outcomes of this introspective approach is
   compatible with the guidelines previously established.
 
@@ -13,10 +13,60 @@ abstract: |
   protocol.
 ---
 
-:::{tip} TODO
-We should provide some default content to illustrate the format / content that we are aiming for.
-MyST
-:::
+# Overview
 
-:::{lorem} 5
-:::
+The Emitter Cell produces and releases a chemical signal molecule into the environment. This capacity provides an example of enzymatic small-molecule production, molecule release as a reporter output,  inter-cell communication, and co-culture of synthetic cells with living bacteria. The Emitter Cell is largely based on a paper by Jefferson M Smith, Denis Hartmann, and Michael J. Booth: [Engineering cellular communication between light-activated synthetic cells and bacteria](https://doi.org/10.1038/s41589-023-01374-7).
+
+In this first Emitter, the cell produces and releases N-isovaleryl-L-homoserine lactone (IV-HSL). IV-HSL is a branched acyl-homoserine lactone with several advantages for use in the Emitter Cell: it is able to cross the synthetic cell membrane; its uncommon branched-chain structure makes it orthogonal from many other HSLs [Lindemann, 2011](https://doi.org/10.1073/pnas.1114125108); and it is able to activate expression in signal receiver cells (in this case, E. coli) at very low (picomolar) concentrations [Lindemann, 2011](https://doi.org/10.1073/pnas.1114125108). The IV-HSL signal is received by a population of E. coli cells, which respond by producing a fluorescent output.
+
+The [Detector Cells](https://nucleus.bnext.bio/detector-cells) and Emitter together form the basis for an upcoming Responder Cell; a synthetic cell which can detect a molecular input (such as aTc or IV-HSL itself), and produce a molecular output (IV-HSL) in response. Coupling Detector and Emitter modules will enable signal amplification, where a low amount of a molecule of interest can activate a large population of Responder cells and generate an output that is easy to detect. IV-HSL-detecting Responder Cells could also detect the production of IV-HSL from living cells, providing a means to report on their state in co-culture.
+
+### TODO Schematic 1
+
+
+# Design
+
+The Emitter Cell implements the [IV-HSL Emitter Module](https://nucleus.bnext.bio/modules/iv-hsl-emitter-module) within a synthetic cell. The Emitter Module produces the BjaI enzyme under the control of a constitutive T7 promoter. BjaI produces IV-HSL from two substrate molecules, S-adenosylmethionine (SAM) and isovaleryl coenzyme A (IV-CoA). IV-HSL diffuses out of the cell, through the lipid bilayer.
+
+### TODO Schematic 2
+
+# Usage
+
+## Protocol
+
+[Protocol: IV-HSL Emitter Module](https://nucleus.bnext.bio/emitter-cell/protocol-iv-hsl-emitter-module)
+
+## Modules
+
+[IV-HSL Emitter Module](https://nucleus.bnext.bio/modules/iv-hsl-emitter-module)
+
+## DNA Components
+
+`pT7-baI` -- [Nucleus v0.2.0 Distribution Plate](https://nucleus.bnext.bio/dna-distribution/nucleus-v020-distribution-plate) _upcoming_. Expresses the BjaI enzyme to produce IV-HSL.
+
+`bjaR-GFP-native` -- [Nucleus v0.2.0 Distribution Plate](https://nucleus.bnext.bio/dna-distribution/nucleus-v020-distribution-plate) _upcoming_. E. coli native receiver module; responds to IV-HSL by producing GFP.
+
+## Key Materials
+
+| **Name** | **Product** | **Manufacturer** | **Part #** | **Price** | **Link** |
+| --- | --- | --- | --- | --- | --- |
+| **SAM** | S-adenosylmethionine (SAM) | NEB | B9003S | $45 | [[link](https://www.neb.com/en-us/products/b9003-s-adenosylmethionine-sam?srsltid=AfmBOoqDUA87yhYE4UrHnh7q8qMgLw8BGgGfFflrpBxYBfuL5juVceYZ)] |
+| **IV-CoA** | Isovaleryl coenzyme A lithium salt hydrate | Millipore Sigma | I9381-10MG | $348 | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/i9381)] |
+| **IV-HSL** | 3-Methyl-N-[(3S)-tetrahydro-2-oxo-3-furanyl]butanamide | LGC | TRC-M282980-50MG | $171 | [[link](https://www.lgcstandards.com/US/en/p/TRC-M282980)] |
+
+# Performance Data
+
+Emitter Cells were constructed following  and co-cultured with E. coli containing the `bjaR-GFP-native` IV-HSL receiver plasmid. We performed time-series confocal microscopy (Revvity Operetta CLS) over 8 hours, collecting red (Rhodamine-B) and green (GFP) fluorescence, and brightfield images at 40x magnification across multiple fields per well, such that the entirety of each well was imaged. Timepoints were approximately 15 minutes apart
+
+### TODO Video 1 - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
+
+### TODO Figure XX - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
+
+### TODO Figure XX - Liposomes exclude E. coli cells from the plate coverslip
+
+### TODO Video 2 - Liposomes exclude E. coli cells from the plate coverslip
+
+# Credits
+
+- Jefferson Smith & Michael Booth (Oxford / UCL)
+- b.next
