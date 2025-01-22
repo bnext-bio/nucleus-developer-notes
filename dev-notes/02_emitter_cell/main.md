@@ -66,9 +66,9 @@ Schematic of IV-HSL emitter module.
 
 # Performance Data
 
-Emitter Cells were constructed following  and co-cultured with E. coli containing the `bjaR-GFP-native` IV-HSL receiver plasmid. We performed time-series confocal microscopy (Revvity Operetta CLS) over 8 hours, collecting red (Rhodamine-B) and green (GFP) fluorescence, and brightfield images at 40x magnification across multiple fields per well, such that the entirety of each well was imaged. Timepoints were approximately 15 minutes apart
+Emitter Cells were constructed following  and co-cultured with E. coli containing the `bjaR-GFP-native` IV-HSL receiver plasmid. We performed time-series confocal microscopy (Revvity Operetta CLS) over 8 hours, collecting red (Rhodamine-B) and green (GFP) fluorescence, and brightfield images at 40x magnification across multiple fields per well, such that the entirety of each well was imaged. Timepoints were approximately 15 minutes apart.
 
-### TODO Video 1 - The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
+## The Emitter Cell causes E. coli to express GFP in response to IV-HSL.
 
 :::{iframe} https://www.youtube.com/embed/ylHokZo5Qrg?si=rLfGsJ2vJJB9s-sI
 :width: 100%
