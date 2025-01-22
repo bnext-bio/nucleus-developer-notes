@@ -1,7 +1,7 @@
 version: 1
 project:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
-  id: nucleus-devnote-core-02_emitter_cell
+  id: nucleus-devnote-core-02_emitter_cell_01
   # Ensure your title is the same as in your `main.md`
   title: IV-HSL Emitter Cell
   subtitle: 
