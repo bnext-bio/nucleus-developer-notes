@@ -81,6 +81,8 @@ Emitter Cells were constructed following  and co-cultured with E. coli containin
 :::
 
 :::{figure} ./data/emitter-cell-endpoint-zstack.mp4
+:label: vid-emitter-cell-endpoint-zstack
+
 *Emitter Cell Endpoint Z-Stack.* Z-stack, single field of view of the Emitter Cell after the final timeseries timepoint (>8h). Liposomes preferentially form a layer on the surface of the cover slip, occluding many of the _E. coli_ cells from the bottom layer imaged during the timeseries. More activated _E. coli_ cells become visible at longer focal distances (higher in the liquid column of the well).
 :::
 
