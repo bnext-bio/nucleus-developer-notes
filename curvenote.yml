@@ -28,10 +28,6 @@ project:
 site:
   title: Nucleus Developer Notes
   nav:
-    - url: /core-devnotes
-      title: Core
-    - url: /community-devnotes
-      title: Community
     - url: /submit
       title: Submit
     - url: /about
