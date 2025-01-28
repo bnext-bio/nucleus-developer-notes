@@ -772,6 +772,9 @@ def plot_steadystate(data: pd.DataFrame, hue="Experiment", **kwargs):
     return g
 
 
-def export():
-    # TODO: Write me
-    pass
+def export_analysis(dataframe, filename="output.csv"):
+    try:
+        dataframe.to_csv(filename, index=False)  # Save without the index column
+        print(f"DataFrame successfully saved to '{filename}'")
+    except Exception as e:
+        print(f"An error occurred while saving the DataFrame: {e}")
