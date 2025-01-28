@@ -30,6 +30,7 @@ project:
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.md
+    - file: protocol.md
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
@@ -42,6 +43,9 @@ project:
   jupyter: true
   exports:
     - format: meca
+  downloads:
+    - file: ./protocol.pdf
+    - title: IV-HSL emitter cell protocol
   # requirements:
   #   - environment.yml
   resources:
