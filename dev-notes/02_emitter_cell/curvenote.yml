@@ -44,8 +44,8 @@ project:
   exports:
     - format: meca
   downloads:
-    - file: ./protocol.pdf
-    - title: IV-HSL emitter cell protocol
+    - file: protocol.pdf
+      title: IV-HSL emitter cell protocol
   # requirements:
   #   - environment.yml
   resources:
