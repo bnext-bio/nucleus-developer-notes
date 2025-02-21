@@ -13,24 +13,12 @@ project:
   venue: Nucleus
   toc:
     - file: index.md
-    - file: core-devnotes.md
-    - file: community-devnotes.md
-    - file: submit.md
-    - file: open-science.md
-    - file: news.md
-    - file: about.md
     - file: glossary.md
-    - file: faq.md
   exclude:
     - dev-notes
   plugins:
     - lorem.mjs
 site:
   title: Nucleus Developer Notes
-  nav:
-    - url: /submit
-      title: Submit
-    - url: /about
-      title: About
   domains:
     - bnextbio-devnotes_landing.curve.space
