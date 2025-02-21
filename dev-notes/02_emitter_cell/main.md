@@ -1,6 +1,9 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
 title: IV-HSL emitter cell
+abstract: |
+  The Emitter Cell produces and releases a small molecule into its surrounding environment, as a means to demonstrate bioproduction within synthetic cells, and small molecule release as a reporter and a means of cell–cell signaling.
+---
 
 # Overview
 
