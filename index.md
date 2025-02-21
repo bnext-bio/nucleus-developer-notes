@@ -8,12 +8,15 @@ Dev notes are a place for small but useful advances in cytosol and synthetic cel
 
 Dev notes integrate embedded video, interactive figures, executable code, and data content with accessible narrative description to ensure that science and engineering is communicated in a way that is maximally useful to other practitioners. 
 
+# Core
+
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: nucleus-core
 :limit: 5
 :::
 
+# Community
 
 :::{cn:articles}
 :venue: bnext-devnotes
