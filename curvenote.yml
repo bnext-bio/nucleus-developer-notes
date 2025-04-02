@@ -23,6 +23,7 @@ project:
   abbreviations:
     CLI: Command Line Interface
     npm: Node Package Manager
+    PR: Pull Request
 site:
   title: Nucleus Developer Notes
   domains:
