@@ -24,7 +24,7 @@ If you're going to work with Jupyter notebooks and include those in your DevNote
 
 The remainder of this document is going to take you through getting started and submitting your first DevNote. There are links out to resources online that will help you complete tasks or provide useful context information.
 
-## Installing the Curvenote Command line.
+# Installing the Curvenote Command line.
 
 When writing your DevNote you can choose to work locally in either the `mystmd` CLI or the `curvenote` CLI tool. Both of these tools will allow you to run a local read and review your markdown changes in a web browser.
 
@@ -32,7 +32,7 @@ However, the Curvenote CLI is required in order to submit a draft and to fully p
 
 To install the If you have no CLI, you will first need to install Node.js on your system. You may already have this installed, so let's first check.
 
-### Confirm node installation
+## Confirm node installation
 
 In a terminal or command line prompt, run the following commands.
 
@@ -43,7 +43,7 @@ npm -v
 
 Here you have Node version 18 or above and NPM version 9 or above available on your system. Here you have Node version 18 or above and NPM version 9 or above available on your system. If you don't have Node.js installed you can install it by following the instructions here: https://curvenote.com/docs/publish/installing-prerequisites.
 
-### Install the curvenote CLI
+## Install the Curvenote CLI
 
 Once you've ensured that you have node.js available, you can install the Curvenote CLI using the Node Package Manager, npm. To do that, run the following command ensuring that you include the `-g` flag as shown.
 
@@ -79,29 +79,100 @@ Token status: VERIFIED
 Login as @stevejpurves <amolima@bnextbio.com> verified by https://sites.curvenote.com/v1/my/user
 ```
 
-## Install text editor
+# Install text editor
 
 We recommend installing [VSCode](https://code.visualstudio.com/download).
 
-## Create a Github account and set up SSH
+# Create a Github account and set up SSH
 
-## Clone the DevNote template repository
+To contribute to our DevNotes, you'll need a GitHub account and SSH access configured. Here's how to get set up:
 
-STEVE: I suggest we orient this back around the devnotes central repo, copying your template into place there?
+1. Create a GitHub account:
 
-Our Devnote template can be found [here](https://github.com/antonrmolina/devnote-template). This template is preconfigured to render a Devnote and will test the installation of other tools.
+   - Visit [GitHub's signup page](https://github.com/signup)
+   - Follow the prompts to create your account
+   - We recommend using your work email address
 
-- Use the CLI tool to navigate to the repository
-- Run the command `curvenote start` and wait for a link to be shown
-- Click on the link and you should expect to see a window that will allow you to view a local preview of the Devnote
-- Run the command `curvenote submit bnext-devnotes --draft` and follow the dialogue
-- Click on thar link, and you should expect to see a preview of the Devnote on the BNext DevNotes site
+2. Set up SSH authentication:
+   - GitHub provides comprehensive guides for setting up SSH:
+     - [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+     - [Adding your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+   - Follow these guides to generate and add your SSH key
+   - Test your SSH connection using [GitHub's SSH connection test](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
-Congratulations all the basic tools are in place to get started with your own devnote
+Once you have your GitHub account and SSH set up, you'll be ready to clone repositories and contribute to DevNotes.
 
-## Making the DevNote your own
+# Install the GitHub CLI
 
-### Folder structure
+While not required, we highly recommend installing the GitHub CLI (`gh`) as it makes many common GitHub operations much easier, including:
+
+- Creating forks
+- Pushing changes
+- Opening pull requests
+- Managing issues and pull requests
+
+To install the GitHub CLI:
+
+1. Visit the [GitHub CLI start page](https://cli.github.com/)
+2. Follow the installation instructions for your platform
+3. After installation, authenticate with your GitHub account:
+   ```sh
+   gh auth login
+   ```
+   Follow the interactive prompts to complete authentication
+
+Once installed and authenticated, you can verify the installation by running:
+
+```sh
+gh --version
+```
+
+For more information about using the GitHub CLI, check out the [official documentation](https://cli.github.com/manual/).
+
+# Clone the DevNotes repository
+
+Our DevNotes repository can be found here: https://github.com/bnext-bio/nucleus-developer-notes, clone this entire repository to your machine.
+The DevNote template can be found in the `dev-notes/00-template` folder. This template is preconfigured to render a DevNote, will let you test the configuration of tools on your system and will also form the base of your DevNote.
+
+Let's start by testing the new tools and exploring the template.
+
+# Rendering the DevNote Template
+
+The DevNote source files themselves are a combination of Markdown and Jupyter Notebook files. To view them properly on the machine you need to run the Curvenote CLI which will open the rendered DevNote in your web browser. Let's do that now.
+
+Firstly, navigate into the template folder.
+
+```sh
+cd dev-notes/00-template
+```
+
+Next run:
+
+```sh
+curvenote start
+```
+
+You'll see a lot of output on the terminal while the DevNote builds, and that should end by displaying a link like https://localhost:3000. Click on that link to open a browser window appear with a preview the DevNote template.
+
+This is a live preview of the template and as long as you have `curvenote start` running in your Terminal, the preview will update as you editing and saving files via your text editor. This is really effective for a way to preview your changes whilst writing.
+
+When you run `curvenote start`, your DevNote is displayed in the default layout and theme. Once you are further along in your writing, you can also submit a "draft" to the DevNotes site and preview it online. Draft submissions are only for you, can only be viewed with the link and can't be seen by anyone else or the DevNotes editors.
+
+Let's go ahead and make a draft submission as that will also test that we can submit using our token. Run the command:
+
+```sh
+curvenote submit bnext-devnotes --draft
+```
+
+and follow the dialogue. At the end of the process you should see a link, click on that link to get to a preview of your DevNote online.
+
+Congratulations! all the basic tools are in place to get started with your own DevNote.
+
+# Exploring the DevNote Template
+
+The template repository has been designed to have most of the common elements that we'd expect to see in a DevNote - we've made some decisions on content, layout, and style.
+
+## Folder structure
 
 If you are using a text editor, for example VSCode, open up the folder to explore the files:
 
@@ -141,9 +212,9 @@ A brief explanation for each component of this file structure:
 
 As you go about your research, you can drop additional experimental directories that are worth sharing with the community as needed and reference them in your main.md
 
-### DevNote configuration
+## DevNote configuration
 
-If we open and look inside our curvenote.yml we will see a basic configuration like this:
+If we open and look inside our `curvenote.yml` file we will see a basic configuration like this:
 
 ```
 # See docs at: https://mystmd.org/guide/frontmatter
@@ -165,17 +236,47 @@ project:
       corresponding: true
 ```
 
-You should not have to edit this page other than adding author information as appropriate. We _highly_ encourage developers to register themselves with [ORCID](https://orcid.org/) - this is a persistent identifier for individuals that links researchers with their research output.
+You should not have to edit the majority of this page other than (1) creating a unique `id` and (2) adding basic metadata (title, subtitle, description, thumbnail,author; see docs at: https://mystmd.org/guide/frontmatter).
+
+We _highly_ encourage developers to register themselves with [ORCID](https://orcid.org/) - this is a persistent identifier for individuals that links researchers with their research output.
 
 ## Use CDK (Workshop specific)
 
 You will be able to access a Jupyter Hub instance at `jupyter.int.bnext.bio`. This will allow you to access an experimental directory template as well as all of the software tools contained in the CDK.
 
-## Writing your DevNote
+# Making the DevNote your own
 
-### Understanding the template
+Let's start by making a copy of the template repository, in a new folder inside the `dev-notes` folder (if you end up copying the ).
 
-DevNotes are a tool for sharing research insights that are roughly the scope of one scientific claim. For example, “[methenyltetrahydrofolate synthetase is a critical but unacknowledged component in OnePot PURE”](https://nucleus.bnext.bio/developer-notes/an-unexpected-enzyme-in-pure-why-folinic-acid-needs-extra-help).
+This will lead to something like this:
+
+```
+dev-notes/
+  ├── 00-template
+  ├── 01-another-devnote
+  ├── ...
+  ├── 2025-04-my-new-devnote
+```
+
+The folder name can be anything provided it's unique, we'd like to stick to something like `YEAR-MM-<relevant-title>` to keep things in order. Name your new folder appropriately.
+
+## Create a unique id
+
+The `id` specified in the `curvenote.yml` file is unique to your DevNote, e.g.
+
+```sh
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-2025-04-my-first-devnote
+```
+
+Note: if your id is not unique, submission will fail.
+
+# Writing your DevNote
+
+## Understanding the template
+
+DevNotes are a tool for sharing research insights that are roughly the scope of one scientific claim. For example, "methenyltetrahydrofolate synthetase is a critical but unacknowledged component in OnePot PURE"](https://nucleus.bnext.bio/developer-notes/an-unexpected-enzyme-in-pure-why-folinic-acid-needs-extra-help).
 
 At this point, the structure of a DevNote is quite simple and flexible. It has the following components:
 
@@ -196,7 +297,7 @@ For now, experimental details are stored in the directory `./experimental/genera
       title: Lab Notebook Entry
 ```
 
-### MyST Essentials (targeted links to mystmd.org)
+## MyST Essentials (targeted links to mystmd.org)
 
 The DevNote is formatted using MyST markdown which is a simple but powerful flavor of markdown designed for scientific communication. There is a comprehensive [user guide for MyST Markdown](https://mystmd.org/guide) at https://mystmd.org/guide and for working with MyST to produce websites and web-based articles like a DevNote.
 
@@ -210,7 +311,7 @@ Otherwise, if you want to dive in we've shortlisted some key links that we think
 - [Citations via DOI](xref:mystmd/citations#doi-links) or using [Bibtex](xref:mystmd/citations#including-bibtex) and [markdown citations](xref:mystmd/citations#table-pandoc-citations)
 - [Cross Referencing](xref:mystmd/cross-references)
 
-### Using Jupyter Notebooks
+## Using Jupyter Notebooks
 
 It's possible to include Jupyter Notebooks directly in your DevNote. A Jupyter Notebook will appear as a page in its own right within the DevNote. The notebook saved and submitted after execution is complete so that all outputs, images, text are also present in your DevNote.
 
@@ -227,7 +328,7 @@ We call that Using the notebook passively, and even though the notebook is just 
 
 To learn more about using Jupyter Notebooks in that way, see the [Embed and Reuse Jupyter Outputs](https://mystmd.org/guide/reuse-jupyter-outputs) section in the MyST guide. You can also automatically run your notebooks when your DevNote builds on your local machine. To find out more about that, see [Execute Notebooks at Build Time](https://mystmd.org/guide/execute-notebooks).
 
-#### Enabling computation
+### Enabling computation
 
 With a little bit more work to manage your Python dependency environment, you can enable computation for the readers of your DevNote. With a little bit more work to manage your Python dependency environment, you can enable computation for the readers of your DevNote. Building on Python Development Best Practices for Creating and Managing Virtual Environments
 
@@ -250,23 +351,95 @@ The first two settings, `jupyter: true` and `format: meca` should not be changed
 
 Once you've correctly configured your environment, a MECA Archive will be built which will enable you to both launch a JupyterHub server directly from your DevNote and to run any in-place notebook cells or embedded figures or tables directly from the pages of your DevNote.
 
-## Publishing your DevNote
+# Publishing your DevNote
 
-### Submitting your first draft (new docs)
+Once you've written your DevNote, the next step is to submit it to the editors of the Nucleus DevNote site.
 
-TODO:
+This is done by opening a pull request on the DevNotes repository on GitHub.
 
-1.  previewing (existing / new docs?)
-1.  the checks system (existing / new docs?)
-1.  troubleshooting (existing / new docs?)
+We are going to assume that you are using the GitHub CLI and we'll go through those steps with you below. If you're not, please just check the GitHub documentation on how to create a fork (https://docs.github.com/en/get-started/quickstart/fork-a-repo) and how to open a PR against an upstream repo (https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-### Requesting review (new docs)
+## Checking your draft
 
-TODO
+The submission system includes a check suite which allows the DevNotes editors to run up some automated checks on your submission. These checks can be for, things like whether you've added an abstract, the abstract length, or whether all your authors have ORCIDs and whether the DOIs that you're using are valid.
 
-### Updating your article (new docs)
+These will be automatically checked when you submit your work and you'll still have chances to correct those afterwards but you can get a head start and check your draft in advance by running the following command.
 
-TODO
+```sh
+curvenote check bnext-devnotes --kind=dev-notes
+```
+
+And look for potential issues both in the build process and in the Curvenote Checks section.
+
+## Previewing your first draft
+
+If you haven't already, you should go ahead and check a draft of your DevNote as a preview on the DevNote site. You can do this by running the following command.
+
+```sh
+cn submit bnext-devnotes --draft
+```
+
+Check that you are happy with your DevNote in the preview and if not, continue to make changes locally until you are. You can make as many draft submissions as you need to.
+
+Once you're ready we'll carry on and submit your DevNote proper by opening a PR.
+
+## Submitting your DevNote
+
+We're going to submit your DevNote now via a PR and by creating your own fork.
+
+:::{tip} How to provide a good title and description for my PR
+
+This PR is your first interaction with the editorial and review team at the Nucleus Dev Notes site. Please set your title to the title of your DevNote and provide a bit of a introduction your DevNote to the editors and reviewers. If you don't manage to get this in place when you first create the PR, don't worry, you can edit it any time on GitHub.
+
+:::
+
+By now, you will have cloned the repo and made your own folder in the `dev-notes/*` folder, where you've been working so far.
+
+It's important to make sure that any changes that you've made in the repo are only to the contents of your new folder, and nowhere outside of that folder. You can check this by running `git status` and making sure all changes or additions are only in your DevNote folder. If you have changes outside you'll need to revert them before submitting.
+
+Once that's the case then go ahead and just locally commit your changes to the main branch:
+
+```sh
+git add .
+git commit -am "my commit message"
+```
+
+Next we're going to use the GitHub CLI to open a PR and in the process create our own fork of the DevNotes repo in our account. To do this, just run the following command from anywhere within the repository and follow the instructions:
+
+```sh
+gh pr create
+```
+
+The GitHub CLI will take you through the process of deciding to create a fork, creating the fork in your own account, pushing your changes to your fork and then opening the PR.
+
+At the end of the process, a link to your PR should be displayed, click that link to visit the PR on the central DevNotes repository.
+
+:::{tip} If you are not using the GitHub CLI
+:class: dropdown
+Please check the GitHub documentation on how to create a fork (https://docs.github.com/en/get-started/quickstart/fork-a-repo) and how to open a PR against an upstream repo (https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+:::
+
+Once you've landed on the pull request page on GitHub and you're happy with the title and initial description look for a comment from the Curvenote preview bot it should look something like this.
+
+:::{figure} ./github-submit-bot.png
+The Curvenote Preview bot on GitHub.
+:::
+
+The comment from the Curvenote Bot should appear shortly after you've posted your PR and every time you push a new change to your branch, the PR will automatically update and the Curvenote Preview will automatically regenerate, this will including re-running any checks that have been configured to run.
+
+## Requesting review
+
+The review process is carried out over GitHub and the exact same PR that you just opened. Yourself, the editors and reviewers can all see the source code and access the preview links from the Cursor bot in order to guide the review and you may have already been contacted by one of the team when you opened the PR.
+
+If you haven't just mention `@antonrmolina` in a comment and say this is ready for review.
+
+## Updating your article (new docs)
+
+Keep making changes to your DevNote locally, in response to reviewer comments and push these to your fork, the PR and preview will automatically update.
+
+## Getting Published
+
+Once the review is complete and the editorial team is happy, the PR will be merged and then separately the publication, the editors will allow your DevNote to be posted live on the Nucleus DevNotes website.
 
 ## Other resources
 
