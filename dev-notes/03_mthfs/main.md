@@ -20,7 +20,7 @@ There are two ways to prepare folinic acid for use in PURE:
 [Shimizu's method (2010)](https://doi.org/10.1007/978-1-60327-331-2_2):
 
 - Dissolve folinic acid in 50 mM β-mercaptoethanol (50 mM) and 1M HCl,
-- Incubate at room temperature for 3 hr until reaction is visibly yellow ([Make Energy Mix](https://www.notion.so/Make-Energy-Mix-c21a30ad7dc140a4aa44bdd9c1bea375?pvs=21)).
+- Incubate at room temperature for 3 hr until reaction is visibly yellow ([Make Energy Mix](https://nucleus.bnext.bio/pure-protocols/make-energy-mix)).
 
 Implied protocol (from [Lavickova *et al.* 2019](https://doi.org/10.1021/acssynbio.8b00427
 )):
