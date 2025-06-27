@@ -46,6 +46,10 @@ project:
   jupyter: true
   exports:
     - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: main.pdf
   requirements:
     - environment.yml
   resources:
