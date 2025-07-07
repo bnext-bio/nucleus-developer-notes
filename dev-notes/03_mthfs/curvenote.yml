@@ -1,5 +1,6 @@
 version: 1
 project:
+  doi: 10.63765/hrvh2868
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-03_mthfs
   # Ensure your title is the same as in your `main.md`
@@ -12,7 +13,11 @@ project:
       email: yemo@bnext.bio
       orcid: 0000-0002-7994-2636
       affiliations:
-        - b.next
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
       corresponding: true
   keywords:
     - Cytosol
@@ -24,7 +29,7 @@ project:
   # Add specs here for any additional content you want to cross reference
   references:
     devnotes: https://devnotes.bnext.bio
-  # Set an initial publisation date for the note
+  # Set an initial publication date for the note
   date: 2025-03-13
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
@@ -46,6 +51,10 @@ project:
   jupyter: true
   exports:
     - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: main.pdf
   requirements:
     - environment.yml
   resources:

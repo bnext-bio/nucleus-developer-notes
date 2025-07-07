@@ -12,7 +12,7 @@ jobs:
       id-pattern-regex: '^nucleus-devnote-core-(?:[a-zA-Z0-9-_]{3,25})$'
       enforce-single-folder: true
       venue: bnext-devnotes
-      kind: dev-notes
+      kind: devnote
       collection: nucleus-core
       path: dev-notes/*
     secrets:
