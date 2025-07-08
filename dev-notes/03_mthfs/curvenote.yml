@@ -54,7 +54,8 @@ project:
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
-      output: main.pdf
+      output: bnext-mthfs.pdf
+      id: article
   requirements:
     - environment.yml
   resources:
@@ -62,6 +63,8 @@ project:
     - experimental/**/*
     - figures/**/*
   downloads:
+    - id: article
+      title: Download PDF
     - file: experiments/20250220-experimental/00-general/MTHFS-labnotebook.pdf
       title: Lab Notebook Entry
 site:
