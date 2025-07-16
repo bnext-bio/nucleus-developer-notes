@@ -13,7 +13,7 @@ In previous work, Wang et al. demonstrated that these three kinases could be fun
 
 In this study, we evaluated the performance of the PPK2-based energy regeneration module in the PURExpress system using DNA-driven protein synthesis. To enable this, we replaced Solution A of the PURExpress kit with a custom-made energy solution (ES) to incorporate the PPK2 module. Our results showed that, while the unoptimized PPK2 module is capable of supporting energy regeneration, its efficiency was much lower compared to the conventional CP/CK module. However, when both the CP/CK and PPK2 modules were combined, we observed a substantial enhancement in protein production, with yields increasing by nearly 96% relative to the CP/CK module alone.
 
-:::{figure} ./figures/PPK illustration.png
+:::{figure} ./figures/PPK-illustration.png
 :label: fig:PPK illustration
 :width: 75%
 Illustration of the PPK2 based energy regeneration the PURE system
