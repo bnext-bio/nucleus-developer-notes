@@ -23,7 +23,10 @@ DevNotes integrate embedded video, interactive figures, executable code, and dat
 
 :::{cn:articles}
 :venue: bnext-devnotes
-:collection: nucleus-contrib
+:collection: nucleus-community
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
 :limit: 5
 :::
 
