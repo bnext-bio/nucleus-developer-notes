@@ -1,10 +1,11 @@
 version: 1
 project:
+  doi: 10.63765/djnv7772
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-04_ppk
   # Ensure your title is the same as in your `main.md`
-  title: PPK Module testing in PURExpress 
-  subtitle: PPK Module increases protein expression 
+  title: PPK Module testing in PURExpress
+  subtitle: PPK Module increases protein expression
   description: PPK Module increases protein expression
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
@@ -68,6 +69,11 @@ project:
   downloads:
     - file: experiments/Lab Notebook Entry-PPK.pdf
       title: Lab Notebook Entry
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+        - Astera Institute
 site:
   template: article-theme
   nav: []
