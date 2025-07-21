@@ -35,7 +35,7 @@ project:
   references:
     devnotes: https://devnotes.bnext.bio
   # Set an initial publisation date for the note
-  date: 2025-06-26
+  date: 2025-07-16
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
   # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
