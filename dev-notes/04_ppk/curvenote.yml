@@ -73,7 +73,6 @@ project:
     - id: G-2024-22735
       source:
         - Alfred P. Sloan Foundation
-        - Astera Institute
 site:
   template: article-theme
   nav: []
