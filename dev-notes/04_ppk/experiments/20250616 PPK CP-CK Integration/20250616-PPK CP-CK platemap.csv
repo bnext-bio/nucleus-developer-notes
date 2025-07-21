@@ -1,0 +1,16 @@
+Well,Experiment,Name,CP
+A1,PPK CP-CK,PURE w/CP 8mM Mg 2+,1
+A4,PPK CP-CK,PURE w/CP 8mM Mg 2+,1
+A7,PPK CP-CK,PURE w/CP 8mM Mg 2+,1
+E1,PPK CP-CK,PURE w/PPK + Polyp 18mM Mg 2+,0
+E4,PPK CP-CK,PURE w/PPK + Polyp 18mM Mg 2+,0
+E7,PPK CP-CK,PURE w/PPK + Polyp 18mM Mg 2+,0
+G1,PPK CP-CK,PURE w/CP + PPK + Polyp 18mM Mg 2+,1
+G4,PPK CP-CK,PURE w/CP + PPK + Polyp 18mM Mg 2+,1
+G7,PPK CP-CK,PURE w/CP + PPK + Polyp 18mM Mg 2+,1
+I1,PPK CP-CK,PURExpress PC ,1
+I4,PPK CP-CK,PURExpress PC ,1
+I7,PPK CP-CK,PURExpress PC ,1
+K1,PPK CP-CK,PURExpress NC (-DNA),1
+K4,PPK CP-CK,PURExpress NC (-DNA),1
+K7,PPK CP-CK,PURExpress NC (-DNA),1

@@ -1,0 +1,78 @@
+version: 1
+project:
+  doi: 10.63765/djnv7772
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-04_ppk
+  # Ensure your title is the same as in your `main.md`
+  title: PPK Module testing in PURExpress
+  subtitle: PPK Module increases protein expression
+  description: PPK Module increases protein expression
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Surendra Yadav
+      email: surendra@bnext.bio
+      orcid: 0009-0009-5630-957X
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+        - name: National Physical Laboratory, Teddington, London, TW11 0LW, UK
+          city: London
+          postal_code: TW11 0LW
+          country: UK
+      corresponding: true
+  keywords:
+    - Cytosol
+    - Module
+    - Energy Regeneration
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-06-26
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner-2.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: experiments/20250610-ppk-energy-solution/20250610-ppk-energy-solution-analysis.ipynb
+    - file: experiments/20250611-Mg-titration-PURExpress-custom-energy-solution/20250611-analysis.ipynb
+    - file: experiments/20250612-PPK-PURE-Reaction/20250612-analysis.ipynb
+    - file: experiments/20250613 PPK Mg Opt/20250613-PPK_Mg_Opt.ipynb
+    - file: experiments/20250616 PPK CP-CK Integration/20250616 PPK CP-CK Integration.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experiments/**/*
+    - figures/**/*
+  downloads:
+    - file: experiments/Lab Notebook Entry-PPK.pdf
+      title: Lab Notebook Entry
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []
