@@ -66,7 +66,7 @@ To test this hypothesis, we supplemented commercial human MTHFS (the only commer
 :align: center
 :width: 50%
 
-Steady state fluorescence measurements comparing PURE system performance across different folinic acid preparations and MTHFS enzyme concentrations. 
+Translation kinetics of PURE system reactions under different folinic acid conditions and MTHFS supplementation. The graph shows plamGFP fluorescence measurements over time.
 :::
 ::::
 
@@ -77,7 +77,7 @@ Steady state fluorescence measurements comparing PURE system performance across 
 :align: center
 :width: 50%
 
-Translation kinetics of PURE system reactions under different folinic acid conditions and MTHFS supplementation. The graph shows plamGFP fluorescence measurements over time.
+Steady state fluorescence measurements comparing PURE system performance across different folinic acid preparations and MTHFS enzyme concentrations. 
 :::
 ::::
 
