@@ -63,7 +63,7 @@ project:
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
-      output: bnext-mthfs.pdf
+      output: bnext-ppk.pdf
       id: article
   requirements:
     - environment.yml
@@ -72,6 +72,8 @@ project:
     - experiments/**/*
     - figures/**/*
   downloads:
+    - id: article
+      title: Download Article PDF
     - file: experiments/Lab Notebook Entry-PPK.pdf
       title: Lab Notebook Entry
   funding:

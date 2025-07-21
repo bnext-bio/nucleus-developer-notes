@@ -64,7 +64,7 @@ project:
     - figures/**/*
   downloads:
     - id: article
-      title: Download PDF
+      title: Download Article PDF
     - file: experiments/20250220-experimental/00-general/MTHFS-labnotebook.pdf
       title: Lab Notebook Entry
 site:
