@@ -1,3 +1,4 @@
+---
 title: Contributing a DevNote
 short_title: Contributing
 ---
