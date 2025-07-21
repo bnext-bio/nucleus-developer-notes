@@ -63,7 +63,7 @@ project:
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
-      output: bnext-ppk.pdf
+      output: bnext-mthfs.pdf
       id: article
   requirements:
     - environment.yml
