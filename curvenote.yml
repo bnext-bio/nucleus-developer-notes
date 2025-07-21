@@ -14,7 +14,7 @@ project:
   toc:
     - file: index.md
     - file: glossary.md
-    - file: contributing-a-devnote.md
+    - file: contribute.md
   exclude:
     - dev-notes
   plugins:
