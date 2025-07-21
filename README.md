@@ -1,13 +1,7 @@
-# nucleus-developer-notes
+# README
 
-Developer Notes for Nucleus
+This repository contains content for [Nucleus Developer Notes](https://devnotes.bnext.bio/). To learn more about the Nucleus Ecosystem please visit https://bnext.bio/nucleus.
 
-## TODO
+## Contact
 
-- [ ] review landing site layout and adjust
-- [ ] add landing site content
-- [ ] review submission template in dev-notes/00_myst_template
-  - [ ] add sample content in main.md
-  - [ ] review template content and comments in curvenote.yml
-  - [ ] decide on id scheme
-- [ ] add submission & deployment documentation to this README (curvenote team)
+If you have problems, questions, ideas, or suggestions, please contact us at build@bnext.bio.
