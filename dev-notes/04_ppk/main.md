@@ -9,12 +9,12 @@ abstract: |
 
 Energy regeneration is a vital component of the PURE (Protein synthesis Using Recombinant Elements) system, ensuring the continuous supply of high-energy nucleotides, ATP and GTP, necessary for efficient protein synthesis. This process is traditionally maintained by a combination of three kinases: creatine kinase (CK), adenylate kinase (AK), and nucleoside-diphosphate kinase (NDK). CK regenerates ATP from ADP using creatine phosphate (CP), while AK converts AMP to ADP, and NDK generates GTP from GDP using ATP as a phosphate donor.
 
-In previous work, Wang et al. demonstrated that these three kinases could be functionally replaced by a single enzyme, polyphosphate kinase (PPK2) [EC 2.7.4.1](https://www.uniprot.org/uniprotkb/A0A6N4SMB5/entry), in conjunction with its substrate, polyphosphate (polyP) [[Wang *et al.* 2019](https://doi.org/10.1021/acssynbio.9b00456)]. This alternative energy regeneration module enabled the direct synthesis of ATP and GTP from AMP and GDP, respectively ({ref}`fig:PPK illustration`). Using mRNA-driven protein synthesis, the PPK2-based system outperformed the traditional three-kinase module, yielding approximately 32% more protein and achieving translation rates nearly five times faster. 
+In previous work, Wang et al. demonstrated that these three kinases could be functionally replaced by a single enzyme, polyphosphate kinase (PPK2) [EC 2.7.4.1](https://www.uniprot.org/uniprotkb/A0A6N4SMB5/entry), in conjunction with its substrate, polyphosphate (polyP) [[Wang *et al.* 2019](https://doi.org/10.1021/acssynbio.9b00456)]. This alternative energy regeneration module enabled the direct synthesis of ATP and GTP from AMP and GDP, respectively ({ref}`fig:PPK-illustration`). Using mRNA-driven protein synthesis, the PPK2-based system outperformed the traditional three-kinase module, yielding approximately 32% more protein and achieving translation rates nearly five times faster. 
 
 In this study, we evaluated the performance of the PPK2-based energy regeneration module in the PURExpress system using DNA-driven protein synthesis. To enable this, we replaced Solution A of the PURExpress kit with a custom-made energy solution (ES) to incorporate the PPK2 module. Our results showed that, while the unoptimized PPK2 module is capable of supporting energy regeneration, its efficiency was much lower compared to the conventional CP/CK module. However, when both the CP/CK and PPK2 modules were combined, we observed a substantial enhancement in protein production, with yields increasing by nearly 96% relative to the CP/CK module alone.
 
 :::{figure} ./figures/PPK-illustration.png
-:label: fig:PPK illustration
+:label: fig:PPK-illustration
 :width: 75%
 Illustration of the PPK2 based energy regeneration the PURE system
 :::
