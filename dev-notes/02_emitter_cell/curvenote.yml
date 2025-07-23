@@ -22,11 +22,11 @@ project:
   references:
     devnotes: https://devnotes.bnext.bio
   # Set an initial publisation date for the note
-  date: 2024-07-10
+  date: 2025-01-23
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
   # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
-  banner: banner.webp
+  banner: banner-2.webp
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.md
