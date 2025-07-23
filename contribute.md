@@ -1,9 +1,9 @@
 ---
-title: Contributing a DevNote
+title: Contributing a Developer Note
 short_title: Contributing
 ---
 
-If you'd like to contribute a DevNote please reach out to build@bnext.bio. To learn more about the Nucleus Ecosystem please read our [whitepaper](https://docs.google.com/document/d/1Yb-uu4bYMdkJecTvt1upZNljj-nySq1Pk224pjb69wo/edit?tab=t.4axq2880m6ti).
+Developer Notes (DevNotes) are a concise form of scientific communication designed to rapidly share insights and results of interest to the Nucleus and broader synthetic cell communities. Since they are built on top of Jupyter Notebooks, DevNotes can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package.
 
 +++
 ## What can I contribute as a DevNote?
@@ -22,3 +22,17 @@ Anything related to PURE-based cytosols and synthetic cells is solidly within th
 - **Technical Notes.** If you have a trick you use for making routine lab work more efficient or more reliable, share it with others. 
 
 - **Open questions.** If there are questions that you feel are worth writing up and of interest to this community, others would probably love to know about them and might even have some answers!
+
++++
+## Learn More
++++
+
+If you'd like to contribute a DevNote please reach out to build@bnext.bio. To learn more about the [Nucleus Ecosystem](https://bnext.bio/nucleus) please check out the following resources:
+
+ - [Nucleus Whitepaper](https://docs.google.com/document/d/1Yb-uu4bYMdkJecTvt1upZNljj-nySq1Pk224pjb69wo/edit?tab=t.4axq2880m6ti).
+ - [Nucleus Open Science Guide](https://nucleus.bnext.bio/open-science)
+ - [Getting Started with Nucleus Hub](https://nucleus.bnext.bio/nucleus-hub-guide)
+ - [Getting Started with DevNotes](https://nucleus.bnext.bio/developer-note-guide)
+ - [DevNote Template](https://github.com/antonrmolina/devnote-template)
+ - [License Information](https://github.com/antonrmolina/devnote-template/blob/main/LICENSE.md)
+ - [Nucleus FAQs](https://nucleus.bnext.bio/faqs)
