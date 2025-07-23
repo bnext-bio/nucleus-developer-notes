@@ -13,7 +13,7 @@ project:
   venue: Nucleus
   toc:
     - file: index.md
-    - file: glossary.md
+    #- file: glossary.md
     - file: contribute.md
   exclude:
     - dev-notes
