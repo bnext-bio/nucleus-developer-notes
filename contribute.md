@@ -34,5 +34,4 @@ If you'd like to contribute a DevNote please reach out to build@bnext.bio. To le
  - [Getting Started with Nucleus Hub](https://nucleus.bnext.bio/nucleus-hub-guide)
  - [Getting Started with DevNotes](https://nucleus.bnext.bio/developer-note-guide)
  - [DevNote Template](https://github.com/antonrmolina/devnote-template)
- - [License Information](https://github.com/antonrmolina/devnote-template/blob/main/LICENSE.md)
  - [Nucleus FAQs](https://nucleus.bnext.bio/faqs)
