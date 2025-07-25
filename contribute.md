@@ -15,7 +15,7 @@ Anything related to PURE-based cytosols and synthetic cells is solidly within th
 
 - **Plans.** If you have a plan for developing a [single module](https://devnotes.bnext.bio/articles/clpxp-module-plan) or for [integrating existing modules](https://devnotes.bnext.bio/articles/developer-cell-introduction), feel free to submit it as a DevNote to let others know how you’re thinking about approaching the problem and get feedback from others earlier. DevNotes can be updated so experimental data can be included along the way.
 
-- **Existing work** If you have alreadu published work that you think might be useful to the Nucleus Community, submit the relevant design files and protocols to make it accessible to others. We'd be excited to work with you to help integrate your work into Nucleus. See the [Cx43 Cell](https://devnotes.bnext.bio/articles/contrib-cx43-cell) as an example. 
+- **Existing work** If you have already published work that you think might be useful to the Nucleus Community, submit the relevant design files and protocols to make it accessible to others. We'd be excited to work with you to help integrate your work into Nucleus. See the [Cx43 Cell](https://devnotes.bnext.bio/articles/contrib-cx43-cell) as an example. 
 
 - **Experimental replication.** If you’re planning to use a component from the existing Nucleus Distribution or from the literature as part of a larger experiment, sharing that the module works in PURE in your hands would be valuable to others. 
 
