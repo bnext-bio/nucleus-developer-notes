@@ -29,7 +29,7 @@ Anything related to PURE-based cytosols and synthetic cells is solidly within th
 
 If you'd like to contribute a DevNote please reach out to build@bnext.bio. To learn more about the [Nucleus Ecosystem](https://bnext.bio/nucleus) please check out the following resources:
 
- - [Nucleus Whitepaper](https://docs.google.com/document/d/1Yb-uu4bYMdkJecTvt1upZNljj-nySq1Pk224pjb69wo/edit?tab=t.4axq2880m6ti).
+ - [Nucleus Whitepaper](https://docs.google.com/document/d/1Yb-uu4bYMdkJecTvt1upZNljj-nySq1Pk224pjb69wo/edit?tab=t.4axq2880m6ti)
  - [Nucleus Open Science Guide](https://nucleus.bnext.bio/open-science)
  - [Getting Started with Nucleus Hub](https://nucleus.bnext.bio/nucleus-hub-guide)
  - [Getting Started with DevNotes](https://nucleus.bnext.bio/developer-note-guide)
