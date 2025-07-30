@@ -4,9 +4,9 @@ project:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-04_ppk
   # Ensure your title is the same as in your `main.md`
-  title: PPK Module testing in PURExpress
-  subtitle: PPK Module increases protein expression
-  description: PPK Module increases protein expression
+  title: "PPK Module testing in PURExpress"
+  subtitle: "PPK Module increases protein expression"
+  description: "PPK Module increases protein expression"
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: Surendra Yadav
@@ -39,7 +39,7 @@ project:
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
   # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
-  banner: banner-2.webp
+  banner: banner.webp
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.md

@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: PPK Module testing in PURExpress
+title: PPK Module testing in PURE
 abstract: |
   Efficient energy regeneration is critical for sustaining protein synthesis in the PURE (Protein synthesis Using Recombinant Elements) system. Traditionally, the creatine phosphate/creatine kinase (CP/CK) module, supplemented with adenylate kinase and nucleoside-diphosphate kinase, has been employed to fulfill this role. In this study, we explored the implementation of a polyphosphate kinase (PPK2)-based energy regeneration system within the PURExpress platform. While previous work has demonstrated the effectiveness of PPK2 in supporting mRNA-driven protein synthesis, we extend these findings by showing that PPK2 can also support protein synthesis when DNA is used as the expression template. Furthermore, we demonstrate that combining the PPK2 module with the existing CP/CK system results in a synergistic effect, enhancing protein production by over 96% relative to the CP/CK module alone. These results highlight the potential of modular energy regeneration strategies to improve the efficiency and yield of *in vitro* protein synthesis in the PURE system.
 ---
