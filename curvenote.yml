@@ -4,6 +4,7 @@ project:
   references:
     devnotes: https://devnotes.bnext.bio
     mystmd: https://mystmd.org/guide
+    curvenote: https://curvenote.com/docs/publish
   title: Nucleus Developer Notes
   thumbnail: default-thumb.png
   description: please add for social previews
@@ -19,6 +20,9 @@ project:
     - dev-notes
   plugins:
     - lorem.mjs
+  abbreviations:
+    CLI: Command Line Interface
+    npm: Node Package Manager
 site:
   title: Nucleus Developer Notes
   domains:
