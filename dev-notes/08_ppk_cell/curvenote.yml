@@ -1,0 +1,77 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-08_ppk-module-in-pure-cell
+  # Ensure your title is the same as in your `main.md`
+  title: "Integrating PPK Module in PURE Cells"
+  subtitle: 
+  description: "PPK Module increases protein expression in PURE Cell" 
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Yen-Yu Hsu
+      email: yenyu@bnext.bio
+      orcid: 0000-0003-0866-6184
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  keywords:
+    - Developer Cell
+    - Cytosol
+    - Module
+    - Energy Regeneration
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-09-07
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: experiments/20250729-PPK-finale (Bulk)/Code (acjs)/20250811-acjs-PPK.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: bnext-ppk-cell.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experiments/**/*
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - file: experiments/labnotebook-ppk-cells.pdf
+      title: Lab Notebook Entry
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []

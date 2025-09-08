@@ -1,0 +1,37 @@
+Well	Experiment	Type	Name	Energy	Metabolism	Crowder	[Mg2+]	[PPK]
+C4	PPK	Sample	CP	Custom	CP	-	8	0
+C5	PPK	Sample	CP	Custom	CP	-	8	0
+C6	PPK	Sample	CP	Custom	CP	-	8	0
+C7	PPK	Sample	PPK	Custom	PPK	-	18	2
+C8	PPK	Sample	PPK	Custom	PPK	-	18	2
+C9	PPK	Sample	PPK	Custom	PPK	-	18	2
+C10	PPK	Sample	CP + PPK	Custom	CP + PPK	-	18	2
+C11	PPK	Sample	CP + PPK	Custom	CP + PPK	-	18	2
+C12	PPK	Sample	CP + PPK	Custom	CP + PPK	-	18	2
+D7	PPK	Control	NEB PURE	NEB Sol A	NEB CP	-	8	0
+D8	PPK	Control	NEB PURE	NEB Sol A	NEB CP	-	8	0
+D9	PPK	Control	NEB PURE	NEB Sol A	NEB CP	-	8	0
+B1	PPK-PEG	Sample	CP (+PEG)	Custom	CP	PEG	8	0
+B2	PPK-PEG	Sample	CP (+PEG)	Custom	CP	PEG	8	0
+B3	PPK-PEG	Sample	CP (+PEG)	Custom	CP	PEG	8	0
+B4	PPK-PEG	Sample	PPK (+PEG)	Custom	PPK	PEG	18	2
+B5	PPK-PEG	Sample	PPK (+PEG)	Custom	PPK	PEG	18	2
+B6	PPK-PEG	Sample	PPK (+PEG)	Custom	PPK	PEG	18	2
+B7	PPK-PEG	Sample	CP + PPK (+PEG)	Custom	CP + PPK	PEG	18	2
+B8	PPK-PEG	Sample	CP + PPK (+PEG)	Custom	CP + PPK	PEG	18	2
+B9	PPK-PEG	Sample	CP + PPK (+PEG)	Custom	CP + PPK	PEG	18	2
+D1	PPK-PEG	Control	NEB PURE (+PEG)	NEB Sol A	NEB CP	PEG	8	0
+D2	PPK-PEG	Control	NEB PURE (+PEG)	NEB Sol A	NEB CP	PEG	8	0
+D3	PPK-PEG	Control	NEB PURE (+PEG)	NEB Sol A	NEB CP	PEG	8	0
+B10	PPK-Optiprep	Sample	CP (+Optiprep)	Custom	CP	Optiprep	8	0
+B11	PPK-Optiprep	Sample	CP (+Optiprep)	Custom	CP	Optiprep	8	0
+B12	PPK-Optiprep	Sample	CP (+Optiprep)	Custom	CP	Optiprep	8	0
+B13	PPK-Optiprep	Sample	PPK (+Optiprep)	Custom	PPK	Optiprep	18	2
+B14	PPK-Optiprep	Sample	PPK (+Optiprep)	Custom	PPK	Optiprep	18	2
+B15	PPK-Optiprep	Sample	PPK (+Optiprep)	Custom	PPK	Optiprep	18	2
+C1	PPK-Optiprep	Sample	CP + PPK (+Optiprep)	Custom	CP + PPK	Optiprep	18	2
+C2	PPK-Optiprep	Sample	CP + PPK (+Optiprep)	Custom	CP + PPK	Optiprep	18	2
+C3	PPK-Optiprep	Sample	CP + PPK (+Optiprep)	Custom	CP + PPK	Optiprep	18	2
+D4	PPK-Optiprep	Control	NEB PURE (+Optiprep)	NEB Sol A	NEB CP	Optiprep	8	0
+D5	PPK-Optiprep	Control	NEB PURE (+Optiprep)	NEB Sol A	NEB CP	Optiprep	8	0
+D6	PPK-Optiprep	Control	NEB PURE (+Optiprep)	NEB Sol A	NEB CP	Optiprep	8	0
