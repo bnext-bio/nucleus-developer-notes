@@ -76,8 +76,6 @@ Images were captured using a Revvity Operetta CLS:
 :::::{tab-item} CP
 :sync: tab2-1
 
-::::{grid} 1 1 1 1
-
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Timeseries/CP-both.png
 :label: fig:cp-both-1
 :width: 75%
@@ -91,14 +89,11 @@ Green (488) fluroescence channel.
 :::
 
 Time series of PURE cells containing CP metabolism.
-::::
 :::::
 
 :::::{tab-item} PPK
 :sync: tab2-2
 
-::::{grid} 1 1 1 1
-:label: grid:ppk-both-timelapse
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Timeseries/PPK-both.png
 :label: fig:ppk-both1
 :width: 75%
@@ -112,27 +107,24 @@ Green (488) fluroescence channel.
 :::
 
 Time series of PURE cells containing PPK metabolism.
-::::
 :::::
 
 :::::{tab-item} CP+PPK
 :sync: tab2-2
 
-::::{grid} 1 1 1 1
 
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Timeseries/Combined-both.png
-:label: fig:cp+ppk-both1
+:label: fig:cp-ppk-both1
 :width: 75%
 Combined green (488) and red (561) fluroescence channels. 
 :::
 
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Timeseries/Combined-488.png
-:label: fig:cp+ppk-both2
+:label: fig:cp-ppk-both2
 :width: 75%
 Green (488) fluroescence channel. 
 :::
 Time series of PURE cells containing CP and PPK metabolism.
-::::
 :::::
 Time series of PURE cells containing different metabolic systems, a description of the samples are given in {ref}`tbl:fig1-description`. Every panel represents every 50 minutes. Exposures are matched between wells. Each field of view is 167 um wide. 
 ::::::
@@ -152,7 +144,6 @@ Expression of deGFP in liposomes over time  was calculated from mean intensity o
 
 :::::{tab-item} CP
 :sync: tab4-1
-::::{grid} 1 1 2 2
 
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Endpoint/CP-whole-both.png
 :label: fig:endpoint-cp3
@@ -165,12 +156,10 @@ Combined green (488) and red (561) fluroescence channels.
 :width: 80%
 Green (488) fluroescence channel. 
 :::
-::::
 :::::
 
 :::::{tab-item} PPK
 :sync: tab4-2
-::::{grid} 1 1 2 2
 
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Endpoint/PPK-whole-both.png
 :label: fig:endpoint-ppk1
@@ -183,14 +172,11 @@ Combined green (488) and red (561) fluroescence channels.
 :width: 80%
 Green (488) fluroescence channel. 
 :::
-::::
 :::::
 
 :::::{tab-item} CP+PPK
 :sync: tab4-3
 
-::::{grid} 1 1 2 2
-:label: grid:cpppk
 :::{figure} ./experiments/20250811-PPK-final-cells-Images/Endpoint/Combined-whole-both.png
 :label: fig:endpoint-ppk3
 :width: 80%
@@ -202,7 +188,6 @@ Combined green (488) and red (561) fluroescence channels.
 :width: 80%
 Green (488) fluroescence channel. 
 :::
-::::
 :::::
 Endpoints of each well containing 50 µL of PURE cells encapsulating different metabolic systems, as described in in {ref}`tbl:fig1-description`. The image was taken 6 hours and 40 minutes after each liposome sample was generated. Exposures are matched between wells. Each field of view is ~3.6 mm wide.
 
