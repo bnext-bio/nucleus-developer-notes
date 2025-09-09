@@ -1,7 +1,7 @@
 version: 1
 project:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
-  id: nucleus-devnote-core-09_ppk-module-in-pure-cell
+  id: nucleus-devnote-core-08_ppk-module-in-pure-cell
   # Ensure your title is the same as in your `main.md`
   title: "Integrating PPK Module in PURE Cells"
   subtitle: 
