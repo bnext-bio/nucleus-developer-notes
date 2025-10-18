@@ -24,4 +24,4 @@ site:
   domains:
     - bnextbio-devnotes_landing.curve.space
   options:
-    analytics_plausible: devnotes.bnext.bio
+    analytics_plausible: bnext.bio
