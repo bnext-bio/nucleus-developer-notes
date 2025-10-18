@@ -23,3 +23,5 @@ site:
   title: Nucleus Developer Notes
   domains:
     - bnextbio-devnotes_landing.curve.space
+  analytics:
+    plausible: devnotes.bnext.bio
