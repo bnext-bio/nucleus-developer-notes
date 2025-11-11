@@ -12,8 +12,9 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 6
+:limit: 7
 :::
+
 # Community
 :::{cn:articles}
 :venue: bnext-devnotes
