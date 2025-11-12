@@ -1,5 +1,6 @@
 version: 1
 project:
+  doi: 10.63765/xvxu3274
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-cx43_01
   # Ensure your title is the same as in your `main.md`
