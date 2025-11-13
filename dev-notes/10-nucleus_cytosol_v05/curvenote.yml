@@ -1,0 +1,81 @@
+version: 1
+project:
+  # doi: 
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-NucelusPURE_deGFP
+  # Ensure your title is the same as in your `main.md`
+  title: "First Nucleus Cytosol Testing"
+  subtitle: "Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression"
+  description: "Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression" 
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Surendra Yadav
+      email: surendra@bnext.bio
+      orcid: 0009-0009-5630-957X
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  keywords:
+    - Cytosol
+    - PURE
+    - Developer Cell
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-11-13
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb
+      title: Analysis Notebook 1
+    - file: experiments/20251107-NucleusPURE_deGFP_MgSweep/Analysis.ipynb
+      title: Analysis Notebook 2
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+    - seqviz.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devnote.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experimental/**/*
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - file: ./experiments/DevNote_Cytosol_v0.5.pdf
+      title: Lab Notebook Entry
+    - file: ./experiments/EtOH_DNA_Precipitation.pdf
+      title: DNA EtOH Precipitation
+    - file: ./plasmids/pOpen-deGFP.gb
+      title: pOpen-deGFP
+site:
+  template: article-theme
+  nav: []

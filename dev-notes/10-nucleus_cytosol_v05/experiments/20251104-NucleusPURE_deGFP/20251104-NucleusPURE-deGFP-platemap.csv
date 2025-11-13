@@ -1,0 +1,16 @@
+Well,Experiment,Name,CP
+B3,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi +etOH),1
+B5,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi +etOH),1
+B7,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi +etOH),1
+D3,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi only),1
+D5,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi only),1
+D7,pOpen-deGFP Test,Cytosol + pOpen-deGFP (maxi only),1
+F3,pOpen-deGFP Test,Cytosol w/o DNA ,1
+F5,pOpen-deGFP Test,Cytosol w/o DNA ,1
+F7,pOpen-deGFP Test,Cytosol w/o DNA ,1
+H3,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi +etOH),1
+H5,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi +etOH),1
+H7,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi +etOH),1
+J3,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi only),1
+J5,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi only),1
+J7,pOpen-deGFP Test,PURExpress +  pOpen-deGFP (maxi only),1
