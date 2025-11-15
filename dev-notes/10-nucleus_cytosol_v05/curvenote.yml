@@ -1,12 +1,12 @@
 version: 1
 project:
-  # doi: 
+  doi: 10.63765/fppr8928
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-NucelusPURE_deGFP
   # Ensure your title is the same as in your `main.md`
-  title: "First Nucleus Cytosol Testing"
-  subtitle: "Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression"
-  description: "Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression" 
+  title: 'First Nucleus Cytosol Testing'
+  subtitle: 'Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression'
+  description: 'Evaluation of Nucleus Cytosol v0.5 Through deGFP Expression'
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: Surendra Yadav
