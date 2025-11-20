@@ -1,0 +1,129 @@
+Well	Row	Column	Experiment	Name	Type	Replicate	Mg2+ Supplement (mM)	NEB Sol A (uL)	OnePot SMx (uL)	Fresh SMx (uL)	OnePot tRNA (uL)	NEB Sol B (uL)	NEB Sol B -Ribos (uL)	OnePot PMx BE #1 (uL)	OnePot PMx BE #2 (uL)	OnePot PMx OG #1 (uL)	b.next PMx (uL)	OnePot Ribos #1 (uL)	OnePot Ribos #2 (uL)	bn Ribosome (uL)	RNase Inhibitor (uL)	pT7-plamGFP (uL)	Ultrapure water (uL)
+B2	B	2	Full Send	OnePot BE #1	Sample	1	0		7.5		2.5			3				2.5			1.25	1.25	4.5
+B4	B	4	Full Send	OnePot BE #1	Sample	1	0.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+B6	B	6	Full Send	OnePot BE #1	Sample	1	1		7.5		2.5			3				2.5			1.25	1.25	4.5
+B8	B	8	Full Send	OnePot BE #1	Sample	1	1.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+B10	B	10	Full Send	OnePot BE #1	Sample	1	2		7.5		2.5			3				2.5			1.25	1.25	4.5
+B12	B	12	Full Send	OnePot BE #1	Sample	1	2.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+B14	B	14	Full Send	OnePot BE #1	Sample	1	3		7.5		2.5			3				2.5			1.25	1.25	4.5
+B16	B	16	Full Send	OnePot BE #1	Sample	1	3.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+D2	D	2	Full Send	OnePot BE #2	Sample	1	0		7.5		2.5				3				2.5		1.25	1.25	4.5
+D4	D	4	Full Send	OnePot BE #2	Sample	1	0.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+D6	D	6	Full Send	OnePot BE #2	Sample	1	1		7.5		2.5				3				2.5		1.25	1.25	4.5
+D8	D	8	Full Send	OnePot BE #2	Sample	1	1.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+D10	D	10	Full Send	OnePot BE #2	Sample	1	2		7.5		2.5				3				2.5		1.25	1.25	4.5
+D12	D	12	Full Send	OnePot BE #2	Sample	1	2.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+D14	D	14	Full Send	OnePot BE #2	Sample	1	3		7.5		2.5				3				2.5		1.25	1.25	4.5
+D16	D	16	Full Send	OnePot BE #2	Sample	1	3.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+F2	F	2	Full Send	OnePot OG #1 +	Sample	1	0		7.5		2.5					3		2.5			1.25	1.25	4.5
+F4	F	4	Full Send	OnePot OG #1 +	Sample	1	0.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+F6	F	6	Full Send	OnePot OG #1 +	Sample	1	1		7.5		2.5					3		2.5			1.25	1.25	4.5
+F8	F	8	Full Send	OnePot OG #1 +	Sample	1	1.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+F10	F	10	Full Send	OnePot OG #1 +	Sample	1	2		7.5		2.5					3		2.5			1.25	1.25	4.5
+F12	F	12	Full Send	OnePot OG #1 +	Sample	1	2.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+F14	F	14	Full Send	OnePot OG #1 +	Sample	1	3		7.5		2.5					3		2.5			1.25	1.25	4.5
+F16	F	16	Full Send	OnePot OG #1 +	Sample	1	3.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+H2	H	2	Full Send	OnePot OG #1 -	Sample	1	0		7.5		2.5					3		2.5			1.25	1.25	4.5
+H4	H	4	Full Send	OnePot OG #1 -	Sample	1	0.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+H6	H	6	Full Send	OnePot OG #1 -	Sample	1	1		7.5		2.5					3		2.5			1.25	1.25	4.5
+H8	H	8	Full Send	OnePot OG #1 -	Sample	1	1.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+H10	H	10	Full Send	OnePot OG #1 -	Sample	1	2		7.5		2.5					3		2.5			1.25	1.25	4.5
+H12	H	12	Full Send	OnePot OG #1 -	Sample	1	2.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+H14	H	14	Full Send	OnePot OG #1 -	Sample	1	3		7.5		2.5					3		2.5			1.25	1.25	4.5
+H16	H	16	Full Send	OnePot OG #1 -	Sample	1	3.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+J2	J	2	Full Send	b.next +	Sample	1	0		7.5		2.5						3			2.5	1.25	1.25	4.5
+J4	J	4	Full Send	b.next +	Sample	1	0.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+J6	J	6	Full Send	b.next +	Sample	1	1		7.5		2.5						3			2.5	1.25	1.25	4.5
+J8	J	8	Full Send	b.next +	Sample	1	1.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+J10	J	10	Full Send	b.next +	Sample	1	2		7.5		2.5						3			2.5	1.25	1.25	4.5
+J12	J	12	Full Send	b.next +	Sample	1	2.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+J14	J	14	Full Send	b.next +	Sample	1	3		7.5		2.5						3			2.5	1.25	1.25	4.5
+J16	J	16	Full Send	b.next +	Sample	1	3.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+L2	L	2	Full Send	SMx +	Sample	1	0		7.5		2.5	3									1.25	1.25	7
+L4	L	4	Full Send	SMx +	Sample	1	0.5		7.5		2.5	3									1.25	1.25	7
+L6	L	6	Full Send	SMx +	Sample	1	1		7.5		2.5	3									1.25	1.25	7
+L8	L	8	Full Send	SMx +	Sample	1	1.5		7.5		2.5	3									1.25	1.25	7
+L10	L	10	Full Send	SMx +	Sample	1	2		7.5		2.5	3									1.25	1.25	7
+L12	L	12	Full Send	SMx +	Sample	1	2.5		7.5		2.5	3									1.25	1.25	7
+L14	L	14	Full Send	SMx +	Sample	1	3		7.5		2.5	3									1.25	1.25	7
+L16	L	16	Full Send	SMx +	Sample	1	3.5		7.5		2.5	3									1.25	1.25	7
+C2	C	2	Full Send	OnePot BE #1	Sample	2	0		7.5		2.5			3				2.5			1.25	1.25	4.5
+C4	C	4	Full Send	OnePot BE #1	Sample	2	0.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+C6	C	6	Full Send	OnePot BE #1	Sample	2	1		7.5		2.5			3				2.5			1.25	1.25	4.5
+C8	C	8	Full Send	OnePot BE #1	Sample	2	1.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+C10	C	10	Full Send	OnePot BE #1	Sample	2	2		7.5		2.5			3				2.5			1.25	1.25	4.5
+C12	C	12	Full Send	OnePot BE #1	Sample	2	2.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+C14	C	14	Full Send	OnePot BE #1	Sample	2	3		7.5		2.5			3				2.5			1.25	1.25	4.5
+C16	C	16	Full Send	OnePot BE #1	Sample	2	3.5		7.5		2.5			3				2.5			1.25	1.25	4.5
+E2	E	2	Full Send	OnePot BE #2	Sample	2	0		7.5		2.5				3				2.5		1.25	1.25	4.5
+E4	E	4	Full Send	OnePot BE #2	Sample	2	0.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+E6	E	6	Full Send	OnePot BE #2	Sample	2	1		7.5		2.5				3				2.5		1.25	1.25	4.5
+E8	E	8	Full Send	OnePot BE #2	Sample	2	1.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+E10	E	10	Full Send	OnePot BE #2	Sample	2	2		7.5		2.5				3				2.5		1.25	1.25	4.5
+E12	E	12	Full Send	OnePot BE #2	Sample	2	2.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+E14	E	14	Full Send	OnePot BE #2	Sample	2	3		7.5		2.5				3				2.5		1.25	1.25	4.5
+E16	E	16	Full Send	OnePot BE #2	Sample	2	3.5		7.5		2.5				3				2.5		1.25	1.25	4.5
+G2	G	2	Full Send	OnePot OG #1 +	Sample	2	0		7.5		2.5					3		2.5			1.25	1.25	4.5
+G4	G	4	Full Send	OnePot OG #1 +	Sample	2	0.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+G6	G	6	Full Send	OnePot OG #1 +	Sample	2	1		7.5		2.5					3		2.5			1.25	1.25	4.5
+G8	G	8	Full Send	OnePot OG #1 +	Sample	2	1.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+G10	G	10	Full Send	OnePot OG #1 +	Sample	2	2		7.5		2.5					3		2.5			1.25	1.25	4.5
+G12	G	12	Full Send	OnePot OG #1 +	Sample	2	2.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+G14	G	14	Full Send	OnePot OG #1 +	Sample	2	3		7.5		2.5					3		2.5			1.25	1.25	4.5
+G16	G	16	Full Send	OnePot OG #1 +	Sample	2	3.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+I2	I	2	Full Send	OnePot OG #1 -	Sample	2	0		7.5		2.5					3		2.5			1.25	1.25	4.5
+I4	I	4	Full Send	OnePot OG #1 -	Sample	2	0.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+I6	I	6	Full Send	OnePot OG #1 -	Sample	2	1		7.5		2.5					3		2.5			1.25	1.25	4.5
+I8	I	8	Full Send	OnePot OG #1 -	Sample	2	1.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+I10	I	10	Full Send	OnePot OG #1 -	Sample	2	2		7.5		2.5					3		2.5			1.25	1.25	4.5
+I12	I	12	Full Send	OnePot OG #1 -	Sample	2	2.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+I14	I	14	Full Send	OnePot OG #1 -	Sample	2	3		7.5		2.5					3		2.5			1.25	1.25	4.5
+I16	I	16	Full Send	OnePot OG #1 -	Sample	2	3.5		7.5		2.5					3		2.5			1.25	1.25	4.5
+K2	K	2	Full Send	b.next +	Sample	2	0		7.5		2.5						3			2.5	1.25	1.25	4.5
+K4	K	4	Full Send	b.next +	Sample	2	0.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+K6	K	6	Full Send	b.next +	Sample	2	1		7.5		2.5						3			2.5	1.25	1.25	4.5
+K8	K	8	Full Send	b.next +	Sample	2	1.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+K10	K	10	Full Send	b.next +	Sample	2	2		7.5		2.5						3			2.5	1.25	1.25	4.5
+K12	K	12	Full Send	b.next +	Sample	2	2.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+K14	K	14	Full Send	b.next +	Sample	2	3		7.5		2.5						3			2.5	1.25	1.25	4.5
+K16	K	16	Full Send	b.next +	Sample	2	3.5		7.5		2.5						3			2.5	1.25	1.25	4.5
+M2	M	2	Full Send	SMx +	Sample	2	0		7.5		2.5	3									1.25	1.25	7
+M4	M	4	Full Send	SMx +	Sample	2	0.5		7.5		2.5	3									1.25	1.25	7
+M6	M	6	Full Send	SMx +	Sample	2	1		7.5		2.5	3									1.25	1.25	7
+M8	M	8	Full Send	SMx +	Sample	2	1.5		7.5		2.5	3									1.25	1.25	7
+M10	M	10	Full Send	SMx +	Sample	2	2		7.5		2.5	3									1.25	1.25	7
+M12	M	12	Full Send	SMx +	Sample	2	2.5		7.5		2.5	3									1.25	1.25	7
+M14	M	14	Full Send	SMx +	Sample	2	3		7.5		2.5	3									1.25	1.25	7
+M16	M	16	Full Send	SMx +	Sample	2	3.5		7.5		2.5	3									1.25	1.25	7
+A19	A	19	Full Send	Fresh SMx +DNA	Sample	1	0			7.5	2.5	3									1.25	1.25	7
+C19	C	19	Full Send	Fresh SMx +DNA	Sample	1	0.5			7.5	2.5	3									1.25	1.25	7
+E19	E	19	Full Send	Fresh SMx +DNA	Sample	1	1			7.5	2.5	3									1.25	1.25	7
+G19	G	19	Full Send	Fresh SMx +DNA	Sample	1	1.5			7.5	2.5	3									1.25	1.25	7
+I19	I	19	Full Send	Fresh SMx +DNA	Sample	1	2			7.5	2.5	3									1.25	1.25	7
+K19	K	19	Full Send	Fresh SMx +DNA	Sample	1	2.5			7.5	2.5	3									1.25	1.25	7
+M19	M	19	Full Send	Fresh SMx +DNA	Sample	1	3			7.5	2.5	3									1.25	1.25	7
+O19	O	19	Full Send	Fresh SMx +DNA	Sample	1	3.5			7.5	2.5	3									1.25	1.25	7
+A21	A	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	0			7.5	2.5	3									1.25	1.25	7
+C21	C	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	0.5			7.5	2.5	3									1.25	1.25	7
+E21	E	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	1			7.5	2.5	3									1.25	1.25	7
+G21	G	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	1.5			7.5	2.5	3									1.25	1.25	7
+I21	I	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	2			7.5	2.5	3									1.25	1.25	7
+K21	K	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	2.5			7.5	2.5	3									1.25	1.25	7
+M21	M	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	3			7.5	2.5	3									1.25	1.25	7
+O21	O	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	1	3.5			7.5	2.5	3									1.25	1.25	7
+B19	B	19	Full Send	Fresh SMx +DNA	Sample	2	0			7.5	2.5	3									1.25	1.25	7
+D19	D	19	Full Send	Fresh SMx +DNA	Sample	2	0.5			7.5	2.5	3									1.25	1.25	7
+F19	F	19	Full Send	Fresh SMx +DNA	Sample	2	1			7.5	2.5	3									1.25	1.25	7
+H19	H	19	Full Send	Fresh SMx +DNA	Sample	2	1.5			7.5	2.5	3									1.25	1.25	7
+J19	J	19	Full Send	Fresh SMx +DNA	Sample	2	2			7.5	2.5	3									1.25	1.25	7
+L19	L	19	Full Send	Fresh SMx +DNA	Sample	2	2.5			7.5	2.5	3									1.25	1.25	7
+N19	N	19	Full Send	Fresh SMx +DNA	Sample	2	3			7.5	2.5	3									1.25	1.25	7
+P19	P	19	Full Send	Fresh SMx +DNA	Sample	2	3.5			7.5	2.5	3									1.25	1.25	7
+B21	B	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	0			7.5	2.5	3									1.25	1.25	7
+D21	D	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	0.5			7.5	2.5	3									1.25	1.25	7
+F21	F	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	1			7.5	2.5	3									1.25	1.25	7
+H21	H	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	1.5			7.5	2.5	3									1.25	1.25	7
+J21	J	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	2			7.5	2.5	3									1.25	1.25	7
+L21	L	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	2.5			7.5	2.5	3									1.25	1.25	7
+N21	N	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	3			7.5	2.5	3									1.25	1.25	7
+P21	P	21	Full Send	Fresh SMx +DNA (Freeze)	Sample	2	3.5			7.5	2.5	3									1.25	1.25	7

@@ -1,0 +1,8 @@
+Well	Name	Type	NEB Ribosome	Ribosome	NEB solution B	Factor mix	NEB Solution A	RNAse Inhibitor	DNA (deGFP)	Water	Total Volume
+D2	Han&Sev Rib	Experiment	0	1.8	0	1.2	4	0.5	0.5	2	10
+D4	Jake&Tyler Rib	Experiment	0	1.8	0	1.2	4	0.5	0.5	2	10
+D6	Red1 Rib	Experiment	0	1.8	0	1.2	4	0.5	0.5	2	10
+D8	Red2 Rib	Experiment	0	1.8	0	1.2	4	0.5	0.5	2	10
+D10	Rib Control	Control	1.8	0	0	1.2	4	0.5	0.5	2	10
+B22	Positive	Control	0	0	3	0	4	0.5	0.5	2	10
+B24	Negative	Control	0	0	3	0	4	0	0	3	10

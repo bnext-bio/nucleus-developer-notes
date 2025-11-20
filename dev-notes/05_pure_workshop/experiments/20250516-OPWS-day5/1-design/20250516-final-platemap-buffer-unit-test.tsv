@@ -1,0 +1,23 @@
+Well	Row	Column	Experiment	Name	Type	Replicate	NEB Sol A (uL)	NEB Sol B (uL)	NEB Sol B -Ribos (uL)	OnePot PMx BE #1 (uL)	OnePot PMx BE #2 (uL)	OnePot PMx BE #3 (uL)	OnePot PMx BE #4 (uL)	OnePot PMx BE #5 (uL)	OnePot PMx OG #1 (uL)	b.next PMx (uL)	bn Ribosome (uL)	RNase Inhibitor (uL)	pT7-plamGFP (uL)	Ultrapure water (uL)
+N2	N	2	BE Unit Test	OnePot BE #1	Sample	1	10			3							2.5	1.25	1.25	7
+N4	N	4	BE Unit Test	OnePot BE #2	Sample	1	10				3						2.5	1.25	1.25	7
+N6	N	6	BE Unit Test	OnePot BE #3	Sample	1	10					3					2.5	1.25	1.25	7
+N8	N	8	BE Unit Test	OnePot BE #4	Sample	1	10						3				2.5	1.25	1.25	7
+N10	N	10	BE Unit Test	OnePot BE #5	Sample	1	10							3			2.5	1.25	1.25	7
+N12	N	12	BE Unit Test	OnePot OG #1 +	Sample	1	10								3		2.5	1.25	1.25	7
+N14	N	14	BE Unit Test	OnePot OG #1 -	Sample	1	10								3		2.5	1.25		8.25
+N16	N	16	BE Unit Test	b.next +	Control	1	10									3	2.5	1.25	1.25	7
+N18	N	18	BE Unit Test	Ribosome +	Control	1	10		3								2.5	1.25	1.25	7
+N20	N	20	BE Unit Test	NEB +DNA	Control	1	10	7.5										1.25	1.25	5
+N22	N	22	BE Unit Test	NEB -DNA	Control	1	10	7.5										1.25		6.25
+O2	O	2	BE Unit Test	OnePot BE #1	Sample	2	10			3							2.5	1.25	1.25	7
+O4	O	4	BE Unit Test	OnePot BE #2	Sample	2	10				3						2.5	1.25	1.25	7
+O6	O	6	BE Unit Test	OnePot BE #3	Sample	2	10					3					2.5	1.25	1.25	7
+O8	O	8	BE Unit Test	OnePot BE #4	Sample	2	10						3				2.5	1.25	1.25	7
+O10	O	10	BE Unit Test	OnePot BE #5	Sample	2	10							3			2.5	1.25	1.25	7
+O12	O	12	BE Unit Test	OnePot OG #1 +	Sample	2	10								3		2.5	1.25	1.25	7
+O14	O	14	BE Unit Test	OnePot OG #1 -	Sample	2	10								3		2.5	1.25		8.25
+O16	O	16	BE Unit Test	b.next +	Control	2	10									3	2.5	1.25	1.25	7
+O18	O	18	BE Unit Test	Ribosome +	Control	2	10		3								2.5	1.25	1.25	7
+O20	O	20	BE Unit Test	NEB +DNA	Control	2	10	7.5										1.25	1.25	5
+O22	O	22	BE Unit Test	NEB -DNA	Control	2	10	7.5										1.25		6.25

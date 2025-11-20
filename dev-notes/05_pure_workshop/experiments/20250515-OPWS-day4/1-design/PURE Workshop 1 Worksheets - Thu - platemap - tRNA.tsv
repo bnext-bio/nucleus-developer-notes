@@ -1,0 +1,29 @@
+Well	Name	Type	Assembled by	NEB Sol A	NEB Sol A -AA -tRNA	NEB AA	NEB tRNA	Workshop A19 tRNA (Adrianna)	bnext ribosomes	tRNA (Dialyzed)	NEB Sol B	NEB Sol B -Ribos	RNase Inhibitor	pT7-plamGFP plasmid (120 ng/uL)	Ultrapure	plamGFP Standard	Total
+E1	Workshop A19 tRNA (AH w/ dialysis)	Experiment	Adrianna		5	2.5		1.57			7.5		1.25	1.25	5.93		25
+E3	Workshop A19 tRNA (AH w/o dialysis)	Experiment	Adrianna		5	2.5				2.84	7.5		1.25	1.25	4.66		25
+E5	NEB SM control (uL)	Experiment	Adrianna		5	2.5	2.5				7.5		1.25	1.25	5		25
+G1	Workshop A19 tRNA (AH w/ dialysis)	Experiment	Adrianna		5	2.5		1.57			7.5		1.25	1.25	5.93		25
+G3	Workshop A19 tRNA (AH w/o dialysis)	Experiment	Adrianna		5	2.5				2.84	7.5		1.25	1.25	4.66		25
+G5	NEB SM control (uL)	Experiment	Adrianna		5	2.5	2.5				7.5		1.25	1.25	5		25
+B19	NEB Protein + (uL)	Control	Viktoriia	10					2.5			3	1.25	1.25	7		25
+B21	NEB +DNA (uL)	Control	Viktoriia	10							7.5		1.25	1.25	5		25
+B23	NEB -DNA (uL)	Control	Viktoriia	10							7.5		1.25		6.25		25
+C19	NEB Protein + (uL)	Control*	Viktoriia	10					2.5			3	1.25	1.25	7		25
+C21	NEB +DNA (uL)	Control	Viktoriia	10							7.5		1.25	1.25	5		25
+C23	NEB -DNA (uL)	Control	Viktoriia	10							7.5		1.25		6.25		25
+I1	plamGFP-0	Standard	Molina													10	
+I3	plamGFP-20	Standard	Molina													10	
+I5	plamGFP-50	Standard	Molina													10	
+I7	plamGFP-75	Standard	Molina													10	
+I9	plamGFP-100	Standard	Molina													10	
+I11	plamGFP-125	Standard	Molina													10	
+I13	plamGFP-150	Standard	Molina													10	
+I15	plamGFP-300	Standard	Molina													10	
+K1	plamGFP-0	Standard	Molina													10	
+K3	plamGFP-20	Standard	Molina													10	
+K5	plamGFP-50	Standard	Molina													10	
+K7	plamGFP-75	Standard	Molina													10	
+K9	plamGFP-100	Standard	Molina													10	
+K11	plamGFP-125	Standard	Molina													10	
+K13	plamGFP-150	Standard	Molina													10	
+K15	plamGFP-300	Standard	Molina													10	

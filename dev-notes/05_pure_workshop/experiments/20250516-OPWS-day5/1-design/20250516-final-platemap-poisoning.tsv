@@ -1,0 +1,6 @@
+Well	Row	Column	Experiment	Name	Type	Replicate	Poison	NEB Solution A (uL)	NEB Solution B (uL)	RNase Inhibitor (uL)	pT7-plamGFP (uL)	Dialysis Buffer #1 (uL)	Dialysis Buffer #2 (uL)	Dialysis Buffer #3 (uL)	ArgRS Protein (uL)	Ultrapure Water (uL)
+B23	B	23	Poisoning	DB 1	Sample	1	Dialysis Buffer 1	4	3	0.5	0.5	1				1
+D23	D	23	Poisoning	DB 2	Sample	1	Dialysis Buffer 2	4	3	0.5	0.5		1			1
+F23	F	23	Poisoning	DB 3	Sample	1	Dialysis Buffer 3	4	3	0.5	0.5			1		1
+H23	H	23	Poisoning	Spike In	Sample	1	ArgRS Spike In	4	3	0.5	0.5				1	1
+J23	J	23	Poisoning	+	Control	1	Control	4	3	0.5	0.5					2
