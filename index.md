@@ -12,7 +12,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 7
+:limit: 9
 :::
 
 # Community
