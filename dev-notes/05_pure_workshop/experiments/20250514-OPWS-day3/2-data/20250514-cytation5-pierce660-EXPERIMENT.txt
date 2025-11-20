@@ -1,0 +1,120 @@
+
+
+Software Version	3.16.10
+
+
+
+Experiment File Path:	C:\Users\bnext\Documents\Biotek\experiments\20250514-cytation5-pierce660-EXPERIMENT.xpt
+Protocol File Path:	C:\Users\bnext\Documents\Biotek\protocols\cytation5-pierce660.prt
+
+
+
+Plate Number	Plate 1
+Date	5/14/2025
+Time	11:56:50 AM
+Reader Type:	Cytation5
+Reader Serial Number:	1705168
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	96 WELL PLATE (Use plate lid)
+Eject plate on completion	
+Read	660-PreShake
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+Shake	Orbital: 1:00 (MM:SS)
+	Frequency: 425 cpm (3 mm)
+Read	660-PostShake
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+Delay	0:05:00 (HH:MM:SS)
+Read	660-Assay
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A								STD1	SPL1:1				Well ID
+								2000	5				Conc/Dil
+B								STD2	SPL1:2				Well ID
+								1000	10				Conc/Dil
+C								STD3	SPL1:3				Well ID
+								500	20				Conc/Dil
+D								STD4	SPL1:4				Well ID
+								250	40				Conc/Dil
+E								STD5	SPL1:5				Well ID
+								125	80				Conc/Dil
+F									SPL1:6				Well ID
+									160				Conc/Dil
+G									SPL1:7				Well ID
+									320				Conc/Dil
+H									SPL1:8				Well ID
+									640				Conc/Dil
+
+
+
+Actual Temperature:	22.9
+
+
+
+Actual Temperature:	22.9
+
+
+
+Actual Temperature:	22.8
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12
+A								1.179	1.308				660-PreShake:660
+								1.189	1.351				660-PostShake:660
+								1.218	1.425				660-Assay:660
+								1985.359	>2093.750				[Concentration]
+									>10468.750				[Concentration] x Dil
+B								0.652	0.819				660-PreShake:660
+								0.674	0.846				660-PostShake:660
+								0.680	0.944				660-Assay:660
+								1028.130	1347.702				[Concentration]
+									13477.018				[Concentration] x Dil
+C								0.384	0.631				660-PreShake:660
+								0.394	0.630				660-PostShake:660
+								0.388	0.688				660-Assay:660
+								507.779	945.030				[Concentration]
+									18900.591				[Concentration] x Dil
+D								0.253	0.436				660-PreShake:660
+								0.255	0.437				660-PostShake:660
+								0.254	0.468				660-Assay:660
+								249.370	586.789				[Concentration]
+									23471.553				[Concentration] x Dil
+E								0.176	0.325				660-PreShake:660
+								0.177	0.331				660-PostShake:660
+								0.180	0.333				660-Assay:660
+								104.363	389.357				[Concentration]
+									31148.539				[Concentration] x Dil
+F									0.271				660-PreShake:660
+									0.275				660-PostShake:660
+									0.271				660-Assay:660
+									286.551				[Concentration]
+									45848.121				[Concentration] x Dil
+G									0.210				660-PreShake:660
+									0.211				660-PostShake:660
+									0.210				660-Assay:660
+									166.827				[Concentration]
+									53384.747				[Concentration] x Dil
+H									0.176				660-PreShake:660
+									0.176				660-PostShake:660
+									0.176				660-Assay:660
+									101.574				[Concentration]
+									65007.586				[Concentration] x Dil
+
+StdCurve Fitting Results
+
+Curve Name	Curve Formula	A	B	R2	Fit F Prob
+StdCurve	Y=A*X+B	0.000538	0.121	0.999	?????
+

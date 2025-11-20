@@ -1,0 +1,27 @@
+Procedure Summary
+
+Plate Type	96 WELL PLATE (Use plate lid)
+Eject plate on completion	
+Read	Read:  660-PreShake (A) 660
+Shake	Shake: Orbital for 1:00
+Read	Read:  660-PostShake (A) 660
+Delay	Delay for 0:05:00
+Read	Read:  660-Assay (A) 660
+
+Pierce660
+
+Protocol File Name	Experiment File Name	Well	Well ID	Name	660-PreShake:660	660-PostShake:660	660-Assay:660
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	A9	SPL1		1.308	1.351	1.425
+		B9			0.819	0.846	0.944
+		C9			0.631	0.630	0.688
+		D9			0.436	0.437	0.468
+		E9			0.325	0.331	0.333
+		F9			0.271	0.275	0.271
+		G9			0.210	0.211	0.210
+		H9			0.176	0.176	0.176
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	A8	STD1		1.179	1.189	1.218
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	B8	STD2		0.652	0.674	0.680
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	C8	STD3		0.384	0.394	0.388
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	D8	STD4		0.253	0.255	0.254
+cytation5-pierce660	20250514-cytation5-pierce660-EXPERIMENT.xpt	E8	STD5		0.176	0.177	0.180
+

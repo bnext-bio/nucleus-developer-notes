@@ -1,0 +1,25 @@
+	Vol (per participant; uL)				Num participants	9
+Component	Experiment	NEB SM control	NEB +DNA	NEB -DNA	Total Burn (uL)	
+NEB Sol A -AA -tRNA	0	5	0	0	5	
+NEB AA	0	2.5	0	0	2.5	
+NEB tRNA	2.5	2.5	0	0	25	
+Workshop SMS	7.5	0	0	0	67.5	
+Mg(OAc)2 supplement	2.5				22.5	
+NEB Sol A	0	0	10	10	20	
+NEB Sol B	7.5	7.5	7.5	7.5	90	
+RNAse Inh	1.25	1.25	1.25	1.25	15	
+DNA	1.25	1.25	1.25	0	13.75	
+H2O	2.5	5	5	6.25	38.75	
+total	25	25	25	25	300	
+						
+						
+						
+Mg Supplement						
+Target [Mg++] (mM)	10					
+[Mg++] from SM Mix (mM)	6					
+Vol Fraction Mg supplement	0.1					
+[Mg++] of Supplement (mM)	40					
+[Mg++] of Mg(OAc)2 stock (mM)	1000					
+Vol of Supplement (uL)	200					
+Vol Mg(OAc2) (uL)	8					
+Vol H2O (uL)	192					

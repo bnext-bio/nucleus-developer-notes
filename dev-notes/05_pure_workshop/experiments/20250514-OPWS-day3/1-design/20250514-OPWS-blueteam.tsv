@@ -1,0 +1,110 @@
+Well	Sample #	Type	Name	ArgRS	T7 RNAP	IF2	EF-TU	T7 RNAP (ctrl)	ArgRS (ctrl)	IF2 (ctrl)	EF-TU (ctrl)	plamGFP (ug/uL)
+B2	1	Control	NEB +									
+B3	2	Control	NEB -									
+B4	3	Control	OP +									
+B5	4	Control	OP -									
+B6	5	Control	Ribo									
+B8	6	Single	ArgRS 1 uL	1								
+B9	7	Single	ArgRS 1.5 uL	1.5								
+B10	8	Single	T7 RNAP 1 uL		1							
+B11	9	Single	T7 RNAP 1.5 uL		1.5							
+B12	10	Single	IF2 1 uL			1						
+B13	11	Single	IF 1.5 uL			1.5						
+B14	12	Single	EF-TU 1 uL				1					
+B15	13	Single	EF-TU 1.5 uL				1.5					
+C2	14	Control	NEB +									
+C3	15	Control	NEB -									
+C4	16	Control	OP +									
+C5	17	Control	OP -									
+C6	18	Control	Ribo									
+C8	19	Single	ArgRS 1 uL	1								
+C9	20	Single	ArgRS 1.5 uL	1.5								
+C10	21	Single	T7 RNAP 1 uL		1							
+C11	22	Single	T7 RNAP 1.5 uL		1.5							
+C12	23	Single	IF2 1 uL			1						
+C13	24	Single	IF 1.5 uL			1.5						
+C14	25	Single	EF-TU 1 uL				1					
+C15	26	Single	EF-TU 1.5 uL				1.5					
+D2	27	Control	NEB +									
+D3	28	Control	NEB -									
+D4	29	Control	OP +									
+D5	30	Control	OP -									
+D6	31	Control	Ribo									
+D8	32	Single	ArgRS 1 uL	1								
+D9	33	Single	ArgRS 1.5 uL	1.5								
+D10	34	Single	T7 RNAP 1 uL		1							
+D11	35	Single	T7 RNAP 1.5 uL		1.5							
+D12	36	Single	IF2 1 uL			1						
+D13	37	Single	IF 1.5 uL			1.5						
+D14	38	Single	EF-TU 1 uL				1					
+D15	39	Single	EF-TU 1.5 uL				1.5					
+F2	40	Single	T7 RNAP (ctrl) 0.5 uL					0.5				
+F3	41	Single	T7 RNAP (ctrl) 1.0 uL					1				
+F4	42	Single	T7 RNAP (ctrl) 1.5 uL					1.5				
+F5	43	Single	ArgRS (ctrl) 0.5 uL						0.5			
+F6	44	Single	ArgsRS (ctrl) 1.0 uL						1			
+F7	45	Single	ArgRS (ctrl) 1.5 uL						1.5			
+F8	46	Single	IF2 (ctrl) 0.5 uL							0.5		
+F9	47	Single	IF2 (ctrl) 1.0 uL							1		
+F10	48	Single	IF2 (ctrl) 1.5 uL							1.5		
+F11	49	Single	EF-TU (ctrl) 0.5 uL								0.5	
+F12	50	Single	EF-TU (ctrl) 1.0 uL								1	
+F13	51	Single	EF-TU (ctrl) 1.5 uL								1.5	
+F15	52	Pairwise	0.5 uL T7 RNAP + 0.5 uL EF-TU (ctrl)		0.5						0.5	
+F16	53	Pairwise	0.5 uL IF2 + 0.5 uL EF-TU (ctrl)			0.5					0.5	
+F17	54	Pairwise	1 uL T7 RNAP + 1 uL EF-TU (ctrl)		1						1	
+F18	55	Pairwise	1 uL IF2 + 1 uL EF-TU			1	1					
+F19	56	Pairwise	0.5 uL T7 RNAP + 0.5 uL IF2 		0.5	0.5					0.5	
+F20	57	Pairwise	0.5 uL ArgRS + 0.5 uL T7 RNAP + 0.5 uL IF 2 + 0.5 uL EF-TU (ctrl)	0.5	0.5	0.5					0.5	
+G2	52	Single	T7 RNAP (ctrl) 0.5 uL					0.5				
+G3	53	Single	T7 RNAP (ctrl) 1.0 uL					1				
+G4	54	Single	T7 RNAP (ctrl) 1.5 uL					1.5				
+G5	55	Single	ArgRS (ctrl) 0.5 uL						0.5			
+G6	56	Single	ArgsRS (ctrl) 1.0 uL						1			
+G7	57	Single	ArgRS (ctrl) 1.5 uL						1.5			
+G8	58	Single	IF2 (ctrl) 0.5 uL							0.5		
+G9	59	Single	IF2 (ctrl) 1.0 uL							1		
+G10	60	Single	IF2 (ctrl) 1.5 uL							1.5		
+G11	61	Single	EF-TU (ctrl) 0.5 uL								0.5	
+G12	62	Single	EF-TU (ctrl) 1.0 uL								1	
+G13	63	Single	EF-TU (ctrl) 1.5 uL								1.5	
+G15	64	Pairwise	0.5 uL T7 RNAP + 0.5 uL EF-TU (ctrl)		0.5						0.5	
+G16	65	Pairwise	0.5 uL IF2 + 0.5 uL EF-TU (ctrl)			0.5					0.5	
+G17	66	Pairwise	1 uL T7 RNAP + 1 uL EF-TU (ctrl)		1						1	
+G18	67	Pairwise	1 uL IF2 + 1 uL EF-TU			1	1					
+G19	68	Pairwise	0.5 uL T7 RNAP + 0.5 uL IF2 		0.5	0.5					0.5	
+G20	69	Pairwise	0.5 uL ArgRS + 0.5 uL T7 RNAP + 0.5 uL IF 2 + 0.5 uL EF-TU (ctrl)	0.5	0.5	0.5					0.5	
+H2	70	Single	T7 RNAP (ctrl) 0.5 uL					0.5				
+H3	71	Single	T7 RNAP (ctrl) 1.0 uL					1				
+H4	72	Single	T7 RNAP (ctrl) 1.5 uL					1.5				
+H5	73	Single	ArgRS (ctrl) 0.5 uL						0.5			
+H6	74	Single	ArgsRS (ctrl) 1.0 uL						1			
+H7	75	Single	ArgRS (ctrl) 1.5 uL						1.5			
+H8	76	Single	IF2 (ctrl) 0.5 uL							0.5		
+H9	77	Single	IF2 (ctrl) 1.0 uL							1		
+H10	78	Single	IF2 (ctrl) 1.5 uL							1.5		
+H11	79	Single	EF-TU (ctrl) 0.5 uL								0.5	
+H12	80	Single	EF-TU (ctrl) 1.0 uL								1	
+H13	81	Single	EF-TU (ctrl) 1.5 uL								1.5	
+H15	82	Pairwise	0.5 uL T7 RNAP + 0.5 uL EF-TU (ctrl)		0.5						0.5	
+H16	83	Pairwise	0.5 uL IF2 + 0.5 uL EF-TU (ctrl)			0.5					0.5	
+H17	84	Pairwise	1 uL T7 RNAP + 1 uL EF-TU (ctrl)		1						1	
+H18	85	Pairwise	1 uL IF2 + 1 uL EF-TU			1	1					
+H19	86	Pairwise	0.5 uL T7 RNAP + 0.5 uL IF2 		0.5	0.5					0.5	
+H20	87	Pairwise	0.5 uL ArgRS + 0.5 uL T7 RNAP + 0.5 uL IF 2 + 0.5 uL EF-TU (ctrl)	0.5	0.5	0.5					0.5	
+J2	88	Standard	plamGFP-0									0
+J4	89	Standard	plamGFP-20									20
+J6	90	Standard	plamGFP-50									50
+J8	91	Standard	plamGFP-75									75
+J10	92	Standard	plamGFP-100									100
+J12	93	Standard	plamGFP-125									125
+J14	94	Standard	plamGFP-150									150
+J16	95	Standard	plamGFP-300									300
+K2	96	Standard	plamGFP-0									0
+K4	97	Standard	plamGFP-20									20
+K6	98	Standard	plamGFP-50									50
+K8	99	Standard	plamGFP-75									75
+K10	100	Standard	plamGFP-100									100
+K12	101	Standard	plamGFP-125									125
+K14	102	Standard	plamGFP-150									150
+K16	103	Standard	plamGFP-300									300

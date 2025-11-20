@@ -1,0 +1,99 @@
+
+
+Software Version	3.16.10
+
+
+
+Experiment File Path:	C:\Users\bnext\Documents\Biotek\experiments\20250515-cytation5-pierce660-redteam.xpt
+Protocol File Path:	C:\Users\bnext\Documents\Biotek\protocols\cytation5-pierce660.prt
+
+
+
+Plate Number	Plate 1
+Date	5/15/2025
+Time	2:21:21 PM
+Reader Type:	Cytation5
+Reader Serial Number:	1705168
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	96 WELL PLATE (Use plate lid)
+Eject plate on completion	
+Read	660-PreShake
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+Shake	Orbital: 1:00 (MM:SS)
+	Frequency: 425 cpm (3 mm)
+Read	660-PostShake
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+Delay	0:05:00 (HH:MM:SS)
+Read	660-Assay
+	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  660
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	SPL1:8	SPL2:8	SPL3:8	SPL4:8		SPL4:8	STD8	STD8	STD8		STDB8	STDB8	Well ID
+	128	128	128	128		128	0	0	0		0	0	Conc/Dil
+B	SPL1:7	SPL2:7	SPL3:7	SPL4:7		SPL4:7	STD7	STD7	STD7		STDB7	STDB7	Well ID
+	64	64	64	64		64	125	125	125		31.25	31.25	Conc/Dil
+C	SPL1:6	SPL2:6	SPL3:6	SPL4:6		SPL4:6	STD6	STD6	STD6		STDB6	STDB6	Well ID
+	32	32	32	32		32	250	250	250		62.5	62.5	Conc/Dil
+D	SPL1:5	SPL2:5	SPL3:5	SPL4:5		SPL4:5	STD5	STD5	STD5		STDB5	STDB5	Well ID
+	16	16	16	16		16	500	500	500		125	125	Conc/Dil
+E	SPL1:4	SPL2:4	SPL3:4	SPL4:4		SPL4:4	STD4	STD4	STD4		STDB4	STDB4	Well ID
+	8	8	8	8		8	750	750	750		250	250	Conc/Dil
+F	SPL1:3	SPL2:3	SPL3:3	SPL4:3		SPL5:3	STD3	STD3	STD3		STDB3	STDB3	Well ID
+	4	4	4	4		4	1000	1000	1000		500	500	Conc/Dil
+G	SPL1:2	SPL2:2	SPL3:2	SPL4:2		SPL5:2	STD2	STD2	STD2		STDB2	STDB2	Well ID
+	2	2	2	2		2	1500	1500	1500		1000	1000	Conc/Dil
+H	SPL1:1	SPL2:1	SPL3:1	SPL4:1		SPL5:1	STD1	STD1	STD1		STDB1	STDB1	Well ID
+	1	1	1	1		1	2000	2000	2000		2000	2000	Conc/Dil
+
+
+
+Actual Temperature:	23.3
+
+
+
+Actual Temperature:	23.3
+
+
+
+Actual Temperature:	23.3
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.123	0.118	0.115	0.162		0.135	0.097	0.100	0.101		0.099	0.097	660-PreShake:660
+	0.127	0.120	0.117	0.181		0.143	0.098	0.100	0.102		0.100	0.098	660-PostShake:660
+	0.132	0.125	0.122	0.210		0.154	0.101	0.103	0.105		0.103	0.100	660-Assay:660
+B	0.149	0.143	0.138	0.203		0.164	0.114	0.126	0.115		0.101	0.102	660-PreShake:660
+	0.153	0.149	0.143	0.225		0.180	0.126	0.132	0.117		0.103	0.104	660-PostShake:660
+	0.161	0.158	0.155	0.286		0.207	0.148	0.151	0.124		0.109	0.111	660-Assay:660
+C	0.197	0.189	0.175	0.253		0.208	0.129	0.151	0.121		0.131	0.131	660-PreShake:660
+	0.201	0.205	0.183	0.281		0.232	0.147	0.163	0.122		0.140	0.142	660-PostShake:660
+	0.223	0.239	0.214	0.374		0.285	0.185	0.200	0.133		0.172	0.170	660-Assay:660
+D	0.264	0.255	0.228	0.312		0.284	0.166	0.193	0.175		0.167	0.142	660-PreShake:660
+	0.279	0.266	0.247	0.344		0.307	0.198	0.216	0.195		0.183	0.161	660-PostShake:660
+	0.337	0.325	0.309	0.444		0.396	0.270	0.280	0.257		0.234	0.207	660-Assay:660
+E	0.351	0.290	0.312	0.387		0.333	0.196	0.230	0.143		0.202	0.172	660-PreShake:660
+	0.360	0.313	0.336	0.427		0.362	0.244	0.272	0.174		0.225	0.203	660-PostShake:660
+	0.463	0.412	0.427	0.529		0.482	0.334	0.358	0.196		0.297	0.266	660-Assay:660
+F	0.449	0.343	0.372	0.422		0.471	0.242	0.243	0.200		0.246	0.245	660-PreShake:660
+	0.471	0.381	0.400	0.461		0.494	0.299	0.272	0.229		0.280	0.278	660-PostShake:660
+	0.575	0.513	0.513	0.581		0.599	0.405	0.358	0.310		0.382	0.373	660-Assay:660
+G	0.547	0.449	0.428	0.486		0.488	0.275	0.320	0.291		0.345	0.323	660-PreShake:660
+	0.591	0.465	0.472	0.539		0.543	0.345	0.346	0.342		0.398	0.376	660-PostShake:660
+	0.681	0.586	0.587	0.687		0.648	0.470	0.460	0.479		0.530	0.499	660-Assay:660
+H	0.551	0.542	0.445	0.550		0.511	0.407	0.478	0.377		0.404	0.405	660-PreShake:660
+	0.637	0.547	0.492	0.605		0.580	0.452	0.486	0.417		0.429	0.411	660-PostShake:660
+	0.715	0.660	0.615	0.773		0.676	0.583	0.588	0.552		0.551	0.549	660-Assay:660
+

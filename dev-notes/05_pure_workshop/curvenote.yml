@@ -1,0 +1,70 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-09_pure-workshop
+  # Ensure your title is the same as in your `main.md`
+  title: "Nucleus OnePot PURE workshop"
+  subtitle:  
+  description: "Nucleus OnePot PURE workshop"
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: OnePot Workshop
+      email: build@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - b.next
+      corresponding: true
+  keywords:
+    - Nucleus Labs
+    - Workshop
+    - Cytosols
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-05-23
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: experiments/20250512-OPWS-day1/3-analysis/nucleus-pure-energy-mix.ipynb
+    - file: experiments/20250513-OPWS-day2/3-analysis/nucleus-pure-protein-mix.ipynb
+    - file: experiments/20250514-OPWS-day3/3-analysis/nucleus-pure-protein-debug.ipynb
+    - file: experiments/20250515-OPWS-day4/3-analysis/nucleus-pure-tRNA-dialysis.ipynb
+    - file: experiments/20250516-OPWS-day5/3-analysis/nucleus-pure-ribosomes.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: 2025-pure-workshop.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experimental/**/*
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+site:
+  template: article-theme
+  nav: []

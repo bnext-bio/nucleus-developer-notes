@@ -1,0 +1,94 @@
+Procedure Summary
+
+Plate Type	96 WELL PLATE (Use plate lid)
+Eject plate on completion	
+Read	Read:  660-PreShake (A) 660
+Shake	Shake: Orbital for 1:00
+Read	Read:  660-PostShake (A) 660
+Delay	Delay for 0:05:00
+Read	Read:  660-Assay (A) 660
+
+Pierce660
+
+Protocol File Name	Experiment File Name	Well	Well ID	Name	Conc/Dil type	Conc/Dil	Unit	660-PreShake:660	660-PostShake:660	660-Assay:660
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H1	SPL1		Dil.	1		0.551	0.637	0.715
+		G1			Dil.	2		0.547	0.591	0.681
+		F1			Dil.	4		0.449	0.471	0.575
+		E1			Dil.	8		0.351	0.360	0.463
+		D1			Dil.	16		0.264	0.279	0.337
+		C1			Dil.	32		0.197	0.201	0.223
+		B1			Dil.	64		0.149	0.153	0.161
+		A1			Dil.	128		0.123	0.127	0.132
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H7	STD1		Conc.	2000	ug/mL	0.407	0.452	0.583
+		H8			Conc.	2000	ug/mL	0.478	0.486	0.588
+		H9			Conc.	2000	ug/mL	0.377	0.417	0.552
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	G7	STD2		Conc.	1500	ug/mL	0.275	0.345	0.470
+		G8			Conc.	1500	ug/mL	0.320	0.346	0.460
+		G9			Conc.	1500	ug/mL	0.291	0.342	0.479
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	F7	STD3		Conc.	1000	ug/mL	0.242	0.299	0.405
+		F8			Conc.	1000	ug/mL	0.243	0.272	0.358
+		F9			Conc.	1000	ug/mL	0.200	0.229	0.310
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	E7	STD4		Conc.	750	ug/mL	0.196	0.244	0.334
+		E8			Conc.	750	ug/mL	0.230	0.272	0.358
+		E9			Conc.	750	ug/mL	0.143	0.174	0.196
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	D7	STD5		Conc.	500	ug/mL	0.166	0.198	0.270
+		D8			Conc.	500	ug/mL	0.193	0.216	0.280
+		D9			Conc.	500	ug/mL	0.175	0.195	0.257
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	C7	STD6		Conc.	250	ug/mL	0.129	0.147	0.185
+		C8			Conc.	250	ug/mL	0.151	0.163	0.200
+		C9			Conc.	250	ug/mL	0.121	0.122	0.133
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	B7	STD7		Conc.	125	ug/mL	0.114	0.126	0.148
+		B8			Conc.	125	ug/mL	0.126	0.132	0.151
+		B9			Conc.	125	ug/mL	0.115	0.117	0.124
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	A7	STD8		Conc.	0	ug/mL	0.097	0.098	0.101
+		A8			Conc.	0	ug/mL	0.100	0.100	0.103
+		A9			Conc.	0	ug/mL	0.101	0.102	0.105
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H2	SPL2		Dil.	1		0.542	0.547	0.660
+		G2			Dil.	2		0.449	0.465	0.586
+		F2			Dil.	4		0.343	0.381	0.513
+		E2			Dil.	8		0.290	0.313	0.412
+		D2			Dil.	16		0.255	0.266	0.325
+		C2			Dil.	32		0.189	0.205	0.239
+		B2			Dil.	64		0.143	0.149	0.158
+		A2			Dil.	128		0.118	0.120	0.125
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H11	STDB1		Conc.	2000	ug/mL	0.404	0.429	0.551
+		H12			Conc.	2000	ug/mL	0.405	0.411	0.549
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	G11	STDB2		Conc.	1000	ug/mL	0.345	0.398	0.530
+		G12			Conc.	1000	ug/mL	0.323	0.376	0.499
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	F11	STDB3		Conc.	500	ug/mL	0.246	0.280	0.382
+		F12			Conc.	500	ug/mL	0.245	0.278	0.373
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	E11	STDB4		Conc.	250	ug/mL	0.202	0.225	0.297
+		E12			Conc.	250	ug/mL	0.172	0.203	0.266
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	D11	STDB5		Conc.	125	ug/mL	0.167	0.183	0.234
+		D12			Conc.	125	ug/mL	0.142	0.161	0.207
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	C11	STDB6		Conc.	62.5	ug/mL	0.131	0.140	0.172
+		C12			Conc.	62.5	ug/mL	0.131	0.142	0.170
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	B11	STDB7		Conc.	31.25	ug/mL	0.101	0.103	0.109
+		B12			Conc.	31.25	ug/mL	0.102	0.104	0.111
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	A11	STDB8		Conc.	0	ug/mL	0.099	0.100	0.103
+		A12			Conc.	0	ug/mL	0.097	0.098	0.100
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H3	SPL3		Dil.	1		0.445	0.492	0.615
+		G3			Dil.	2		0.428	0.472	0.587
+		F3			Dil.	4		0.372	0.400	0.513
+		E3			Dil.	8		0.312	0.336	0.427
+		D3			Dil.	16		0.228	0.247	0.309
+		C3			Dil.	32		0.175	0.183	0.214
+		B3			Dil.	64		0.138	0.143	0.155
+		A3			Dil.	128		0.115	0.117	0.122
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H4	SPL4		Dil.	1		0.550	0.605	0.773
+		G4			Dil.	2		0.486	0.539	0.687
+		F4			Dil.	4		0.422	0.461	0.581
+		E4			Dil.	8		0.387	0.427	0.529
+		E6			Dil.	8		0.333	0.362	0.482
+		D4			Dil.	16		0.312	0.344	0.444
+		D6			Dil.	16		0.284	0.307	0.396
+		C4			Dil.	32		0.253	0.281	0.374
+		C6			Dil.	32		0.208	0.232	0.285
+		B4			Dil.	64		0.203	0.225	0.286
+		B6			Dil.	64		0.164	0.180	0.207
+		A4			Dil.	128		0.162	0.181	0.210
+		A6			Dil.	128		0.135	0.143	0.154
+cytation5-pierce660	20250515-cytation5-pierce660-redteam.xpt	H6	SPL5		Dil.	1		0.511	0.580	0.676
+		G6			Dil.	2		0.488	0.543	0.648
+		F6			Dil.	4		0.471	0.494	0.599
+
