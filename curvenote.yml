@@ -15,6 +15,7 @@ project:
     - file: index.md
     #- file: glossary.md
     - file: contribute.md
+    - file: collections.md
   exclude:
     - dev-notes
   plugins:
