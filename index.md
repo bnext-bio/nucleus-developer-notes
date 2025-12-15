@@ -12,7 +12,30 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 9
+:limit: 2
+:::
+
+
+# DevCells
+
+## Node - Chicago
+:::{cn:articles}
+:venue: bnext-devnotes
+:collection: devcells-node-chicago
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
+:limit: 2
+:::
+
+## Node - London
+:::{cn:articles}
+:venue: bnext-devnotes
+:collection: devcells-node-london
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
+:limit: 2
 :::
 
 # Community
@@ -22,7 +45,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 5
+:limit: 2
 :::
 
 
