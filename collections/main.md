@@ -1,4 +1,14 @@
-# Core
+---
+title: "Collections"
+site:
+  options:
+    hide_outline: true
+---
+
+
+
+
+<!-- # Core
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: nucleus-core
@@ -38,4 +48,4 @@
 :show-date: true
 :show-kind: true
 :limit: 5
-:::
+::: -->
