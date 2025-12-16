@@ -15,7 +15,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 2
+:limit: 9
 :::
 
 
