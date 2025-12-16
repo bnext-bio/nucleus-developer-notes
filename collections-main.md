@@ -32,9 +32,8 @@ See all ***Core*** DevNotes [here](collections-core.md)
 
 ***
 
-## Developer Cell Developer Notes
-
-Developer Cell Developer Notes are DevNotes from the Developer Cell Network, an effort to scale collaborative synthetic cell engineering from 2 to 25 nodes throught the development of tangible demonstrations.
+:::{card} Developer Cell Developer Notes
+:header: Developer Cell Developer Notes are DevNotes from the Developer Cell Network, an effort to scale collaborative synthetic cell engineering to many nodes throught the development of tangible demonstrations.
 
 ### Node: Chicago
 
@@ -65,6 +64,8 @@ Developer Notes from the London Node.
 :::
 
 See all ***Node: London*** DevNotes [here](collections-devcell-node-london.md)
+
+:::
 
 ***
 
