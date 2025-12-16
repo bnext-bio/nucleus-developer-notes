@@ -68,5 +68,6 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :show-date: true
 :show-kind: true
 :limit: 1
+:::
 
 See all ***Community*** DevNotes [here](collections-contrib.md)
