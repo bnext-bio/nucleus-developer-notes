@@ -10,6 +10,8 @@ Nucleus Developer Notes hosts several collections of DevNotes that represent con
 
 ## Core
 
+DevNotes from the Core development team at b.next.
+
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: nucleus-core
