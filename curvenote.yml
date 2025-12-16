@@ -20,7 +20,7 @@ project:
     - file: collections-contrib.md
     #- file: glossary.md
     - file: contribute.md
-      hidden: true
+      # hidden: true
 
   exclude:
     - dev-notes

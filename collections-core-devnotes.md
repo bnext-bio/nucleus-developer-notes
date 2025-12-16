@@ -13,4 +13,5 @@ Dev Notes from the Core Development team at b.next. The underlying protocols, ma
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
+:limit: 9
 :::
