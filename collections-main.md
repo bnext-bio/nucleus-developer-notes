@@ -10,7 +10,7 @@ Nucleus Developer Notes hosts several collections of DevNotes that represent con
 <!-- 
 ## Core Developer Notes -->
 
-:::{idea} Core
+:::{tip} Core
 :icon: false
 
 Core Developer Notes are DevNotes that from the Core Development Team at b.next. 
