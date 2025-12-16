@@ -8,7 +8,7 @@ title: "Collections"
 # Collections
 Nucleus Developer Notes hosts several collections of DevNotes that represent contributions from across the Nucleus Developer Ecosystem.
 
-## Core Developer Notes
+## Core
 
 :::{cn:articles}
 :venue: bnext-devnotes
@@ -23,7 +23,9 @@ See all ***Core*** DevNotes [here](collections-core.md)
 
 ***
 
-## Developer Cell Developer Notes
+## Developer Cells
+
+DevNotes from the Developer Cell Network, a group of multi-team nodes building shared capacities for engineering synthetic cells at scale.
 
 ### Node: Chicago
 
@@ -54,8 +56,6 @@ Developer Notes from the London Node.
 :::
 
 See all ***Node: London*** DevNotes [here](collections-devcell-node-london.md)
-
-:::
 
 ***
 
