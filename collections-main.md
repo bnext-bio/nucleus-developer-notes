@@ -30,6 +30,8 @@ Core Developer Notes are DevNotes that from the Core Development Team at b.next.
 
 See all ***Core*** DevNotes [here](collections-core.md) 
 
+***
+
 ## Developer Cell Developer Notes
 
 Developer Cell Developer Notes are DevNotes from the Developer Cell Network, an effort to scale collaborative synthetic cell engineering from 2 to 25 nodes throught the development of tangible demonstrations.
@@ -63,6 +65,8 @@ Developer Notes from the London Node.
 :::
 
 See all ***Node: London*** DevNotes [here](collections-devcell-node-london.md)
+
+***
 
 ## Community
 
