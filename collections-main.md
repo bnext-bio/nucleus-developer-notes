@@ -7,10 +7,17 @@ title: "Collections"
 
 # Collections
 Nucleus Developer Notes hosts several collections of DevNotes that represent contributions from across the Nucleus Developer Ecosystem.
+<!-- 
+## Core Developer Notes -->
 
-## Core Developer Notes
+:::{idea} Core
+:icon: false
 
 Core Developer Notes are DevNotes that from the Core Development Team at b.next. 
+:::
+
+
+
 
 :::{cn:articles}
 :venue: bnext-devnotes
