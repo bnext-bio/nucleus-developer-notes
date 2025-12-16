@@ -1,9 +1,9 @@
 ---
 title: "Node: London"
 subtitle: "Developer Notes from the London Node"
-site:
-  options:
-    hide_outline: true
+# site:
+#   options:
+#     hide_outline: true
 ---
 
 :::{cn:articles}

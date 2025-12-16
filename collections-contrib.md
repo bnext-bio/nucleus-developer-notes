@@ -1,9 +1,9 @@
 ---
 title: "Community Contributions"
 subtitle: "Developer Notes from the Community"
-site:
-  options:
-    hide_outline: true
+# site:
+#   options:
+#     hide_outline: true
 ---
 
 

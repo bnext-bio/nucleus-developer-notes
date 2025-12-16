@@ -1,9 +1,8 @@
 ---
 title: "Collections"
-site:
-  options:
-    hide-toc: true
-    # hide_outline: true
+# site:
+#   options:
+#     hide-toc: true
 ---
 
 # Collections

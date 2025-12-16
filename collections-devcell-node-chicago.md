@@ -1,9 +1,9 @@
 ---
 title: "Node: Chicago"
 subtitle: "Developer Notes from the Chicago Node"
-site:
-  options:
-    hide_outline: true
+# site:
+#   options:
+#     hide_outline: true
 ---
 
 :::{cn:articles}
