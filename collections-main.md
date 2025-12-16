@@ -21,7 +21,7 @@ Core Developer Notes are DevNotes that from the Core Development Team at b.next.
 :limit: 1
 :::
 
-- See all ***Core*** DevNotes [here](collections-core.md) 
+See all ***Core*** DevNotes [here](collections-core.md) 
 
 ## Developer Cell Developer Notes
 
@@ -40,7 +40,7 @@ Developer Notes from the Chicago Node.
 :limit: 1
 :::
 
-- See all ***Node: Chicago*** DevNotes [here](collections-devcell-node-chicago.md)
+See all ***Node: Chicago*** DevNotes [here](collections-devcell-node-chicago.md)
 
 ### Node: London
 
@@ -55,7 +55,7 @@ Developer Notes from the London Node.
 :limit: 1
 :::
 
-- See all ***Node: Chicago*** DevNotes [here](collections-devcell-node-london.md)
+See all ***Node: London*** DevNotes [here](collections-devcell-node-london.md)
 
 ## Community
 
@@ -69,4 +69,4 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :show-kind: true
 :limit: 1
 
-- See all ***Community*** DevNotes [here](collections-contrib.md)
+See all ***Community*** DevNotes [here](collections-contrib.md)
