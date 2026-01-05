@@ -16,11 +16,11 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 9
+:limit: 5
 :::
 
 
-# DevCells
+<!-- # DevCells
 
 ## Node: Chicago
 :::{cn:articles}
@@ -40,7 +40,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-date: true
 :show-kind: true
 :limit: 2
-:::
+::: -->
 
 # Community
 :::{cn:articles}

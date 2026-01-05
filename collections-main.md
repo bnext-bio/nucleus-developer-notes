@@ -25,7 +25,7 @@ See all ***Core*** DevNotes [here](collections-core.md)
 
 ***
 
-## Developer Cells
+<!-- ## Developer Cells
 
 DevNotes from the Developer Cell Network, a group of multi-team nodes building shared capacities for engineering synthetic cells at scale.
 
@@ -59,7 +59,7 @@ Developer Notes from the London Node.
 
 See all ***Node: London*** DevNotes [here](collections-devcell-node-london.md)
 
-***
+*** -->
 
 ## Community
 
