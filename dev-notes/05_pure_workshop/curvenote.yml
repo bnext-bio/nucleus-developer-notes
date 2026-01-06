@@ -10,9 +10,8 @@ project:
   authors:
     - name: OnePot Workshop
       email: build@bnext.bio
-      orcid: 0000-0000-0000-0001
       affiliations:
-        - b.next
+        - Nucleus Labs
       corresponding: true
   keywords:
     - Nucleus Labs
@@ -26,7 +25,7 @@ project:
   references:
     devnotes: https://devnotes.bnext.bio
   # Set an initial publisation date for the note
-  date: 2025-05-23
+  date: 2025-08-01
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
   # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
