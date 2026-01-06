@@ -1,0 +1,12 @@
+{
+  "name": "bnext-examples",
+  "version": "0.0.0",
+  "description": "Minimal package file for dependencies only.",
+  "type": "module",
+  "author": "Steve Purves <steve@curvenote.com>",
+  "license": "MIT",
+  "dependencies": {
+    "seqparse": "^0.2.1",
+    "unist-builder": "^4.0.0"
+  }
+}

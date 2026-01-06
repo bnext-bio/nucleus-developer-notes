@@ -1,0 +1,4 @@
+,Date,Experiment Name,Well,Name,Sample Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (ng/uL),[Mg-Ace] (mM),[polyP] (mM),[PPK2] (uM),[Optiprep] (mg/uL),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),Optiprep Vol (uL),RNase Inhib Vol (uL),Water vol (uL),Rxn Volume (uL)
+0,20251119,20251119-nucleus-liposome,F15,Nucleus Base Cell,Sample,AR-829,15,AR-699,10,4xSMix,AR-837,35,AR-889,231,200,500,57,1.32,4.8,7.2,10,4,0.95,,,1.6000000000000000,1.33,0,10.120000000000000,40
+1,20251119,20251119-nucleus-liposome,F17,PURExpress Base Cell,Control,Sol B,,Sol B,,Sol A,Sol A,,AR-889,231,200,500,57,1.32,12.0,0.0,16,0,0.95,,,0.0,1.33,0,9.720000000000000,40
+2,20251119,20251119-ammonium-acetate-liposome,F18,Ammonium Acetate Cell,Sample,Sol B,,Sol B,,Sol A,Sol A,,AR-889,231,200,500,57,1.32,12.0,0.0,16,0,0.95,,,0.0,1.33,2,7.720000000000000,40

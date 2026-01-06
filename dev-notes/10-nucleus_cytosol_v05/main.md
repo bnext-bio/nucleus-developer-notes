@@ -2,12 +2,12 @@
 # Ensure that this title is the same as the one in `myst.yml`
 title: "First Nucleus Cytosol Testing"
 abstract: |
- PURE serves as a foundational platform for constructing synthetic cells from the bottom up. In this Developer Note, we present the first evaluation of Nucleus Cytosol v0.5, an open-source PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system. Our results show that Nucleus Cytosol performs comparably, with optimal protein expression achieved at a final Mg$^{2+}$ concentration of 8 mM. 
+ PURE serves as a foundational platform for constructing synthetic cells from the bottom up. In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system. Our results show that Nucleus Cytosol performs comparably, with optimal protein expression achieved at a final Mg$^{2+}$ concentration of 8 mM. 
 ---
 
 # Overview
 
-The cytosol is the internal compartment of a synthetic cell containing proteins, RNAs, small organic molecules, and salts that collectively define its biochemical environment and support user-defined biological functions {ref}`illustration`. Nucleus Cytosol is based on the PURE system, consisting of a defined set of proteins and small molecules that reconstitute the essential transcription and translation machinery required for protein synthesis from DNA templates [[Shimizu *et al.* 2001](https://doi.org/10.1038/90802)]. Nucleus Cytosol v0.5 comprises the essential components required for *in vitro* protein synthesis: a protein mix (PMix), a small-molecule mix (SMix), A19 tRNAs, A19 ribosomes, Mg$^{2+}$ ions (magnesium acetate), and a pOpen-deGFP gene expression template driven by the T7 transcription system. 
+The cytosol is the internal compartment of a synthetic cell containing proteins, RNAs, small organic molecules, and salts that collectively define its biochemical environment and support user-defined biological functions {ref}`illustration`. Nucleus Cytosol is based on the PURE system, consisting of a defined set of proteins and small molecules that reconstitute the essential transcription and translation machinery required for protein synthesis from DNA templates [[Shimizu *et al.* 2001](https://doi.org/10.1038/90802)]. Nucleus Cytosol comprises the essential components required for *in vitro* protein synthesis: a protein mix (PMix), a small-molecule mix (SMix), A19 tRNAs, A19 ribosomes, Mg$^{2+}$ ions (magnesium acetate), and a pOpen-deGFP gene expression template driven by the T7 transcription system. 
 
 :::{figure} ./figures/illustration2.png
 :name: illustration
@@ -26,14 +26,14 @@ A schematic representation of PURE converting template DNA into a fluorescent re
 - **tRNAs and Ribosomes:** tRNAs and ribosomes are purified from the *E. coli* A19 strain, which is deficient in RNase I, an enzyme that degrades RNA. 
 
 
-- **pOpen-deGFP:** The pOpen-deGFP construct was designed to carry out deGFP expression via the T7 transcription system in Nucleus Cytosol v0.5 {ref}`seq-degfp`. The plasmid sequence is attached to this DevNote.
+- **pOpen-deGFP:** The pOpen-deGFP construct was designed to carry out deGFP expression via the T7 transcription system in Nucleus Cytosol {ref}`seq-degfp`. The plasmid sequence is attached to this DevNote.
 
-Here, we demonstrate that Nucleus Cytosol v0.5 performs comparably to commercial PURExpress system in terms of final protein yield. We also performed a magnesium acetate titration to determine the optimal Mg$^{2+}$ concentration for the system. Some component concentrations are still being standardized; therefore, detailed manufacturing protocols for each component of Nucleus Cytosol v0.5 will be released later through Nucleus Distribution.
+Here, we demonstrate that Nucleus Cytosol performs comparably to commercial PURExpress system in terms of final protein yield. We also performed a magnesium acetate titration to determine the optimal Mg$^{2+}$ concentration for the system. Some component concentrations are still being standardized; therefore, detailed manufacturing protocols for each component of Nucleus Cytosol will be released later through Nucleus Distribution.
 
 
 # Base Cytosol Composition
 
-The base composition of Nucleus Cytosol v0.5 is summarized in the following tables. Across all experiments, the listed concentrations of each component were maintained, except for those intentionally varied, which are described later in the {ref}`Results` section. The concentration of each protein in the PMix is listed in {ref}`PMix`. The PMix was prepared at a stock concentration of 15 mg/mL, with a final concentration of 1.8 mg/mL in the reaction. Ribosomes were prepared at a stock concentration of 10 $\mu$M, with a final concentration of 1.8 $\mu$M in the reaction.
+The base composition of Nucleus Cytosol is summarized in the following tables. Across all experiments, the listed concentrations of each component were maintained, except for those intentionally varied, which are described later in the {ref}`Results` section. The concentration of each protein in the PMix is listed in {ref}`PMix`. The PMix was prepared at a stock concentration of 15 mg/mL, with a final concentration of 1.8 mg/mL in the reaction. Ribosomes were prepared at a stock concentration of 10 $\mu$M, with a final concentration of 1.8 $\mu$M in the reaction.
 
 ::::::{tab-set}
 
@@ -200,4 +200,4 @@ Final protein yields of the reactions measured at steady state.
 
 # Conclusions and next steps
 
-Here, we showed that Nucleus Cytosol v0.5 performs equivalently to other commerically available PURExpress system and characterize the `pOpen-T7-deGFP` DNA template. Next steps will involve characterizing other Nucleus Modules in Cytosol v0.5.
+Here, we showed that Nucleus Cytosol performs equivalently to other commerically available PURExpress system and characterize the `pOpen-T7-deGFP` DNA template. Next steps will involve characterizing other Nucleus Modules in Cytosol.

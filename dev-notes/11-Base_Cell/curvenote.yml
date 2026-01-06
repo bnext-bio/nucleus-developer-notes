@@ -1,12 +1,12 @@
 version: 1
 project:
-  doi: 10.63765/fppr8928
+  # doi: 
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
-  id: nucleus-devnote-core-NucelusPURE_deGFP
+  id: nucleus-devnote-core-Base_Cell
   # Ensure your title is the same as in your `main.md`
-  title: 'First Nucleus Cytosol Testing'
-  subtitle: 'Evaluation of Nucleus Cytosol Through deGFP Expression'
-  description: 'Evaluation of Nucleus Cytosol Through deGFP Expression'
+  title: "Nucleus Base Cell Testing"
+  subtitle: "Evaluation of Nucleus Base Cell Through deGFP Expression"
+  description: "Evaluation of Nucleus Base Cell Through deGFP Expression" 
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: Surendra Yadav
@@ -22,6 +22,7 @@ project:
   keywords:
     - Cytosol
     - PURE
+    - Base Cell
     - Developer Cell
   # Add the abbreviations that you use in your paper here
   abbreviations:
@@ -31,7 +32,7 @@ project:
   references:
     devnotes: https://devnotes.bnext.bio
   # Set an initial publisation date for the note
-  date: 2025-11-13
+  date: 2025-12-19
   # Reference a specific thumbnail if you are not happy with the automatically selected one
   #thumbnail: thumbnail.png
   # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
@@ -39,10 +40,10 @@ project:
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.md
-    - file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb
-      title: Analysis Notebook 1
-    - file: experiments/20251107-NucleusPURE_deGFP_MgSweep/Analysis.ipynb
-      title: Analysis Notebook 2
+    #- file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb
+    #  title: Analysis Notebook 1
+    #- file: experiments/20251107-NucleusPURE_deGFP_MgSweep/Analysis.ipynb
+    #  title: Analysis Notebook 2
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
@@ -72,12 +73,12 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
-    - file: ./experiments/DevNote_Cytosol_v0.5.pdf
-      title: Lab Notebook Entry
-    - file: ./experiments/EtOH_DNA_Precipitation.pdf
-      title: DNA EtOH Precipitation
-    - file: ./plasmids/pOpen-deGFP.gb
-      title: pOpen-deGFP
+  #  - file: ./experiments/DevNote_Cytosol_v0.5.pdf
+   #   title: Lab Notebook Entry
+  #  - file: ./experiments/EtOH_DNA_Precipitation.pdf
+  #    title: DNA EtOH Precipitation
+  #  - file: ./plasmids/pOpen-deGFP.gb
+   #   title: pOpen-deGFP
 site:
   template: article-theme
   nav: []
