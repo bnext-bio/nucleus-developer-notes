@@ -1,12 +1,13 @@
 version: 1
 project:
-  # doi: 
+  doi: 10.63765/tjvg8792
+  # doi:
   # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
   id: nucleus-devnote-core-Base_Cell
   # Ensure your title is the same as in your `main.md`
-  title: "Nucleus Base Cell Testing"
-  subtitle: "Evaluation of Nucleus Base Cell Through deGFP Expression"
-  description: "Evaluation of Nucleus Base Cell Through deGFP Expression" 
+  title: 'Nucleus Base Cell Testing'
+  subtitle: 'Evaluation of Nucleus Base Cell Through deGFP Expression'
+  description: 'Evaluation of Nucleus Base Cell Through deGFP Expression'
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: Surendra Yadav
@@ -74,11 +75,11 @@ project:
     - id: article
       title: Download Article PDF
   #  - file: ./experiments/DevNote_Cytosol_v0.5.pdf
-   #   title: Lab Notebook Entry
+  #    title: Lab Notebook Entry
   #  - file: ./experiments/EtOH_DNA_Precipitation.pdf
   #    title: DNA EtOH Precipitation
   #  - file: ./plasmids/pOpen-deGFP.gb
-   #   title: pOpen-deGFP
+  #    title: pOpen-deGFP
 site:
   template: article-theme
   nav: []
