@@ -12,7 +12,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 # Latest
 :::{cn:articles}
 :venue: bnext-devnotes
-:collection: latest
+:collection: nucleus-core
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
