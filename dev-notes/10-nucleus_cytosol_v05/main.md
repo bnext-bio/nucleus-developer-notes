@@ -2,8 +2,10 @@
 # Ensure that this title is the same as the one in `myst.yml`
 title: "First Nucleus Cytosol Testing"
 abstract: |
- PURE serves as a foundational platform for constructing synthetic cells from the bottom up. In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system. Our results show that Nucleus Cytosol performs comparably, with optimal protein expression achieved at a final Mg$^{2+}$ concentration of 8 mM. 
+ PURE serves as a foundational platform for constructing synthetic cells from the bottom up. In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source alternative to the PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system. Our results show that Nucleus Cytosol performs comparably, with optimal protein expression achieved at a final Mg$^{2+}$ concentration of 8 mM. 
 ---
+
+In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system." ->"In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source  PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system
 
 # Overview
 
