@@ -79,7 +79,7 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :limit: 1
 :::
 
-:::{admonition} See all ***Core*** DevNotes [here](collections-contrib.md)
+:::{admonition} See all ***Community*** DevNotes [here](collections-contrib.md)
 :class: tip
 :icon: false
 :::
