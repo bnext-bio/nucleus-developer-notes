@@ -9,7 +9,19 @@ Developer Notes (DevNotes) are a short form of scientific communication that can
 
 If you work on synthetic cells and related systems and/or work with the Nucleus Distribution, you are invited to submit a DevNote. DevNotes are open access and open source. By contributing a DevNote you can contribute to the development of the Nucleus Distribution. Results and insights that are highly useful and/or relevant will be integrated into the Nucleus Distribution by the Core Development Team at b.next.
 
-# Core
+# Latest
+:::{cn:articles}
+:venue: bnext-devnotes
+:collection: latest
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
+:limit: 7
+:::
+
+> To see all DevNotes, explore [Collections](./collections-main.md)
+
+<!-- # Core
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: nucleus-core
@@ -17,7 +29,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-date: true
 :show-kind: true
 :limit: 5
-:::
+::: -->
 
 
 <!-- # DevCells
@@ -42,7 +54,7 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :limit: 2
 ::: -->
 
-# Community
+<!-- # Community
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: nucleus-contrib
@@ -50,6 +62,6 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :show-date: true
 :show-kind: true
 :limit: 2
-:::
+::: -->
 
 

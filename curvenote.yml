@@ -15,8 +15,8 @@ project:
     - file: index.md
     - file: collections-main.md
     - file: collections-core.md
-    - file: collections-devcell-node-chicago.md
-    - file: collections-devcell-node-london.md
+    # - file: collections-devcell-node-chicago.md
+    # - file: collections-devcell-node-london.md
     - file: collections-contrib.md
     #- file: glossary.md
     - file: contribute.md

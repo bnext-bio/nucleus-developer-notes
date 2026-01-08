@@ -21,7 +21,11 @@ DevNotes from the Core development team at b.next.
 :limit: 1
 :::
 
-See all ***Core*** DevNotes [here](collections-core.md) 
+:::{tip} See all ***Core*** DevNotes [here](collections-core.md) 
+:icon: false
+:::
+
+
 
 ***
 
@@ -74,4 +78,6 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :limit: 1
 :::
 
-See all ***Community*** DevNotes [here](collections-contrib.md)
+:::{tip} See all ***Core*** DevNotes [here](collections-contrib.md)
+:icon: false
+:::
