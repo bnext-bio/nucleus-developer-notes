@@ -5,8 +5,6 @@ abstract: |
  PURE serves as a foundational platform for constructing synthetic cells from the bottom up. In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source alternative to the PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system. Our results show that Nucleus Cytosol performs comparably, with optimal protein expression achieved at a final Mg$^{2+}$ concentration of 8 mM. 
 ---
 
-In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system." ->"In this Developer Note, we present the first evaluation of Nucleus Cytosol, an open-source  PURE system, by assessing the expression and yield of deGFP in comparison to a commercial PURE system
-
 # Overview
 
 The cytosol is the internal compartment of a synthetic cell containing proteins, RNAs, small organic molecules, and salts that collectively define its biochemical environment and support user-defined biological functions {ref}`illustration`. Nucleus Cytosol is based on the PURE system, consisting of a defined set of proteins and small molecules that reconstitute the essential transcription and translation machinery required for protein synthesis from DNA templates [[Shimizu *et al.* 2001](https://doi.org/10.1038/90802)]. Nucleus Cytosol comprises the essential components required for *in vitro* protein synthesis: a protein mix (PMix), a small-molecule mix (SMix), A19 tRNAs, A19 ribosomes, Mg$^{2+}$ ions (magnesium acetate), and a pOpen-deGFP gene expression template driven by the T7 transcription system. 
