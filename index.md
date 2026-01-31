@@ -1,9 +1,9 @@
 ---
 title: Welcome
-# site:
-#   options:
-#     hide_outline: true
-#     hide_toc: true
+site:
+  options:
+    hide_outline: true
+    hide_toc: true
 ---
 Developer Notes (DevNotes) are a short form of scientific communication that can be described in one sentence. They provide the Nucleus community with a means to rapidly share useful results and insights. Since they are built on top of Jupyter Notebooks they can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package. Continuing developments made to the [Nucleus Distribution](https://bnext.bio/nucleus) by the Core Development Team at b.next or by visiting residents and fellows at Nucleus Labs will be reported here before being integrated into the Distribution.
 
@@ -102,5 +102,3 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :class: tip
 :icon: false
 :::
-
-> To see all DevNotes, explore [Collections](./collections-main.md)
