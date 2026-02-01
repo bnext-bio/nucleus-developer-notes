@@ -7,7 +7,8 @@ subtitle: "Developer Notes from the London Node"
 ---
 
 :::{cn:articles}
-:venue: london-pinned
+:venue: bnext-devnotes
+:collection: london-pinned
 :show-thumbnails: true
 :show-date: true
 :show-kind: true

@@ -7,7 +7,8 @@ subtitle: "Developer Notes from the Chicago Node"
 ---
 
 :::{cn:articles}
-:venue: chicago-pinned
+:venue: bnext-devnotes
+:collection: chicago-pinned
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
