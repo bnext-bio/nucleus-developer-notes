@@ -11,5 +11,5 @@ site:
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 13
+:limit: 18
 :::
