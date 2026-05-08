@@ -18,6 +18,7 @@ project:
     - file: collections-devcell-node-chicago.md
     - file: collections-devcell-node-london.md
     - file: collections-contrib.md
+    - file: collections-ai-scientist.md
     #- file: glossary.md
     - file: contribute.md
       # hidden: true
