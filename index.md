@@ -102,3 +102,21 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :class: tip
 :icon: false
 :::
+
+## AI Scientist
+
+AI Scientist DevNotes are developed with an AI Scientist in the loop.
+
+:::{cn:articles}
+:venue: bnext-devnotes
+:collection: ai-scientist-pinned
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
+:limit: 1
+:::
+
+:::{admonition} See all ***AI Scientist*** DevNotes [here](collections-ai-scientist.md)
+:class: tip
+:icon: false
+:::

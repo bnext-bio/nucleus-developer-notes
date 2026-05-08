@@ -21,5 +21,5 @@ subtitle: "Developer Notes from the Chicago Node"
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
-:limit: 7
+:limit: 15
 :::

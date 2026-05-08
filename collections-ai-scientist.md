@@ -1,6 +1,6 @@
 ---
-title: "Node: London"
-subtitle: "Developer Notes from the London Node"
+title: "AI Scientist"
+subtitle: "AI Scientist DevNotes are developed with an AI Scientist in the loop."
 # site:
 #   options:
 #     hide_outline: true
@@ -8,7 +8,7 @@ subtitle: "Developer Notes from the London Node"
 
 :::{cn:articles}
 :venue: bnext-devnotes
-:collection: london-pinned
+:collection: ai-scientist-pinned
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
@@ -17,7 +17,7 @@ subtitle: "Developer Notes from the London Node"
 
 :::{cn:articles}
 :venue: bnext-devnotes
-:collection: devcells-node-london
+:collection: ai-scientist
 :show-thumbnails: true
 :show-date: true
 :show-kind: true
