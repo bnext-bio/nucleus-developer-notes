@@ -21,6 +21,7 @@ project:
     - file: collections-ai-scientist.md
     #- file: glossary.md
     - file: contribute.md
+    - file: search.html
       # hidden: true
 
   exclude:
