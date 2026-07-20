@@ -106,6 +106,24 @@ Community Developer Notes are independent contributions from across the Nucleus 
 :icon: false
 :::
 
+## Workshops and Courses
+
+DevNotes from workshops and courses that build on and contribute back to Nucleus
+
+:::{cn:articles}
+:venue: bnext-devnotes
+:collection: workshops-and-courses
+:show-thumbnails: true
+:show-date: true
+:show-kind: true
+:limit: 1
+:::
+
+:::{admonition} See all ***Workshop and Course*** DevNotes [here](collections-ai-scientist.md)
+:class: tip
+:icon: false
+:::
+
 ## AI Scientist
 
 AI Scientist DevNotes are developed with an AI Scientist in the loop.
