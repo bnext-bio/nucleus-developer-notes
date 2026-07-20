@@ -119,7 +119,7 @@ DevNotes from workshops and courses that build on and contribute back to Nucleus
 :limit: 1
 :::
 
-:::{admonition} See all ***Workshop and Course*** DevNotes [here](collections-ai-scientist.md)
+:::{admonition} See all ***Workshop and Course*** DevNotes [here](collections-workshops-and-courses.md)
 :class: tip
 :icon: false
 :::
