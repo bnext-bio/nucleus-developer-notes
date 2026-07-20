@@ -8,7 +8,7 @@ description: please add for social previews
 The Nucleus Community Contributions contains modules, documentation, and protocols shared by contributors in the community and outside of the main Nucleus distribution.
 
 :::{warning} Important
- Popular contributions might be integrated into the Core distribution with materials being made available under OpenMTA. Reach out to us if you’d like to share your work!
+ Popular contributions might be integrated into the Core distribution with materials being made available under OpenMTA. Reach out to us if you’d like to share your work! Some contributions may have patent rights.
 :::
 
 :::{cn:articles}
