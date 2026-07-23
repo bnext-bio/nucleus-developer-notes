@@ -9,6 +9,13 @@ Developer Notes (DevNotes) are a short form of scientific communication that can
 
 If you work on synthetic cells and related systems and/or work with the Nucleus Distribution, you are invited to submit a DevNote. DevNotes are open access and open source. By contributing a DevNote you can contribute to the development of the Nucleus Distribution. Results and insights that are highly useful and/or relevant will be integrated into the Nucleus Distribution by the Core Development Team at b.next.
 
+:::{attention}
+**Heads up:** We're upgrading the [Nucleus CDK](https://pypi.org/project/nucleus-cdk/), and this introduces a breaking change that will cause analysis workflows in some Developer Notes to fail to run. We expect the DevNotes to be updated to match by **August 1, 2026**.
+
+If you hit this before then, comment out the existing `pip install` cell and use `!pip install nucleus-cdk==0.5.0rc2 | tail -n2` instead.
+:::
+
+
 :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
 :::
 
