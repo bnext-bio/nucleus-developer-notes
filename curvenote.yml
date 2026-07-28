@@ -34,4 +34,3 @@ site:
     - bnextbio-devnotes_landing.curve.space
   options:
     analytics_plausible: devnotes.nucleus.engineering
-    search: true
