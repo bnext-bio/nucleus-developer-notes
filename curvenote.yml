@@ -8,7 +8,7 @@ project:
   thumbnail: default-thumb.png
   description: please add for social previews
   github: https://github.com/bnext-bio/nucleus-developer-notes
-  license: CC-NY-4.0
+  license: CC-BY-4.0
   open_access: true
   venue: Nucleus
   toc:
