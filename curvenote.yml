@@ -23,6 +23,8 @@ project:
     #- file: glossary.md
     - file: contribute.md
       # hidden: true
+    - file: devstudio.md
+      hidden: true
 
   exclude:
     - dev-notes
@@ -45,3 +47,4 @@ site:
       url: https://docs.nucleus.engineering/start/contribute/
   options:
     analytics_plausible: devnotes.nucleus.engineering
+  css: custom.css
