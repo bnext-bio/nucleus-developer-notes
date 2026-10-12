@@ -1,23 +1,47 @@
-# This file was created automatically with `myst init --gh-curvenote` 🪄 💚
+# Based on `myst init --gh-curvenote` and curvenote/action-myst-publish, with its steps written
+# out here so the DevNotes network can be built (and today's notes cached into it) before
+# the site builds: the action checks the repo out again, which would remove the build.
 
 name: Landing Site Deploy
 on:
   push:
     # Runs on pushes targeting the default branch
     branches: [main]
+  # Run by hand to refresh the notes cached into the landing page
+  workflow_dispatch:
 permissions:
   # Sets permissions of the GITHUB_TOKEN to allow read of private repos
   contents: read
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      CURVENOTE_TOKEN: ${{ secrets.CURVENOTE_TOKEN }}
     steps:
-      - name: Deploy 🚀
-        uses: curvenote/action-myst-publish@v1
-        env:
-          CURVENOTE_TOKEN: ${{ secrets.CURVENOTE_TOKEN }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: oven-sh/setup-bun@v2
+      - name: Build the DevNotes network, with today's notes cached in
+        working-directory: widgets/devnotes-network
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+      - name: Install imagemagick, inkscape, and webp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape imagemagick webp
+      - name: Install the Curvenote CLI
+        run: |
+          npm install -g curvenote
+          curvenote -v
+      - name: Build all content
+        run: curvenote build -d --all
+      - name: Deploy the site 🚀
+        run: curvenote deploy -y -d --ci
