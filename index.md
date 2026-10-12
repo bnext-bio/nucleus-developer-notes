@@ -16,21 +16,12 @@ site:
 Build synthetic cells that work
 :::
 
-Developer Notes (DevNotes) are a short form of scientific communication that can be described in one sentence. They provide the Nucleus community with a means to rapidly share useful results and insights. Since they are built on top of Jupyter Notebooks they can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package. Continuing developments made to the [Nucleus Distribution](https://bnext.bio/nucleus) by the Core Development Team at b.next or by visiting residents and fellows at Nucleus Labs will be reported here before being integrated into the Distribution.
+Developer Notes (DevNotes) are a short form of scientific communication that can be described in one sentence. They provide the Nucleus community with a means to rapidly share useful results and insights. DevNotes are built on top of Jupyter Notebooks. This lets them easily integrate code and a variety of file types, and each DevNote bundles an entire research workflow into one discrete package. The Core Development Team at b.next makes ongoing developments to the [Nucleus Distribution](https://bnext.bio/nucleus). Visiting residents and fellows at Nucleus Labs also contribute developments. This site will report them here before they join the Distribution.
 
 If you work on synthetic cells and related systems and/or work with the Nucleus Distribution, you are invited to submit a DevNote. DevNotes are open access and open source. By contributing a DevNote you can contribute to the development of the Nucleus Distribution. Results and insights that are highly useful and/or relevant will be integrated into the Nucleus Distribution by the Core Development Team at b.next.
 
 
 :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
-:::
-
-# Who writes DevNotes
-
-Everyone who has written a DevNote, joined to the people they wrote it with. Find yourself, pick a lab to see its people, and look out for new contributors in green.
-
-:::{anywidget} widgets/devnotes-network.mjs
-:class: col-page-right
-{ "site": "bnext-devnotes", "height": 640 }
 :::
 
 # Latest
