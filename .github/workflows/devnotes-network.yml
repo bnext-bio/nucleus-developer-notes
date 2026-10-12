@@ -1,0 +1,21 @@
+name: DevNotes network
+on:
+  pull_request:
+    paths: ['widgets/devnotes-network/**', '.github/workflows/devnotes-network.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: widgets/devnotes-network
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun run lint
+      - run: bun run lint:format
+      - run: bun test
+      - run: bun run build

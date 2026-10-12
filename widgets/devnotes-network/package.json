@@ -1,0 +1,25 @@
+{
+  "name": "devnotes-network",
+  "private": true,
+  "type": "module",
+  "description": "Who writes DevNotes: the co-authorship network on the landing page, as an anywidget.",
+  "scripts": {
+    "build": "bun run build.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:format": "prettier --check ."
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/bun": "^1.2.0",
+    "@types/d3-force": "^3.0.10",
+    "eslint": "^9.17.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.18.0"
+  }
+}

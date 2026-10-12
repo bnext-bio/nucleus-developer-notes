@@ -24,6 +24,15 @@ If you work on synthetic cells and related systems and/or work with the Nucleus 
 :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
 :::
 
+# Who writes DevNotes
+
+Everyone who has written a DevNote, joined to the people they wrote it with. Find yourself, pick a lab to see its people, and look out for new contributors in green.
+
+:::{anywidget} widgets/devnotes-network.mjs
+:class: col-page-right
+{ "site": "bnext-devnotes", "height": 640 }
+:::
+
 # Latest
 :::{cn:articles}
 :venue: bnext-devnotes

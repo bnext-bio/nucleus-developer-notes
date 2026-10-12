@@ -2,3 +2,6 @@ _build/
 .ipynb_checkpoints/
 .DS_Store
 __pycache__/
+# Built by widgets/devnotes-network (`bun run build`), in CI before the site builds
+widgets/devnotes-network.mjs
+node_modules/
