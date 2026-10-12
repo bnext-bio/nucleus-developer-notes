@@ -24,7 +24,6 @@ project:
     - file: contribute.md
       # hidden: true
     - file: devstudio.md
-      hidden: true
 
   exclude:
     - dev-notes
