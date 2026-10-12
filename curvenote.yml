@@ -24,6 +24,7 @@ project:
     - file: contribute.md
       # hidden: true
     - file: devstudio.md
+    - file: graph.md
 
   exclude:
     - dev-notes
