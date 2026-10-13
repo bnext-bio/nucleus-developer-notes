@@ -8,6 +8,11 @@ site:
     hide_outline: true
 ---
 
+:::{admonition} These DevNotes were produced during DevStudio (9/23/2026 - 10/11/2026) and are still being actively updated.
+:class: warning
+:icon: false
+:::
+
 :::{cn:articles}
 :venue: bnext-devnotes
 :collection: devstudio-2026
