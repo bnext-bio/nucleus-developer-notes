@@ -1,7 +1,7 @@
 ---
 title: The Nucleus Glossary
 short_title: Glossary
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 ---
 

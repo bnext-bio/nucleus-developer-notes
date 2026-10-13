@@ -1,7 +1,7 @@
 ---
 title: "DevNotes Network"
 subtitle: "Who writes DevNotes"
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 site:
   options:

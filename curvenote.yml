@@ -5,7 +5,7 @@ project:
     devnotes: https://devnotes.bnext.bio
     mystmd: https://mystmd.org/guide
   title: Nucleus Developer Notes
-  thumbnail: default-thumb.png
+  thumbnail: thumbnail-cells.png
   description: please add for social previews
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0

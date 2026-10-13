@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
 short_title: FAQs
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 ---
