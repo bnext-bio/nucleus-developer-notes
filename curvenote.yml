@@ -25,6 +25,7 @@ project:
       # hidden: true
     - file: devstudio.md
     - file: graph.md
+    - file: validation.md
 
   exclude:
     - dev-notes
