@@ -1,6 +1,6 @@
 ---
 title: "Validation"
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 site:
   options:

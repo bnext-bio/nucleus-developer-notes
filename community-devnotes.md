@@ -1,7 +1,7 @@
 ---
 title: Notes from the Community
 short_title: Community
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 ---
 

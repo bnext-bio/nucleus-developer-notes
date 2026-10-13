@@ -1,7 +1,7 @@
 ---
 title: Notes from the Core Team
 short_title: Core
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 ---
 

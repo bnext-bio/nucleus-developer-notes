@@ -1,7 +1,7 @@
 ---
 title: Submit a Community Development Note
 short_title: Submit
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 ---
 

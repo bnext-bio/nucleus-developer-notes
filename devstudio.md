@@ -1,7 +1,7 @@
 ---
 title: "DevStudio 2026"
 subtitle: "DevNotes in progress"
-thumbnail: default-thumb.png
+thumbnail: thumbnail-cells.png
 description: please add for social previews
 site:
   options:
