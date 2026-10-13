@@ -15,3 +15,8 @@ site:
 :show-kind: true
 :limit: 18
 :::
+
+:::{anywidget} widgets/devnotes-network.mjs
+:class: col-page-right
+{ "site": "bnext-devnotes", "height": 800 }
+:::
