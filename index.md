@@ -16,22 +16,13 @@ site:
 Build synthetic cells that work
 :::
 
-Developer Notes (DevNotes) are a short form of scientific communication that can be described in one sentence. They provide the Nucleus community with a means to rapidly share useful results and insights. Since they are built on top of Jupyter Notebooks they can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package. Continuing developments made to the [Nucleus Distribution](https://bnext.bio/nucleus) by the Core Development Team at b.next or by visiting residents and fellows at Nucleus Labs will be reported here before being integrated into the Distribution.
+Developer Notes (DevNotes) document how synthetic cell work gets done: the protocols, code, data, and decisions behind a result. Each DevNote centers on a single result or insight, and together they form the working record of a project as it develops. DevNotes are built on Jupyter Notebooks, so code, data, and other files sit alongside the text, and the full workflow travels as one package that others can rerun, adapt, and build on. DevNotes come from b.next’s Core Development Team, from residents and fellows at Nucleus Labs, and from developers across the wider community. New developments to the [Nucleus platform](https://docs.nucleus.engineering/) appear here first, before they are integrated.
 
-If you work on synthetic cells and related systems and/or work with the Nucleus Distribution, you are invited to submit a DevNote. DevNotes are open access and open source. By contributing a DevNote you can contribute to the development of the Nucleus Distribution. Results and insights that are highly useful and/or relevant will be integrated into the Nucleus Distribution by the Core Development Team at b.next.
+If you work on synthetic cells or related systems, or build with the Nucleus platform, we invite you to submit a DevNote. DevNotes are open access and open source, published under Nucleus terms. Each one is a direct contribution to the platform: the Core Development Team at b.next integrates results and insights that prove broadly useful into Nucleus.
 
 
-:::{anywidget} https://devnotes-search.pages.dev/widget.mjs
-:::
-
-# Who writes DevNotes
-
-Everyone who has written a DevNote, joined to the people they wrote it with. Find yourself, pick a lab to see its people, and look out for new contributors in green.
-
-:::{anywidget} widgets/devnotes-network.mjs
-:class: col-page-right
-{ "site": "bnext-devnotes", "height": 640 }
-:::
+<!-- :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
+::: -->
 
 # Latest
 :::{cn:articles}
