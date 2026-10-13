@@ -16,9 +16,9 @@ site:
 Build synthetic cells that work
 :::
 
-Developer Notes (DevNotes) are a short form of scientific communication that can be described in one sentence. They provide the Nucleus community with a means to rapidly share useful results and insights. DevNotes are built on top of Jupyter Notebooks. This lets them easily integrate code and a variety of file types, and each DevNote bundles an entire research workflow into one discrete package. The Core Development Team at b.next makes ongoing developments to the [Nucleus Distribution](https://bnext.bio/nucleus). Visiting residents and fellows at Nucleus Labs also contribute developments. This site will report them here before they join the Distribution.
+Developer Notes (DevNotes) document how synthetic cell work gets done: the protocols, code, data, and decisions behind a result. Each DevNote centers on a single result or insight, and together they form the working record of a project as it develops. DevNotes are built on Jupyter Notebooks, so code, data, and other files sit alongside the text, and the full workflow travels as one package that others can rerun, adapt, and build on. DevNotes come from b.next’s Core Development Team, from residents and fellows at Nucleus Labs, and from developers across the wider community. New developments to the [Nucleus platform](https://docs.nucleus.engineering/) appear here first, before they are integrated.
 
-If you work on synthetic cells and related systems and/or work with the Nucleus Distribution, you are invited to submit a DevNote. DevNotes are open access and open source. By contributing a DevNote you can contribute to the development of the Nucleus Distribution. Results and insights that are highly useful and/or relevant will be integrated into the Nucleus Distribution by the Core Development Team at b.next.
+If you work on synthetic cells or related systems, or build with the Nucleus platform, we invite you to submit a DevNote. DevNotes are open access and open source, published under Nucleus terms. Each one is a direct contribution to the platform: the Core Development Team at b.next integrates results and insights that prove broadly useful into Nucleus.
 
 
 <!-- :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
