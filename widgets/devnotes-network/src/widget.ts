@@ -527,7 +527,7 @@ button.${PREFIX}-chip:hover { background: var(--chip); }
 .${PREFIX}-notes li { padding: 10px 0; border-top: 1px solid var(--line); }
 .${PREFIX}-notes a { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); text-decoration: none; }
 .${PREFIX}-notes a:hover b { text-decoration: underline; }
-.${PREFIX}-thumb { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; flex: none; background: var(--soft); }
+.${PREFIX}-thumb { width: 72px; height: 72px; border-radius: 8px; object-fit: cover; flex: none; background: var(--soft); }
 .${PREFIX}-note-text { display: block; min-width: 0; }
 .${PREFIX}-note-text b { display: block; font-weight: 600; line-height: 1.35; }
 .${PREFIX}-note-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
