@@ -615,8 +615,10 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     h('option', { value: 'new' }, 'New contributors'),
   );
   // Hidden until a build finds at least one docs page citing a note (see `fetchDocCitations`).
+  // Not `-wide`, unlike "Color by": narrow mode still drops the legend, but the one thing
+  // that actually changes what's drawn stays reachable at any width.
   const docsToggle = h('input', { type: 'checkbox', checked: '' });
-  const docsLabel = h('label', { class: `${PREFIX}-k ${PREFIX}-wide`, hidden: '' });
+  const docsLabel = h('label', { class: `${PREFIX}-k`, hidden: '' });
   docsLabel.append(docsToggle, document.createTextNode(' Docs pages that cite a note'));
   const legend = h('ul', { class: `${PREFIX}-legend ${PREFIX}-wide` });
   const stats = h('div', { class: `${PREFIX}-stats`, 'aria-live': 'polite' }, 'Loading dev notes…');
