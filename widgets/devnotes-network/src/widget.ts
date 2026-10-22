@@ -966,9 +966,6 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
       });
       return;
     }
-    const newcomers = Object.values(graph.people)
-      .filter((q) => byId.get(q.id)?.isNew)
-      .sort((a, b) => b.firstDate.localeCompare(a.firstDate));
     const latest = Object.values(graph.notes)
       .sort((a, b) => b.date.localeCompare(a.date))
       .slice(0, 8)
@@ -976,18 +973,7 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     panel.innerHTML =
       `<h2>${escape(graph.site.title || 'Dev notes')}</h2>` +
       `<div class="${PREFIX}-meta">Every circle is someone who wrote a dev note. Pick one to see their notes, or find yourself.</div>` +
-      (newcomers.length
-        ? `<div class="${PREFIX}-h">New contributors</div><div class="${PREFIX}-chips">${newcomers
-            .map(
-              (q) =>
-                `<button type="button" class="${PREFIX}-chip" data-person="${escape(q.id)}">${escape(q.name)}</button>`,
-            )
-            .join('')}</div>`
-        : '') +
       `<div class="${PREFIX}-h">Latest notes</div><ul class="${PREFIX}-notes">${latest.map(noteItem).join('')}</ul>`;
-    for (const chip of panel.querySelectorAll<HTMLButtonElement>('[data-person]')) {
-      chip.addEventListener('click', () => pick(chip.dataset.person!, true));
-    }
   }
 
   function showTip(id: string | null, at?: { x: number; y: number }) {
