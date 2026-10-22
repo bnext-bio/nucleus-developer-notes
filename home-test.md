@@ -25,15 +25,16 @@ If you work on synthetic cells or related systems, or build with the Nucleus pla
 ::: -->
 
 ::::{grid} 1 1 2 2
-:gutter: 3
 
-:::{card} Browse by Collection
+:::{card} {icon:fas}`layer-group` Browse by Collection
 :link: #home-test-collections
+:footer: View collections →
 Core, Developer Cells, Community, Workshops and Courses, and AI Scientist.
 :::
 
-:::{card} See the Network
+:::{card} {icon:fas}`diagram-project` See the Network
 :link: graph.md
+:footer: Open the graph →
 Find yourself, and see who's working with whom.
 :::
 
