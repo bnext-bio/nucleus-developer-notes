@@ -16,28 +16,13 @@ site:
 Build synthetic cells that work
 :::
 
-Developer Notes (DevNotes) document how synthetic cell work gets done: the protocols, code, data, and decisions behind a result. Each DevNote centers on a single result or insight, and together they form the working record of a project as it develops. DevNotes are built on Jupyter Notebooks, so code, data, and other files sit alongside the text. The full workflow travels as one package that others can rerun, adapt, and build on. DevNotes come from b.next’s Core Development Team, from residents and fellows at Nucleus Labs, and from developers across the wider community. New developments to the [Nucleus platform](https://docs.nucleus.engineering/) appear here first, before they are integrated.
+Developer Notes (DevNotes) document how synthetic cell work gets done: the protocols, code, data, and decisions behind a result. Each DevNote centers on a single result or insight, and together they form the working record of a project as it develops. DevNotes are built on Jupyter Notebooks, so code, data, and other files sit alongside the text, and the full workflow travels as one package that others can rerun, adapt, and build on. DevNotes come from b.next’s Core Development Team, from residents and fellows at Nucleus Labs, and from developers across the wider community. New developments to the [Nucleus platform](https://docs.nucleus.engineering/) appear here first, before they are integrated.
 
 If you work on synthetic cells or related systems, or build with the Nucleus platform, we invite you to submit a DevNote. DevNotes are open access and open source, published under Nucleus terms. Each one is a direct contribution to the platform: the Core Development Team at b.next integrates results and insights that prove broadly useful into Nucleus.
 
 
 <!-- :::{anywidget} https://devnotes-search.pages.dev/widget.mjs
 ::: -->
-
-::::{grid} 1 1 2 2
-:gutter: 3
-
-:::{card} Browse by Collection
-:link: #collections
-Core, Developer Cells, Community, Workshops and Courses, and AI Scientist.
-:::
-
-:::{card} See the Network
-:link: graph.md
-Find yourself, and see who's working with whom.
-:::
-
-::::
 
 # Latest
 :::{cn:articles}
@@ -49,7 +34,6 @@ Find yourself, and see who's working with whom.
 :limit: 7
 :::
 
-(collections)=
 # Collections
 Nucleus Developer Notes hosts several collections of DevNotes that represent contributions from across the Nucleus Developer Ecosystem.
 
