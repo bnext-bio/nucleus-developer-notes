@@ -26,6 +26,7 @@ project:
     - file: devstudio.md
     - file: graph.md
     - file: validation.md
+    - file: home-test.md
 
   exclude:
     - dev-notes
