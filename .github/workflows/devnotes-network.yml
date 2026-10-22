@@ -18,4 +18,4 @@ jobs:
       - run: bun run lint
       - run: bun run lint:format
       - run: bun test
-      - run: bun run build
+      - run: bun run build -- --no-snapshot
