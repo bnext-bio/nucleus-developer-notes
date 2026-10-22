@@ -34,11 +34,17 @@ import {
 } from 'd3-force';
 import {
   buildDevnotesGraph,
+  docTitle,
   isNewArrival,
   mdastSummary,
   mdastUrls,
+  nodeId,
+  noteForUrl,
+  slugify,
   type CdnProject,
+  type Doc,
   type DevnotesGraph,
+  type Edge,
   type RawNote,
   type ScmsCollection,
   type ScmsWork,
@@ -189,6 +195,57 @@ export async function snapshotDevnotesGraph(
   return { site: options.site ?? DEFAULTS.site, savedAt: new Date().toISOString(), graph };
 }
 
+/**
+ * Crawls a docs site's public `myst.xref.json` manifest and every page it lists for links
+ * back to this graph's notes — the direction a note's own links can't see, since docs
+ * pages cite a DevNote far more often than a DevNote links out to docs. A page that fails
+ * to fetch or parse is skipped, not fatal.
+ *
+ * Call this once at build time (see `build.ts`), never from the live 60-second refresh:
+ * it fetches every page of the docs site, which `loadDevnotesGraph` has no reason to do
+ * on a timer.
+ */
+export async function fetchDocCitations(
+  graph: Pick<DevnotesGraph, 'notes' | 'aliases' | 'linking'>,
+  docsBaseUrl: string,
+  signal?: AbortSignal,
+): Promise<{ docs: Record<string, Doc>; edges: Edge[] }> {
+  const base = docsBaseUrl.replace(/\/+$/, '');
+  const docs: Record<string, Doc> = {};
+  const edges: Edge[] = [];
+  let pages: { kind: string; data: string; url: string }[];
+  try {
+    const xref = await getJson<{ references?: typeof pages }>(`${base}/myst.xref.json`, signal);
+    pages = (xref.references ?? []).filter((r) => r.kind === 'page');
+  } catch {
+    return { docs, edges }; // docs site unreachable: no citations, not a broken build
+  }
+  await pool(pages, 8, async (p) => {
+    let content: { frontmatter?: { title?: string }; mdast?: unknown };
+    try {
+      content = await getJson(`${base}${p.data}`, signal);
+    } catch {
+      return; // one page failing to fetch shouldn't drop the rest
+    }
+    const path = p.url.replace(/\/?$/, '/');
+    let docId: string | undefined;
+    for (const href of mdastUrls(content.mdast)) {
+      const noteId = noteForUrl(href, graph.aliases, graph.linking);
+      if (!noteId || !graph.notes[noteId]) continue;
+      docId ??= nodeId('doc', slugify(path) || 'home');
+      docs[docId] ??= {
+        id: docId,
+        url: `${base}${path}`,
+        title: content.frontmatter?.title || docTitle(new URL(`${base}${path}`)),
+        notes: [],
+      };
+      if (!docs[docId].notes.includes(noteId)) docs[docId].notes.push(noteId);
+      edges.push({ source: docId, target: noteId, kind: 'doc', date: graph.notes[noteId].date });
+    }
+  });
+  return { docs, edges };
+}
+
 // ─── The view: a co-authorship network ──────────────────────────────────────────────────
 
 export interface ViewNode extends SimulationNodeDatum {
@@ -196,13 +253,17 @@ export interface ViewNode extends SimulationNodeDatum {
   label: string;
   initials: string;
   r: number;
-  /** Notes they've written. */
+  /** Notes they've written, or a docs page has cited. */
   count: number;
-  /** Their main institution, for colour. */
+  /** Their main institution, for colour. Docs nodes have none. */
   institution?: string;
-  /** Their first note is recent. */
+  /** Their first note is recent. Always false for a docs page. */
   isNew: boolean;
   date: string;
+  /** A person who wrote notes, or a docs page that cites some of them. */
+  kind: 'person' | 'doc';
+  /** A docs page's own URL, to open from its panel. */
+  url?: string;
   x?: number;
   y?: number;
 }
@@ -210,8 +271,8 @@ export interface ViewNode extends SimulationNodeDatum {
 export interface ViewEdge extends SimulationLinkDatum<ViewNode> {
   source: string | ViewNode;
   target: string | ViewNode;
-  /** Wrote a note together, or one's note links to the other's. */
-  kind: 'coauthor' | 'builds';
+  /** Wrote a note together, one's note links to the other's, or a docs page cites theirs. */
+  kind: 'coauthor' | 'builds' | 'cites';
   /** How many notes. */
   weight: number;
 }
@@ -247,6 +308,7 @@ export function graphView(graph: DevnotesGraph, today: string, newDays: number):
     institution: [...p.institutions].sort((a, b) => rank.get(a)! - rank.get(b)!)[0],
     isNew: isNewArrival(p, today, newDays),
     date: p.firstDate,
+    kind: 'person',
   }));
 
   const pairs = new Map<string, ViewEdge>();
@@ -266,7 +328,32 @@ export function graphView(graph: DevnotesGraph, today: string, newDays: number):
     for (const t of n.linksTo)
       for (const a of n.authors) for (const b of graph.notes[t].authors) add(a, b, 'builds');
   }
-  return { nodes, edges: [...pairs.values()], institutions };
+
+  // A docs page cites a note; drawn as an edge to that note's authors, the same way a note
+  // linking to another note becomes a "builds on" edge between their authors.
+  const docEdges: ViewEdge[] = [];
+  const docNodes: ViewNode[] = [];
+  for (const doc of Object.values(graph.docs)) {
+    const authorIds = new Set<string>();
+    for (const noteId of doc.notes)
+      for (const a of graph.notes[noteId]?.authors ?? []) if (ids.has(a)) authorIds.add(a);
+    if (!authorIds.size) continue; // nothing in this view to connect it to
+    docNodes.push({
+      id: doc.id,
+      label: doc.title,
+      initials: '',
+      r: 7 + Math.sqrt(doc.notes.length) * 3.5,
+      count: doc.notes.length,
+      isNew: false,
+      date: '',
+      kind: 'doc',
+      url: doc.url,
+    });
+    for (const a of authorIds)
+      docEdges.push({ source: doc.id, target: a, kind: 'cites', weight: 1 });
+  }
+
+  return { nodes: [...nodes, ...docNodes], edges: [...pairs.values(), ...docEdges], institutions };
 }
 
 const endId = (end: string | ViewNode) => (typeof end === 'string' ? end : end.id);
@@ -312,6 +399,7 @@ const PALETTE = ['#f57c00', '#7fb3dc', '#a0522d', '#6a3d9a', '#ef8a94', '#1f6fb2
 const OTHER = '#a8a8a8';
 const NEW = '#2e7d32';
 const SELECTED = '#1b5e20';
+const DOC = '#8a6d1f';
 
 /** White and technical, like the docs: black ink, grey lines, green for you and the new. */
 const CSS = `
@@ -365,6 +453,9 @@ const CSS = `
 .${PREFIX}-stage svg { display: block; width: 100%; height: 100%; }
 .${PREFIX}-edge { stroke: var(--edge); stroke-opacity: .55; transition: opacity .15s; }
 .${PREFIX}-edge.builds { stroke-dasharray: 3 3; stroke-opacity: .4; }
+.${PREFIX}-edge.cites { stroke: ${DOC}; stroke-dasharray: 2 3; stroke-opacity: .5; }
+.${PREFIX}.hide-docs .${PREFIX}-node.doc, .${PREFIX}.hide-docs .${PREFIX}-edge.cites,
+.${PREFIX}.hide-docs .${PREFIX}-label.doc { display: none; }
 .${PREFIX}-node { cursor: pointer; }
 .${PREFIX}-node:focus { outline: none; }
 .${PREFIX}-node:focus-visible .ring { stroke: var(--ink); stroke-dasharray: none; }
@@ -377,6 +468,9 @@ const CSS = `
 .${PREFIX}-node .disc { stroke: var(--surface); stroke-width: 1.5; }
 .${PREFIX}-node .ring { fill: none; stroke: transparent; stroke-width: 2.5; }
 .${PREFIX}-node.new .ring { stroke: ${NEW}; stroke-dasharray: 3 2; }
+.${PREFIX}-node.doc .base { fill: var(--surface); }
+.${PREFIX}-node.doc .disc { fill-opacity: .25; }
+.${PREFIX}-node.doc .ring { stroke: ${DOC}; stroke-dasharray: 2 2; }
 .${PREFIX}-node.on .disc { fill: ${SELECTED}; stroke: var(--surface); stroke-width: 2.5; }
 .${PREFIX}-node.on .ring { stroke: ${SELECTED}; stroke-dasharray: none; }
 .${PREFIX}-node text {
@@ -520,10 +614,14 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     h('option', { value: 'institution' }, 'Institution'),
     h('option', { value: 'new' }, 'New contributors'),
   );
+  // Hidden until a build finds at least one docs page citing a note (see `fetchDocCitations`).
+  const docsToggle = h('input', { type: 'checkbox', checked: '' });
+  const docsLabel = h('label', { class: `${PREFIX}-k ${PREFIX}-wide`, hidden: '' });
+  docsLabel.append(docsToggle, document.createTextNode(' Docs pages that cite a note'));
   const legend = h('ul', { class: `${PREFIX}-legend ${PREFIX}-wide` });
   const stats = h('div', { class: `${PREFIX}-stats`, 'aria-live': 'polite' }, 'Loading dev notes…');
   legend.style.marginTop = '8px';
-  side.append(title, findLabel, find, colorLabel, colorSelect, legend, stats);
+  side.append(title, findLabel, find, colorLabel, colorSelect, docsLabel, legend, stats);
 
   // Middle: the graph.
   const stage = h('div', { class: `${PREFIX}-stage` });
@@ -575,6 +673,7 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
   let t = { x: 0, y: 0, k: 1 };
 
   const colorOf = (n: ViewNode) => {
+    if (n.kind === 'doc') return DOC;
     if (colorBy === 'new') return n.isNew ? NEW : OTHER;
     const k = view.institutions.findIndex((i) => i.id === n.institution);
     return k >= 0 && k < PALETTE.length ? PALETTE[k] : OTHER;
@@ -725,11 +824,22 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
               name: 'Elsewhere',
               people: view.nodes.filter(
                 (n) =>
-                  view.institutions.findIndex((i) => i.id === n.institution) < 0 ||
-                  view.institutions.findIndex((i) => i.id === n.institution) >= PALETTE.length,
+                  n.kind === 'person' &&
+                  (view.institutions.findIndex((i) => i.id === n.institution) < 0 ||
+                    view.institutions.findIndex((i) => i.id === n.institution) >= PALETTE.length),
               ).length,
               color: OTHER,
             },
+            ...(view.nodes.some((n) => n.kind === 'doc')
+              ? [
+                  {
+                    id: '',
+                    name: 'Docs pages',
+                    people: view.nodes.filter((n) => n.kind === 'doc').length,
+                    color: DOC,
+                  },
+                ]
+              : []),
           ];
     legend.replaceChildren(
       ...items.map((item) => {
@@ -768,6 +878,20 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
 
   function showPanel() {
     if (!graph) return;
+    const doc = selected ? graph.docs[selected] : null;
+    if (doc) {
+      panel.innerHTML =
+        `<button type="button" class="${PREFIX}-close" aria-label="Close">×</button>` +
+        `<h2>${escape(doc.title)}</h2>` +
+        `<div class="${PREFIX}-meta">Docs page · ${plural(doc.notes.length, 'note')} cited · <a href="${escape(doc.url)}">Open</a></div>` +
+        `<ul class="${PREFIX}-notes">${doc.notes.slice().reverse().map(noteItem).join('')}</ul>`;
+      panel.querySelector(`.${PREFIX}-close`)!.addEventListener('click', () => {
+        selected = null;
+        setFocus();
+        showPanel();
+      });
+      return;
+    }
     const p = selected ? graph.people[selected] : null;
     if (p) {
       const node = byId.get(p.id);
@@ -859,9 +983,14 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
       tip.hidden = true;
       return;
     }
-    const p = graph.people[id];
-    const inst = p.institutions.map((i) => graph!.institutions[i]?.name)[0];
-    tip.innerHTML = `<strong>${escape(p.name)}</strong><span>${plural(p.notes.length, 'note')}${inst ? ` · ${escape(inst)}` : ''}</span>`;
+    const doc = graph.docs[id];
+    if (doc) {
+      tip.innerHTML = `<strong>${escape(doc.title)}</strong><span>${plural(doc.notes.length, 'note')} cited · docs page</span>`;
+    } else {
+      const p = graph.people[id];
+      const inst = p.institutions.map((i) => graph!.institutions[i]?.name)[0];
+      tip.innerHTML = `<strong>${escape(p.name)}</strong><span>${plural(p.notes.length, 'note')}${inst ? ` · ${escape(inst)}` : ''}</span>`;
+    }
     tip.hidden = false;
     const { w } = size();
     tip.style.left = `${Math.max(4, Math.min(at.x + 14, w - 270))}px`;
@@ -976,10 +1105,10 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     const byArrival = [...view.nodes].sort((a, b) => a.date.localeCompare(b.date));
     for (const n of order) {
       const g = s('g', {
-        class: `${PREFIX}-node${n.isNew ? ' new' : ''}`,
+        class: `${PREFIX}-node${n.isNew ? ' new' : ''}${n.kind === 'doc' ? ' doc' : ''}`,
         tabindex: 0,
         role: 'button',
-        'aria-label': n.label,
+        'aria-label': n.kind === 'doc' ? `${n.label} (docs page)` : n.label,
       });
       const shape = s('g', { class: 'shape' });
       shape.append(
@@ -989,7 +1118,7 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
       );
       const text = s('text');
       text.style.fontSize = `${Math.max(4.5, n.r * 0.72)}px`;
-      text.textContent = n.initials;
+      text.textContent = n.kind === 'doc' ? '' : n.initials;
       shape.append(text);
       g.append(shape);
       // On first load the circles pop in, oldest first; on a refresh, only the new ones.
@@ -1000,7 +1129,7 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
       }
       nodeLayer.append(g);
       nodeEls.set(n.id, g);
-      const label = s('text', { class: `${PREFIX}-label` });
+      const label = s('text', { class: `${PREFIX}-label${n.kind === 'doc' ? ' doc' : ''}` });
       label.textContent = n.label;
       labelLayer.append(label);
       labelEls.set(n.id, label);
@@ -1010,9 +1139,12 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     msg.hidden = true;
 
     const notes = Object.keys(next.notes).length;
+    const docCount = view.nodes.filter((n) => n.kind === 'doc').length;
+    docsLabel.hidden = !docCount;
     stats.innerHTML =
-      `<b>${view.nodes.length}</b> people · <b>${view.edges.filter((e) => e.kind === 'coauthor').length}</b> collaborations<br>` +
+      `<b>${view.nodes.filter((n) => n.kind === 'person').length}</b> people · <b>${view.edges.filter((e) => e.kind === 'coauthor').length}</b> collaborations<br>` +
       `<b>${notes}</b> dev notes · <b>${Object.keys(next.institutions).length}</b> institutions` +
+      (docCount ? ` · <b>${docCount}</b> docs pages` : '') +
       (next.range[1] ? `<br>Latest ${formatDate(next.range[1])}` : '');
 
     if (selected && !byId.has(selected)) selected = null;
@@ -1166,6 +1298,15 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
     paint();
     setFocus();
     showPanel();
+  });
+
+  docsToggle.addEventListener('change', () => {
+    root.classList.toggle('hide-docs', !docsToggle.checked);
+    if (!docsToggle.checked && selected && graph?.docs[selected]) {
+      selected = null;
+      setFocus();
+      showPanel();
+    }
   });
 
   // Find yourself.

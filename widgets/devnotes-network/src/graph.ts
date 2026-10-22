@@ -205,7 +205,7 @@ function sameName(a: string, b: string): boolean {
   return x.first === y.first || editDistance(x.first, y.first) <= 1;
 }
 
-const slugify = (s: string) =>
+export const slugify = (s: string) =>
   fold(s)
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
