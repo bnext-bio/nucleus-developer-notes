@@ -525,9 +525,12 @@ button.${PREFIX}-chip:hover { background: var(--chip); }
 .${PREFIX}-chip small { font-size: 9px; font-weight: 600; letter-spacing: .06em; color: var(--muted); }
 .${PREFIX}-notes { margin: 0; padding: 0; list-style: none; }
 .${PREFIX}-notes li { padding: 10px 0; border-top: 1px solid var(--line); }
-.${PREFIX}-notes a { display: block; font-weight: 600; line-height: 1.35; color: var(--ink); text-decoration: none; }
-.${PREFIX}-notes a:hover { text-decoration: underline; }
-.${PREFIX}-notes span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
+.${PREFIX}-notes a { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); text-decoration: none; }
+.${PREFIX}-notes a:hover b { text-decoration: underline; }
+.${PREFIX}-thumb { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; flex: none; background: var(--soft); }
+.${PREFIX}-note-text { display: block; min-width: 0; }
+.${PREFIX}-note-text b { display: block; font-weight: 600; line-height: 1.35; }
+.${PREFIX}-note-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
 .${PREFIX}-h { margin: 14px 0 6px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .${PREFIX}.narrow { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; }
 .${PREFIX}.narrow .${PREFIX}-side { border-right: 0; border-bottom: 1px solid var(--line); }
@@ -875,7 +878,14 @@ export function mount(el: HTMLElement, options: DevnotesGraphOptions = {}): () =
   const noteItem = (id: string) => {
     const n = graph!.notes[id];
     const collection = graph!.collections[n.collection]?.title;
-    return `<li><a href="${escape(n.url)}">${escape(n.title)}</a><span>${collection ? `${escape(collection)} · ` : ''}${formatDate(n.date)}</span></li>`;
+    const thumb = n.thumbnail
+      ? `<img class="${PREFIX}-thumb" src="${escape(n.thumbnail)}" alt="" loading="lazy">`
+      : `<span class="${PREFIX}-thumb" aria-hidden="true"></span>`;
+    return (
+      `<li><a href="${escape(n.url)}">${thumb}<span class="${PREFIX}-note-text">` +
+      `<b>${escape(n.title)}</b><span>${collection ? `${escape(collection)} · ` : ''}${formatDate(n.date)}</span>` +
+      `</span></a></li>`
+    );
   };
 
   function showPanel() {

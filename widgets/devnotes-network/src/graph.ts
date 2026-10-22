@@ -21,7 +21,7 @@ export interface ScmsWork {
   cdn?: string;
   cdn_key?: string;
   collection?: { slug: string; content?: { title?: string; description?: string } };
-  links?: { html?: string; config?: string };
+  links?: { html?: string; config?: string; thumbnail?: string };
 }
 
 /** A collection as `GET /v1/sites/:site/collections` lists it. */
@@ -368,14 +368,19 @@ export function buildDevnotesGraph(
     for (const a of authorNames) records.push({ ...a, note: id, date: r.date });
 
     const collectionSlug = homeOf(work.collection!.slug);
-    const thumb = project?.thumbnailOptimized ?? project?.thumbnail;
+    // SCMS serves one for every work, generated from the note itself; the CDN path only
+    // exists when the note's own frontmatter declares a thumbnail, so it's the fallback.
+    const cdnThumb = project?.thumbnailOptimized ?? project?.thumbnail;
     notes[id] = {
       id,
       title: work.title,
       date: r.date,
       summary: r.summary,
       thumbnail:
-        thumb && work.cdn && work.cdn_key ? `${work.cdn}${work.cdn_key}/public${thumb}` : undefined,
+        work.links?.thumbnail ??
+        (cdnThumb && work.cdn && work.cdn_key
+          ? `${work.cdn}${work.cdn_key}/public${cdnThumb}`
+          : undefined),
       url: work.links?.html ?? `${site.url}/articles/${work.slug ?? work.id}`,
       doi: work.doi || undefined,
       collection: nodeId('collection', collectionSlug),
