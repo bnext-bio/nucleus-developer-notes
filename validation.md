@@ -17,6 +17,6 @@ site:
 :::
 
 :::{anywidget} widgets/devnotes-network.mjs
-:class: col-page-right
+:class: col-screen
 { "site": "bnext-devnotes", "height": 800 }
 :::

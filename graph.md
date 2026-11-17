@@ -12,6 +12,6 @@ site:
 Everyone who has written a DevNote, joined to the people they wrote it with. Find yourself, pick a lab to see its people, and look out for new contributors in green.
 
 :::{anywidget} widgets/devnotes-network.mjs
-:class: col-page-right
+:class: col-screen
 { "site": "bnext-devnotes", "height": 800 }
 :::
